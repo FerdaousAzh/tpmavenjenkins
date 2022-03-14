@@ -1,0 +1,801 @@
+@font-face {
+  font-family: 'Amiko';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/amiko/amiko-v5-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/amiko/amiko-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/amiko/amiko-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/amiko/amiko-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/amiko/amiko-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/amiko/amiko-v5-latin-regular.svg#Amiko') format('svg'); /* Legacy iOS */
+}
+
+body {
+	margin: 0px;
+	background: #293A4E;
+	font-family: Verdana,Amiko,sans-serif;
+	font-size:12px;
+	letter-spacing:0;
+	-moz-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+}
+
+img { border: 0; }
+
+/* #gabarit_b1 = première barre du haut */
+#gabarit_b1 { background: #293a4e; height: 30px; }
+
+/* #gabarit-new-logo = logo */
+#gabarit-new-logo {
+	position:absolute;
+	top:0;
+	left:0;
+	width:200px;
+	background-color:#345976;
+}
+
+#gabarit-new-logo img {
+	position:relative;
+	z-index:20;
+	top:4px;
+}
+
+#gabarit-new-logo span.dvp {
+	display:block;
+	position:absolute;
+	top:5px;
+	left:40px;
+	color:#fff;
+	font-weight:bold;
+	font-size:.9rem;
+	content: ' ';
+	width:130px;
+	height:20px;
+	background: transparent url(/template/images/developpez.com.png) no-repeat center center;
+}
+
+#gabarit-new-logo span.triangle {
+	position:absolute;
+	top:0;
+	right:0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 30px 6px;
+	border-color: transparent transparent #293a4e transparent;
+}
+
+/* #gabarit_superieur = la barre du haut qui donne accès aux différentes parties du site */
+#gabarit_superieur {
+	width: 830px;
+	height: inherit;
+	margin: 0 auto 0 170px;
+	font-weight: bold;
+}
+
+#gabarit_superieur ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align:center;
+	background-color:#293a4e;
+}
+
+@media screen and (max-width: 1066px) {
+	#gabarit_superieur { position: relative; right: 0; top: 0; margin:0; }
+}
+
+#gabarit_superieur ul li {
+	display: inline;
+	line-height: 33px;
+	margin-right: 5px;
+	transition: background-color .2s linear;
+	background-color: #293a4e;
+	display: inline-block;
+	margin:0;
+	text-transform: uppercase;
+	transform: skew(-11deg);
+}
+
+#gabarit_superieur ul li a {
+	position:relative;
+	top:0;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 0 10px;
+}
+
+#gabarit_superieur ul li:hover { background-color: #345976; cursor:pointer; }
+
+#gabarit_superieur a:hover { text-decoration: none; }
+
+/* #gabarit_recherche = recherche personnalisée Google */
+#gabarit_recherche {
+	position:absolute;
+	z-index:14;
+	top:1px;
+	right:0;
+	width: auto;
+	background-color:#293a4e;
+	height:30px;
+	padding:0 6px;
+}
+
+#gabarit_recherche input[type=text] { width: 140px; }
+
+#gabarit_recherche input[type=submit] {
+	font-size: 8pt;
+	color: #577F99;
+	background: #ACBFCB;
+	border: 1px solid #5a7f97;
+	position: relative;
+	top: -2px;
+	width: 80px;
+}
+
+#gabarit_recherche .gabarit-btn-menu,
+#gabaritRepereLogout {
+	display:inline-block;
+	width:36px;
+	height:26px;
+	background-image: url(/template/images/gabarit-icons.png);
+	background-repeat:no-repeat;
+	background-color:transparent;
+	cursor:pointer;
+	position:relative;
+	top:3px;
+	z-index:12;
+	margin-left:4px;
+}
+
+#gabarit_recherche .gabarit-btn-menu.contacts { background-position:-98px 0px; }
+#gabarit_recherche .gabarit-btn-menu.contacts:hover { background-position:-245px 0px; }
+
+#gabarit_recherche .gabarit-btn-menu.recherche { background-position:-49px 0px; }
+#gabarit_recherche .gabarit-btn-menu.recherche:hover, #gabarit_recherche .gabarit-btn-menu.recherche.open { background-position:-196px 0px; }
+
+#gabarit_recherche .gabarit-btn-menu.profil { background-position:0px 0px; }
+#gabarit_recherche .gabarit-btn-menu.profil:hover { background-position:-147px 0px; }
+
+#gabarit_recherche .gabarit-btn-menu.dn { display:none; }
+
+#gabarit_recherche [role="gabarit-connecter"] {
+	display: inline-grid;
+	grid-gap: 0 15px;
+	grid-template-columns: auto 36px;
+	grid-auto-rows: minmax(0, auto);
+	align-items: center;
+	width: max-content;
+	height:30px;
+	background: none;
+	top: -6px;
+	right: 0;
+	color: #fff;
+}
+#gabarit_recherche [role="gabarit-connecter"] a { color: #fff; font-weight:bold; }
+
+#gabarit-barreRecherche {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	background-color:#293a4e;
+	border: 1px solid #293a4e;
+	width: calc(100% - 244px);
+	margin-left:200px;
+	height: 28px;
+	z-index: 14;
+}
+
+#gabarit-barreRecherche form { padding:0 10px; }
+
+#gabarit-barreRecherche form div {
+	position: relative;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	vertical-align: middle;
+	width:100%;
+}
+
+#gabarit-barreRecherche form input[type="text"] {
+	display: block;
+	width: 100%;
+	padding: 0 0.75rem;
+	margin-top:2px;
+	font-size: 12px;
+	height:22px;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 0;
+	border-radius: 0.25rem 0 0 0.25rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	outline:0;
+}
+
+#gabarit-barreRecherche form input[type="submit"],
+#gabaritRepereLogout {
+	font-size: 12px;
+	line-height: 22px;
+	border-radius: 0 .25rem .25rem 0;
+	margin-top:2px;
+	border:0;
+	background-color:#5789b0;
+	color:#fff;
+	width:170px;
+	cursor:pointer;
+}
+
+@media screen and (max-width: 1066px) {
+	#gabarit-barreRecherche { margin-left:36px; width:calc(100% - 78px); }
+}
+
+/* #gabarit_pub0, #gabarit_pub1, #gabarit_pub3 = libellé pub */
+#gabarit_pub0 {
+	display: none;
+	width: 6px;
+	height: 90px;
+	margin-right: 5px;
+	background-image: url(/template/images/pub728.png);
+}
+
+#gabarit_pub1, #gabarit_pub3 {
+	display: none;
+	width: 81px;
+	height: 7px;
+	margin-left: 109px;
+	margin-top: 1px;
+	margin-bottom: 3px;
+	background-image: url(/template/images/pub300.png);
+}
+
+#gabarit_pub4 {
+	display: none;
+	width: 81px;
+	height: 7px;
+	margin-left: 40px;
+	margin-top: 1px;
+	margin-bottom: 3px;
+	background-image: url(/template/images/pub300.png);
+}
+
+/* #gabarit_menu = barre de menus */
+#gabarit_menu {
+	clear: both;
+	background-color: #5789b0;
+	border-top:2px solid #293a4e;
+	height: auto;
+	margin: 0;
+	position:relative;
+	z-index:10;
+	display:flex;
+}
+
+#gabarit_menu a { text-decoration: none; }
+
+#gabarit_menu > li {
+	position: relative;
+	float: left;
+	display: block;
+	line-height: 28px;
+	margin:0;
+	white-space:nowrap;
+}
+
+#gabarit_menu > li:first-child { border: 0; }
+
+#gabarit_menu > li > a {
+	display: block;
+	height: 100%;
+	padding: 0 10px;
+	color: white;
+	font-weight:bold;
+	font-size:11px;
+}
+
+#gabarit_menu > li a div#gabarit_home {
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position:0 0;
+	background-image: url(/template/images/gabarit-home.png);
+	width: 36px;
+	height: 26px;
+}
+
+
+#gabarit_menu > li a.gabarit_selection {
+	background: #eaf5f8;
+	background: -moz-linear-gradient(top,  #eaf5f8 0%, #d8e6ec 37%, #aed1dd 100%);
+	background: -webkit-linear-gradient(top,  #eaf5f8 0%,#d8e6ec 37%,#aed1dd 100%);
+	background: linear-gradient(to bottom, #eaf5f8 0%,#d8e6ec 37%,#aed1dd 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaf5f8', endColorstr='#aed1dd',GradientType=0 );
+	color:#000;
+}
+
+#gabarit_menu > li a.gabarit_selection div#gabarit_home { background-position:-72px 0; }
+
+#gabarit_menu > li a.gabarit_selection:hover, #gabarit_menu > li > a:hover, #gabarit_menu > li:hover > a { background: #345976; color: #fff; }
+
+#gabarit_menu > li a.gabarit_selection:hover div#gabarit_home, #gabarit_menu > li a:hover div#gabarit_home { background-position:-36px 0; }
+
+/* .gabarit_tooltip = infobulle au survol des méga-rubriques */
+.gabarit_tooltip { display: none; }
+
+#gabarit_menu > li > a:hover > .gabarit_tooltip {
+	display: block;
+	position: absolute;
+	width: auto;
+	white-space:nowrap;
+	height: 30px;
+	top: -30px;
+	left: 0;
+	background: #000;
+	color: #fff;
+	font-size: .7rem;
+	font-weight: bold;
+	line-height: 30px;
+	padding: 0 20px;
+}
+
+#gabarit_menu > li:last-child > a:hover > .gabarit_tooltip { left: auto; right:0; }
+
+/* .gabarit_sousmenu = les menus déroulants */
+#gabarit_menu li:hover .gabarit_sousmenu { display: block; }
+
+.gabarit_sousmenu {
+	display: none;
+	position: absolute;
+	border: solid 3px #345976;
+	-webkit-border-radius: 0 .25rem .25rem .25rem;
+	border-radius: 0 0 .25rem .25rem;
+	padding: 0px;
+	background-color: #fff;
+	z-index: 1100;
+	min-width:150px;
+}
+
+.gabarit_menu li:hover .gabarit_sousmenu, .gabarit_menu a:hover .gabarit_sousmenu { display: block; }
+
+#gabarit_menu > li:last-child .gabarit_sousmenu { left: -84px; }
+
+.gabarit_sousmenu li {
+	display: block;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	height: 28px;
+}
+
+.gabarit_sousmenu li a {
+	display: block;
+	white-space: nowrap;
+	color: #293a4e;
+	padding: 0 10px;
+	line-height: 28px;
+}
+
+.gabarit_sousmenu li a:hover {
+	color: #fff;
+	background-color: #345976;
+	transition: background-color 0.1s linear;
+}
+
+/* #gabarit_barre1 = première barre de boutons, #gabarit_barre2 = deuxième barre de boutons */
+#gabarit_barre1 {
+	background-color: #426c8c;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	border-top: 2px solid #293a4e;
+	/* height: 25px; */
+	height:auto;
+	overflow:hidden;
+}
+
+#gabarit_barre2 {
+	background-color: #345976;
+	border-width: 2px 0;
+	border-color: #293a4e;
+	border-style: solid;
+	padding: 0 10px;
+	height:auto;
+	overflow:hidden;
+}
+
+#gabarit_barre2 ul {
+	font-size: .8rem;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	height:inherit;
+}
+
+#gabarit_barre1 a, #gabarit_barre2 ul a {
+	display:inline-block;
+	position:relative;
+	top:-2px;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+}
+
+#gabarit_barre1 a { font-size: 11px; padding: 0 10px; }
+
+#gabarit_barre2 ul a { font-size: 11px; padding: 0 8px; }
+
+#gabarit_barre1 li, #gabarit_barre2 li { display: inline-block; margin:0; }
+
+#gabarit_barre1 li { line-height: 24px; }
+
+#gabarit_barre2 li { line-height: 20px; }
+
+#gabarit_barre1 li.gabarit_selection {
+	background: #eaf5f8;
+	background: -moz-linear-gradient(top,  #eaf5f8 0%, #d8e6ec 37%, #aed1dd 100%);
+	background: -webkit-linear-gradient(top,  #eaf5f8 0%,#d8e6ec 37%,#aed1dd 100%);
+	background: linear-gradient(to bottom, #eaf5f8 0%,#d8e6ec 37%,#aed1dd 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaf5f8', endColorstr='#aed1dd',GradientType=0 );
+}
+
+#gabarit_barre1 li.gabarit_selection:hover, #gabarit_barre1 li:hover { background: #10436b; }
+
+#gabarit_barre1 li.gabarit_selection a { color:#293a4e; }
+
+#gabarit_barre2 li:hover { background-color: #10334f; }
+
+#gabarit_barre2 li.gabarit_selection { background-color: #0e2d46; }
+
+#gabarit_barre1 li:hover a, #gabarit_barre2 li:hover a { color: #fff; }
+
+@-moz-document url-prefix() {
+	#gabarit_barre2 li { min-width: 50px; }
+	#gabarit_barre1 li a, #gabarit_barre2 li a { display: block; position: relative; top: 0; line-height:inherit; }
+}
+
+.gabarit_social {
+	display: block;
+	position: relative;
+	float: right;
+	margin: 2px 0 0 5px;
+	background-image: none;
+	cursor: pointer;
+	z-index: 0;
+	width: 16px;
+	height: 16px;
+	background-image: url(/template/images/social.png);
+}
+
+.gabarit_facebook { background-position: 0px 0px; }
+
+.gabarit_rss { background-position: 16px 0px; }
+
+.gabarit_linkedin { background-position: 32px 0px; }
+
+.gabarit_twitter { background-position: 48px 0px; }
+
+/* gabarit_pubBB = emplacement Big banner */
+#gabarit_pubBB, #gabarit_megaban_bas {
+	position: relative;
+	width: 100%;
+	height:100px;
+	background-color: #e1e1e2;
+	padding:5px 0;
+	text-align: center;
+}
+
+/* .contenuPage = tout l'espace utile du site, entre l'en-tête gabarit et le pied du gabarit */
+.contenuPage { padding: 0 .5rem 20px; background: #e1e1e2; }
+
+.contenuPage h1:first-of-type,
+.contenuPage h2:first-of-type,
+.contenuPage h3:first-of-type,
+.contenuPage h4:first-of-type,
+.contenuPage h5:first-of-type,
+.contenuPage h6:first-of-type { margin-top:0; padding-top:20px; }
+
+/* #gabarit_responsable = zone où est indiqué qui est responsable de cette rubrique */
+
+#gabarit_responsable {
+	padding: 5px 0;
+	background-color: #293a4e;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	border-width: 1px 0 1px 0;
+	border-color: #5a7f97;
+	border-style: solid;
+}
+
+#gabarit_responsable a { color: #fff; text-decoration: none; }
+
+#gabarit_responsable a:hover { text-decoration: underline; }
+
+/* #gabarit_pied = pied de page */
+#gabarit_pied {
+	text-align: center;
+	list-style-type: none;
+	margin: 5px 0 0 0;
+	padding: 0;
+	font-size: 8pt;
+	color: #fff;
+}
+
+#gabarit_pied li {
+	display: inline-block;
+	margin: 0 10px;
+	padding: 0;
+}
+
+#gabarit_pied a { text-decoration: none; color: #fff; }
+
+#gabarit_pied a:hover { text-decoration: underline; }
+
+#gabarit_copyright {
+	text-align: center;
+	color: #7292a7;
+	font-weight: bold;
+	text-align: center;
+	font-size: 8pt;
+	margin:0;
+	padding:5px 0;
+}
+
+#gabarit_cnilcookie {
+	position: fixed;
+	font-size: 10pt;
+	border: 1px solid black;
+	color: black;
+	background: #ffe;
+	padding: 1em;
+	right: 5px;
+	bottom: 5px;
+	cursor: pointer;
+}
+
+.pubtuto { border: 0 !important; background-color: #fff !important; }
+
+.pubtuto div:first-child { text-align: center; margin-bottom: 1em; }
+
+.pubtuto div:last-child { border: 1px solid #ddd; border-radius: 7px; background-color: rgba(155, 177, 188, 0.1); }
+
+.pubtuto #gabarit_pub1 { margin: 0 auto; border: 0; }
+
+@media screen and (max-width: 1270px) {
+	.pubtuto div:first-child { display: none; }
+}
+
+#div-gpt-ad-1407836094815-0 { position: relative; top: -4px; }
+
+#div-gpt-ad-1407836209633-0 { position: relative; top: -3px; }
+
+/* CHECKBOX */
+.checkBlok .checkbox { display:inline-block; padding:0; margin:0; }
+.checkBlok .checkbox label { margin-bottom:0; }
+.checkBlok .checkbox label:after { content: ''; display: table; clear: both; }
+.checkBlok .checkbox .cr {
+    position: relative;
+	top:2px;
+    display: inline-block;
+    border: 1px solid #abc9b2;
+	color: rgba(4, 8, 2, 0.5);
+	background-color: #fff;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: none;
+    margin-right: .2em;
+}
+.checkBlok .checkbox .cr .cr-icon {
+	position: absolute;
+	line-height: 0;
+	top: .7em;
+	left: .2em;
+	font-size:10px;
+}
+.checkBlok .checkbox label input[type="checkbox"] {
+	display: none;
+}
+.checkBlok .checkbox label input[type="checkbox"] + .cr > .cr-icon {
+	transform: scale(3) rotateZ(-20deg); opacity: 0; transition: all .3s ease-in;
+}
+.checkBlok .checkbox label input[type="checkbox"]:checked + .cr > .cr-icon {
+	transform: scale(1) rotateZ(0deg); opacity: 1;
+}
+.checkBlok .checkbox label.off {
+	opacity:.3;
+}
+.checkBlok .checkbox label input[type="checkbox"]:disabled + .cr {
+	opacity: .05;
+	border-color:red;
+	cursor:default;
+}
+
+/* colonne de droite */
+#suite_colonne_droite {
+	background: #f7f7f7;
+	border: 1px solid #b1b1b1;
+	overflow: unset;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+
+.colonneDroite #suite_colonne_droite:before,
+.colonneDroite #suite_colonne_droite::before {
+	display:block;
+	background: #293a4e;
+	color:#fff;
+	content: attr(data-title);
+	text-align:center;
+	font-weight:bold;
+	font-size:11px;
+	line-height:17px;
+	text-transform:uppercase;
+}
+
+#suite_colonne_droite .voiraussiTitle {
+	display: block;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-bottom: 0px;
+	margin-top: 4px;
+	border: 3px solid #fff;
+	text-align: center;
+	padding: 3px;
+	background: #eee;
+	-webkit-border-radius: .35rem .35rem 0 0;
+	border-radius: .35rem .35rem 0 0;
+	color:#000;
+	text-transform:none;
+	line-height:1rem;
+	font: 8pt Verdana;
+	font-weight: bold;
+}
+#suite_colonne_droite .voiraussiTitle:before,
+#suite_colonne_droite .voiraussiTitle::before { content: attr(data-title); }
+
+#suite_colonne_droite .voiraussi {
+	background: #f7f7f7;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-bottom:5px;
+	padding:10px;
+	border: 3px solid #fff;
+	border-width: 0px 3px 3px 3px;
+	-webkit-border-radius: 0 0 .35rem .35rem;
+	border-radius: 0 0 .35rem .35rem;
+}
+#suite_colonne_droite .voiraussi ul { margin-bottom:0; padding-left:25px; }
+#suite_colonne_droite .voiraussi ul .voiraussiItem { margin-top:5px; }
+#suite_colonne_droite .voiraussi ul .voiraussiItem a {
+	color:#000;
+	position:relative;
+	top:-4px;
+	left:5px;
+}
+#suite_colonne_droite .voiraussi .tag { background-color: #000; padding:0.3em 0.6em 0.4em; margin-right:2px; }
+#suite_colonne_droite .voiraussi .tag:hover { box-shadow: none; margin-right:2px; }
+#suite_colonne_droite .voiraussiScrollable { max-height:none; }
+
+/* CONNEXION */
+#gabarit_connexion,
+[role="gabarit-connecter"] {
+	display:none;
+	width: calc(100% - 94px);
+	height: 30px;
+	margin: 0;
+	margin-left: 46px;
+	padding:0;
+	position: relative;
+	top:0;
+	left:0;
+	z-index: 30;
+	text-align: left;
+	overflow:hidden;
+	background:#293a4e;
+}
+
+[role="gabarit-connecter"] {
+	width: calc(100% - 260px);
+	margin-left: 210px;
+	color: #fff;
+	font-weight: bold;
+	line-height:30px;
+}
+
+#gabarit_connexion form {
+	width:auto;
+	height:30px;
+	line-height:30px;
+	color:#fff;
+	font-weight:bold;
+}
+
+#gabarit_connexion form > div { display:inline-block; position:relative; padding-right:20px; margin-right:4px; }
+
+#gabarit_connexion form span { margin: 0 10px; }
+
+#gabarit_connexion form a { color:#fff; }
+
+#gabarit_connexion form #mdpoublier { position:relative; top:1px; margin:0 25px 0 10px; }
+
+#gabarit_connexion .form-control,
+#gabarit_connexion #formbuttonConnexion,
+#gabarit_connexion #inscriptionConnexion,
+#gabaritRepereLogout {
+	height:20px;
+	font-size:.8rem;
+	-webkit-border-radius:0;
+	border-radius:0;
+}
+
+#gabarit_connexion .form-control {
+	display: inline-block;
+	width:120px;
+	padding:3px 5px;
+	margin-bottom:0;
+}
+
+#gabarit_connexion #formbuttonConnexion,
+#gabarit_connexion #inscriptionConnexion,
+#gabaritRepereLogout {
+	width:max-content;
+	padding: 0 10px;
+	margin: 0 10px;
+}
+
+#gabaritRepereLogout {
+	margin:0;
+	position:relative;
+	top:0;
+    height: 26px;
+	width:36px;
+	padding:0;
+}
+#gabaritRepereLogout:hover { background-color: #e8d157; }
+
+#gabaritRepereLogout { background-position:-322px 0px; }
+#gabaritRepereLogout:hover { background-position:-362px 0px; }
+
+#gabaritRepereLogout> i { font-size: 12px; color: #293a4e; text-shadow:1px 1px 0 #ffe86e; }
+
+#gabarit_connexion #formbuttonConnexion.actif { background-color: #138d0f; box-shadow: none; }
+
+#gabarit_connexion #loadingConnexion { display:none; position:absolute; right:0; top:7px; width: 18px; height: 18px; border-width: 0.2em; }
+
+[role="gabarit-connecter"] > span > a { color:#fff; }
+
+[role="gabarit-connecter"] > span > img {
+	height: 22px;
+	margin: 0 12px;
+	position: relative;
+	top: -2px;
+	border: 1px solid #0000003b;
+	-webkit-box-shadow:0px 0px 1px 0px #fff;
+	box-shadow:0px 0px 1px 0px #fff;
+	vertical-align: middle;
+}
+‚I~Z      b/¥b/¥DÅBb8Hì   k    O^partitionKey=%28https%2Cdeveloppez.net%29,:https://www.developpez.net/template/css/gabarit.css?1630596300 necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Mon, 14 Mar 2022 09:44:13 GMT
+Server: Apache/2.4.38 (Debian)
+Last-Modified: Thu, 02 Sep 2021 15:25:00 GMT
+ETag: "4c7f-5cb04c93bcb00"
+Accept-Ranges: bytes
+Content-Length: 19583
+Content-Type: text/css
+ original-response-headers Date: Mon, 14 Mar 2022 09:44:13 GMT
+Server: Apache/2.4.38 (Debian)
+Last-Modified: Thu, 02 Sep 2021 15:25:00 GMT
+ETag: "4c7f-5cb04c93bcb00"
+Accept-Ranges: bytes
+Content-Length: 19583
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/css
+ ctid 5 uncompressed-len 0 net-response-time-onstart 1274 net-response-time-onstop 1295   L

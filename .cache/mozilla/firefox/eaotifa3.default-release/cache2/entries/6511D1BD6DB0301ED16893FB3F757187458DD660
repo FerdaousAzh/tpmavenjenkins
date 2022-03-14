@@ -1,0 +1,1387 @@
+@charset "UTF-8";
+
+/* vB4 Project Tools CSS definitions */
+
+/*
+ * These definitions are new for vBulletin or copied / edited from
+ * others parts, they need to have their own stylevars
+ */
+
+/* Code for all controls in PT - grey bar above all contents */
+a.toolbar_text{
+	font-size: 11px;
+	color: #4e4e4e;
+	padding: 0.2em 0.4em;
+	border: 0;
+	display: block;
+	float: left;
+	clear: right;
+}
+
+.searchprojects.popupmenu .popupbody {
+	min-width: 240px;
+	max-width: 240px;
+	font: ;
+	left: -100px;
+}
+
+.projectpopups .popupbody .text {
+	text-align: left;
+}
+
+.searchprojects input.button {
+	float: right;
+	top: 0;
+}
+
+.formsubmit .newissueslink {
+	float: left;
+	clear: left;
+	width: 48%;
+	text-align: left;
+}
+
+.formsubmit .advancedsearchlink {
+	float: right;
+	clear: right;
+	width: 48%;
+}
+
+.formsubmit .newissueslink a {
+	background: transparent;
+}
+
+.toolsmenu .popupgroup .popupbody .advancedsearchlink a {
+	text-align: right;
+}
+
+a.firstunread, a.firstunread:hover
+{
+	color: #3e3e3e;
+}
+
+/* Project overview definitions */
+.pt_overview {
+	margin-top: 5px;
+	display: inline-block;
+	width: 100%;
+}
+
+.pt_overview .blocksubhead div {
+	display: inline-block;
+}
+
+.pt_overview .blocksubhead .project {
+	margin-left: 53px;
+}
+
+.pt_overview .blocksubhead .activeissues {
+	float: right;
+	width: 20%;
+}
+
+.pt_overview .blocksubhead .lastpost {
+	float: right;
+	width: 20%;
+}
+
+.pt_overview .blockrow {
+	padding: 5px 0;
+	border-top: solid 1px #cedfeb;
+}
+
+.pt_overview .blockrow div {
+	display: inline-block;
+}
+
+.pt_overview .settings_form_border > *:first-child {
+	border-top:none;
+}
+
+.pt_overview .blockrow .projectstatusicon {
+	padding: 0 5px;
+	vertical-align: middle;
+	width: 48px;
+}
+
+.pt_overview .blockrow .projecttitle {
+	padding: 0 5px;
+	vertical-align: middle;
+}
+
+.pt_overview .blockrow .projecttitle div {
+	display: block;
+}
+
+.pt_overview .blockrow .projecttypecounts {
+	width: 20%;
+	clear: left;
+	float: right;
+}
+
+.pt_overview .blockrow .projectlastpost {
+	font-size: 12px;
+	padding-top: 5px;
+	width: 20%;
+	clear: right;
+	float: right;
+}
+
+.pt_overview .projectlastpost {
+	clear: right;
+}
+
+.pt_overview .projectlastpost .lastpostdate {
+	font-size: 11px;
+}
+
+.pt_overview .blockfoot .group .button {
+	margin-top: 5px;
+	display: inline-block;
+}
+
+/* Project overview definitions */
+.pt_timeline {
+	margin-top: 5px;
+	display: inline-block;
+	width: 100%;
+}
+
+.pt_timeline .blockhead div {
+	/* margins on floats are doubled in ie, don't use them */
+	position: absolute;
+	right: 65px;
+}
+
+.pt_timeline .blocksubhead div {
+	display: inline-block;
+}
+
+.pt_timeline .blockrow {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-top: solid 1px #cedfeb;
+}
+
+.pt_timeline .blockrow div {
+	display: inline-block;
+}
+
+.pt_timeline .blockrow .issuetype_icon {
+	padding: 3px 10px 0 10px;
+	vertical-align: top;
+}
+
+.pt_timeline .blockrow .issuedate {
+	padding: 0 5px;
+	vertical-align: top;
+}
+
+.pt_timeline .blockrow .issuetext {
+	padding: 0 5px;
+}
+
+/* Project informations */
+.pt_project {
+	margin-top: 5px;
+	display: inline-block;
+	width: 100%;
+}
+
+.pt_project .blocksubhead div {
+	display: inline-block;
+}
+
+.pt_project .blocksubhead .stats {
+	float: right;
+	width: 18%;
+}
+
+.pt_project .blockrow div {
+	display: inline-block;
+}
+
+.pt_project .blockrow div.projectdescription {
+	width: 80%;
+	overflow: hidden;
+}
+
+.pt_project .blockrow .stats {
+	float: right;
+	width: 18%;
+	vertical-align: top;
+}
+
+.pt_project .blockfoot .pt_milestonelist {
+	float: left;
+	margin-top: -4px;
+}
+
+/* Project reports list definitions */
+.pt_reportlist .blocksubhead div {
+	display: inline-block;
+}
+
+.pt_reportlist .blocksubhead .ptreportlist_subscribebutton {
+	width: 75px;
+}
+
+.pt_reportlist .blocksubhead .ptreportlist_submittedby {
+	float: right;
+	width: 15%;
+}
+
+.pt_reportlist .blocksubhead .ptreportlist_delete {
+	float: right;
+	width: 5%;
+}
+
+.pt_reportlist .blockrow {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.pt_reportlist .blockrow div {
+	display: inline-block;
+}
+
+.pt_reportlist .blockrow .ptreportlist_checkbox {
+	text-align: center;
+	width: 80px;
+	position: absolute;
+}
+
+.pt_reportlist .blockrow .ptreportlist_title {
+	margin-left: 90px;
+}
+
+.pt_reportlist .blockrow .ptreportlist_submittedby {
+	width: 15%;
+	float: right;
+}
+
+.pt_reportlist .blockrow .ptreportlist_checkbox_del {
+	width: 5%;
+	float: right;
+}
+
+/* Special definition for issue listing - allowing AJAX issue title editing */
+.projectissuelist {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+/* Project issue list definitions */
+.pt_issuelist {
+	margin-top: 5px;
+	display: inline-block;
+	width: 100%;
+}
+
+.pt_issuelist .blocksubhead div {
+	display: inline-block;
+}
+
+.pt_issuelist .blocksubhead .ptissuelist_title {
+	margin-left: 22px;
+}
+
+.pt_issuelist .blocksubhead .ptissuelist_project {
+	margin-left: 22px;
+}
+
+.pt_issuelist .blocksubhead .ptissuelist_applyversion {
+	float: right;
+	width: 10%;
+}
+
+.pt_issuelist .blocksubhead .ptissuelist_addressversion {
+	float: right;
+	width: 10%;
+}
+
+.pt_issuelist .blocksubhead .ptissuelist_category {
+	float: right;
+	width: 6%;
+}
+
+.pt_issuelist .blocksubhead .ptissuelist_status {
+	float: right;
+	width: 9%;
+}
+
+.pt_issuelist .blocksubhead .ptissuelist_priority {
+	float: right;
+	width: 5%;
+}
+
+.pt_issuelist .blocksubhead .ptissuelist_replies {
+	float: right;
+	width: 5%;
+}
+
+.pt_issuelist .blocksubhead .ptissuelist_issuetype {
+	float: right;
+	width: 15%;
+}
+
+.pt_issuelist .blocksubhead .ptissuelist_lastpost {
+	float: right;
+	width: 10%;
+}
+
+.pt_issuelist .blocksubhead .ptissuelist_notifications {
+	float: right;
+	width: 12%;
+}
+
+.pt_issuelist .issuecontent {
+	clear: both;
+	display: block;
+}
+
+.pt_issuelist .blockrow {
+	padding-left: 0;
+}
+
+.pt_issuelist .blockrow .ptissuelist_statusicon {
+	padding: 0 5px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.pt_issuelist .blockrow .ptissuelist_title {
+	padding: 0 5px;
+	vertical-align: middle;
+	display: inline-block;
+	max-width: 35%;
+}
+
+.pt_issuelist .blockrow .ptissuelist_title .pagination {
+	display: inline-block;
+	position: relative;
+}
+
+.pt_issuelist .blockrow .ptissuelist_title .pagination dd span {
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: -3px;
+	margin-bottom: -3px;
+}
+
+.pt_issuelist .blockrow .ptissuelist_title .pagination a {
+	padding: 0 4px;
+	-moz-border-radius: 2px;
+	-webkit_border-radius: 2px;
+	color: #417394;
+	font-size: 11px;
+	display: inline;
+	float: none;
+}
+
+.pt_issuelist .blockrow .ptissuelist_deleted_title {
+	padding: 0 5px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.pt_issuelist .blockrow .ptissuelist_project {
+	padding: 0 5px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.pt_issuelist .blockrow .ptissuelist_titlesub {
+	padding: 0 5px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.pt_issuelist .blockrow .ptissuelist_icons {
+	padding: 0 5px;
+	text-align: right;
+	float: right;
+}
+
+.pt_issuelist .blockrow .ptissuelist_applyversion {
+	padding: 0 5px;
+	vertical-align: middle;
+	width: 10%;
+	text-align: right;
+	float: right;
+}
+
+.pt_issuelist .blockrow .ptissuelist_addressversion {
+	padding: 0 5px;
+	vertical-align: middle;
+	width: 10%;
+	text-align: right;
+	float: right;
+}
+
+.pt_issuelist .blockrow .ptissuelist_category {
+	padding: 0 5px;
+	vertical-align: middle;
+	width: 6%;
+	text-align: right;
+	float: right;
+}
+
+.pt_issuelist .blockrow .ptissuelist_status {
+	padding: 0 5px;
+	vertical-align: middle;
+	width: 9%;
+	text-align: right;
+	float: right;
+}
+
+.pt_issuelist .blockrow .ptissuelist_priority {
+	padding: 0 5px;
+	vertical-align: middle;
+	width: 5%;
+	text-align: right;
+	float: right;
+}
+
+.pt_issuelist .blockrow .ptissuelist_replies {
+	padding: 0 5px;
+	vertical-align: middle;
+	width: 5%;
+	text-align: center;
+	float: right;
+}
+
+.pt_issuelist .blockrow .ptissuelist_issuetype {
+	padding: 0 5px;
+	vertical-align: middle;
+	width: 15%;
+	text-align: center;
+	float: right;
+}
+
+.pt_issuelist .blockrow .ptissuelist_lastpost {
+	padding: 0 5px;
+	vertical-align: middle;
+	width: 10%;
+	margin-top: -5px;
+	text-align: left;
+	float: right;
+}
+
+.pt_issuelist .blockrow .ptissuelist_emptylastpost {
+	padding: 0 5px;
+	vertical-align: middle;
+	width: 10%;
+	text-align: left;
+	float: right;
+}
+
+.pt_issuelist .blockrow .ptissuelist_notifications {
+	padding: 0 5px;
+	vertical-align: middle;
+	width: 10%;
+	text-align: right;
+	float: right;
+}
+
+.pt_issuelist .blockrow .ptissuelist_checkbox {
+	padding: 0 5px;
+	vertical-align: middle;
+	width: 5%;
+	text-align: right;
+	float: right;
+}
+
+.pt_issuelist .blockrow .ptissuelist_deleted {
+	padding: 0 5px;
+	vertical-align: middle;
+	width: 43%;
+	text-align: left;
+	float: right;
+}
+
+.pt_issuelist .deleted {
+	background-color: #e5e5e5;
+}
+
+.pt_issuelist .blockrow .ptissuelist_icons_search {
+	padding: 0 5px;
+	width: 5%;
+	text-align: right;
+	float: right;
+}
+
+.pt_issuelist .blockrow .ptissuelist_status_search {
+	padding: 0 5px;
+	vertical-align: middle;
+	width: 10%;
+	text-align: right;
+	float: right;
+}
+
+.pt_issuelist .blockrow .ptissuelist_priority_search {
+	padding: 0 5px;
+	vertical-align: middle;
+	width: 8%;
+	text-align: right;
+	float: right;
+}
+
+.pt_issuelist .blockrow .ptissuelist_replies_search {
+	padding: 0 5px;
+	vertical-align: middle;
+	width: 10%;
+	text-align: center;
+	float: right;
+}
+
+.pt_issuelist .blockrow .ptissuelist_lastpost_search {
+	padding: 0 5px;
+	vertical-align: middle;
+	width: 15%;
+	margin-top: -5px;
+	text-align: left;
+	float: right;
+}
+
+.pt_issuelist .actionbuttons .group {
+	padding: 10px 0 5px 0;
+}
+
+/* Project issue content definitions */
+#pt_issue_details {
+	float: right;
+	width: 210px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.pt_issue_content .issue_content {
+	margin-left:230px; 
+}
+
+.pt_issue_content {
+	width: 100%;
+	float: left;
+	margin-left:-230px;
+	margin-top: 10px;
+}
+
+.pt_issue_content .block {
+	width: 100%;
+	display: block;
+	float: right;
+}
+
+.pt_issue_content .blockrow {
+	background: #f2f6f8 none   ;
+}
+
+.pt_issue_content .issuetext {
+	padding-bottom: 26px;
+	background: #fafafa none   ;
+}
+
+.pt_issue_content .formcontrols .blockrow {
+	background: #FFFFFF  bottom repeat-x;
+	border-top: solid 1px #cedfeb;
+	padding: 10px 5px;
+}
+
+.pt_issue_content .blockrow .issue_message {
+	padding-bottom: 1em;
+}
+
+.pt_issue_content .blockrow .issue_message .shade {
+	font-size: 11px;
+}
+
+.pt_issue_content .issuefoot {
+	background: none repeat scroll 0 0 transparent;
+	clear: both;
+	display: block;
+	float: left;
+	font:   bold 11px Tahoma, Calibri, Verdana, Geneva, sans-serif;
+	position: relative;
+	right: 0;
+	width: 100%;
+	margin-left: -10px;
+	margin-right: -20px;
+}
+
+.pt_issue_content .issuefoot .textcontrols {
+	background: #e9e9e9 none   ;
+	display: block;
+	font:   bold 11px Tahoma, Calibri, Verdana, Geneva, sans-serif;
+	height: 16px;
+	padding: 3px 20px 7px 0;
+	width: 100%;
+}
+
+.pt_issue_content .issuefoot .issuecontrols {
+	margin-left: 1px;
+	position: absolute;
+	right: -10px;
+}
+
+.pt_issue_content .issuefoot .textcontrols span.separator {
+	
+		border-right: 1px solid #DADADA;
+		display: inline;
+		margin: 0 5px;
+	
+}
+
+.pt_issue_content .issuefoot .textcontrols a.editissue {
+	background: url(https://forum.developpez.be/images/buttons/edit_40b.png) no-repeat scroll left center transparent;
+	padding-left: 20px;
+	border: 0 solid #A8A8A8;
+}
+
+.pt_issue_content .issuefoot .textcontrols a.editissue:hover {
+	background: url(https://forum.developpez.be/images/buttons/edit_40b-hover.png) no-repeat scroll left center transparent;
+	padding-left: 20px;
+	border: 0 solid #A8A8A8;
+}
+
+.pt_issue_content .issuefoot .textcontrols a.replyissue {
+	background: url(https://forum.developpez.be/images/buttons/reply_40b.png) no-repeat scroll left center transparent;
+	padding-left: 20px;
+	border: 0 solid #A8A8A8;
+}
+
+.pt_issue_content .issuefoot .textcontrols a.replyissue:hover {
+	background: url(https://forum.developpez.be/images/buttons/reply_40b-hover.png) no-repeat scroll left center transparent;
+	padding-left: 20px;
+	border: 0 solid #A8A8A8;
+}
+
+.pt_issue_content .issuefoot .issuelinking {
+	margin-left: 0px;
+	position: absolute;
+	left: 10px;
+}
+
+.pt_issue_content .issuefoot .textcontrols a {
+	display: inline-block;
+}
+
+.pt_issue_content .issuefoot .textcontrols a.issuehistory {
+	background: none no-repeat scroll left center transparent;
+	padding-left: 0;
+	border: 0 solid #A8A8A8;
+}
+
+.pt_issue_content .issuefoot .textcontrols a.issuehistory:hover {
+	background: none no-repeat scroll left center transparent;
+	padding-left: 0;
+	border: 0 solid #A8A8A8;
+}
+
+.pt_issue_content .issuefoot .textcontrols a.reportissue {
+	background: url(https://forum.developpez.be/images/buttons/report-40b.png) no-repeat scroll left center transparent;
+	padding-left: 20px;
+	border: 0 solid #A8A8A8;
+}
+
+.pt_issue_content .issuefoot .textcontrols a.reportissue:hover {
+	background: url(https://forum.developpez.be/images/buttons/report-40b-hover.png) no-repeat scroll left center transparent;
+	padding-left: 20px;
+	border: 0 solid #A8A8A8;
+}
+
+.pt_issue_content .issuefoot .textcontrols a.ipissue {
+	background: url(https://forum.developpez.be/images/buttons/ip-40b.png) no-repeat scroll left center transparent;
+	padding-left: 20px;
+	border: 0 solid #A8A8A8;
+}
+
+.pt_issue_content .issuefoot .textcontrols a.ipissue:hover {
+	background: url(https://forum.developpez.be/images/buttons/ip-40b-hover.png) no-repeat scroll left center transparent;
+	padding-left: 20px;
+	border: 0 solid #A8A8A8;
+}
+
+.pt_issue_content .issuefoot .textcontrols a img {
+	left: 3px;
+	position: absolute;
+	top: 2px;
+}
+
+.pt_issue_content .issuevote, #pt_issue_content .issueclosed {
+	/*background: none repeat scroll 0 0 #FFFFFF;*/
+	background:none none   ;
+	border-top: 1px solid #D1D1E1; 
+	margin-top: 3px; 
+	padding: 4px;
+	text-align: center;
+}
+
+.pt_issue_content img.author_avatar
+{
+	float: left;
+	margin-right: 5px;
+}
+
+/* Issue notes */
+.pt_issue_note {
+	margin-bottom: 15px;
+}
+
+.pt_issue_note .blockrow {
+	background: #f2f6f8 none   ;
+}
+
+.pt_issue_note .formcontrols .blockrow {
+	background: #FFFFFF  bottom repeat-x;
+	border-top: solid 1px #cedfeb;
+	padding: 10px 5px;
+}
+
+.pt_issue_note .issuetext {
+	padding-bottom: 26px;
+	background: #fafafa none   ;
+}
+
+.pt_issue_note .blockrow .issue_message {
+	padding-bottom: 1em;
+}
+
+.pt_issue_note .issuefoot {
+	background: #e9e9e9 none   ;
+	clear: both;
+	display: block;
+	float: left;
+	font: bold 11px Tahoma,Calibri,Verdana,Geneva,sans-serif;
+	position: relative;
+	right: 0;
+	width: 100%;
+	margin-left: -10px;
+	margin-right: -20px;
+}
+
+.pt_issue_note .issuefoot .textcontrols {
+	background: #e9e9e9 none   ;
+	display: block;
+	font: bold 11px Tahoma,Calibri,Verdana,Geneva,sans-serif;
+	height: 16px;
+	padding: 3px 20px 7px 0;
+	width: 100%;
+}
+
+.pt_issue_note .issuefoot .issuecontrols {
+	margin-left: 1px;
+	position: absolute;
+	right: -10px;
+}
+
+.pt_issue_note .issuefoot .textcontrols span.separator {
+	
+		border-right: 1px solid #DADADA;
+		display: inline;
+		margin: 0 5px;
+	
+}
+
+.pt_issue_note .issuefoot .textcontrols a {
+	display: inline-block;
+}
+
+.pt_issue_note .issuefoot .textcontrols a.editissue {
+	background: url(https://forum.developpez.be/images/buttons/edit_40b.png) no-repeat scroll left center transparent;
+	padding-left: 20px;
+	border: 0 solid #A8A8A8;
+}
+
+.pt_issue_note .issuefoot .textcontrols a.editissue:hover {
+	background: url(https://forum.developpez.be/images/buttons/edit_40b-hover.png) no-repeat scroll left center transparent;
+	padding-left: 20px;
+	border: 0 solid #A8A8A8;
+}
+
+.pt_issue_note .issuefoot .textcontrols a.replyissue {
+	background: url(https://forum.developpez.be/images/buttons/reply_40b.png) no-repeat scroll left center transparent;
+	padding-left: 20px;
+	border: 0 solid #A8A8A8;
+}
+
+.pt_issue_note .issuefoot .textcontrols a.replyissue:hover {
+	background: url(https://forum.developpez.be/images/buttons/reply_40b-hover.png) no-repeat scroll left center transparent;
+	padding-left: 20px;
+	border: 0 solid #A8A8A8;
+}
+
+.pt_issue_note .issuefoot .issuelinking {
+	margin-left: 0px;
+	position: absolute;
+	left: 10px;
+}
+
+.pt_issue_note .issuefoot .textcontrols a.issuehistory {
+	background: none no-repeat scroll left center transparent;
+	padding-left: 0;
+	border: 0 solid #A8A8A8;
+}
+
+.pt_issue_note .issuefoot .textcontrols a.issuehistory:hover {
+	background: none no-repeat scroll left center transparent;
+	padding-left: 0;
+	border: 0 solid #A8A8A8;
+}
+
+.pt_issue_note .issuefoot .textcontrols a.promoteissue {
+	background: url(https://forum.developpez.be/images/buttons/project.png) no-repeat scroll left center transparent;
+	padding-left: 20px;
+	border: 0px solid #a8a8a8;
+}
+
+.pt_issue_note .issuefoot .textcontrols a.promoteissue:hover {
+	background: url(https://forum.developpez.be/images/buttons/project-hover.png) no-repeat scroll left center transparent;
+	padding-left: 20px;
+	border: 0px  ;
+}
+
+.pt_issue_note .issuefoot .textcontrols a.reportissue {
+	background: url(https://forum.developpez.be/images/buttons/report-40b.png) no-repeat scroll left center transparent;
+	padding-left: 20px;
+	border: 0 solid #A8A8A8;
+}
+
+.pt_issue_note .issuefoot .textcontrols a.reportissue:hover {
+	background: url(https://forum.developpez.be/images/buttons/report-40b-hover.png) no-repeat scroll left center transparent;
+	padding-left: 20px;
+	border: 0 solid #A8A8A8;
+}
+
+.pt_issue_note .issuefoot .textcontrols a.ipissue {
+	background: url(https://forum.developpez.be/images/buttons/ip-40b.png) no-repeat scroll left center transparent;
+	padding-left: 20px;
+	border: 0 solid #A8A8A8;
+}
+
+.pt_issue_note .issuefoot .textcontrols a.ipissue:hover {
+	background: url(https://forum.developpez.be/images/buttons/ip-40b-hover.png) no-repeat scroll left center transparent;
+	padding-left: 20px;
+	border: 0 solid #A8A8A8;
+}
+
+.pt_issue_note .issuefoot .textcontrols a img {
+	left: 3px;
+	position: absolute;
+	top: 2px;
+}
+
+.pt_issue_note img.author_avatar
+{
+	float: left;
+	margin-right: 5px;
+}
+
+/* Milestones */
+.pt_milestone {
+	margin-top: 5px;
+	display: inline-block;
+	width: 100%;
+}
+
+.pt_milestone .blockrow .milestone_date {
+	float: right;
+}
+
+.pt_milestone .blockrow hr {
+	border: 0px;
+	height: 1px;
+	color: #E1E1D1;
+	background-color: #E1E1D1;
+}
+
+.pt_milestone .blockrow .milestone_total {
+	margin-bottom: 0.75em;
+}
+
+.pt_milestone .blockrow .milestone_total .milestone_total_content {
+	margin-right: 20px;
+}
+
+.pt_milestone .blockrow .milestone_table {
+	width: 400px;
+	height: 15px;
+	color: #000000;
+	border: 1px solid #0B198C;
+}
+
+.pt_milestone .blockrow .milestone_color {
+	height: 15px;
+	background-color: #B0F0B0;
+}
+
+.pt_milestone .blockrow .milestone_percent {
+	width: 400px;
+	text-align: right;
+}
+
+/* Search */
+.pt_search_checkboxes
+{
+	float: none;
+	margin-left: 212px;
+	height: 150px;
+	overflow: auto;
+}
+
+/* Popup */
+.above_project_controls .projectpopups a.firstunread {
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	border: 0;
+}
+
+.pt_popup {
+	clear: left;
+	display: inline-block;
+	width: 100%;
+}
+
+.pt_popup .pagenav {
+	float: right;
+}
+
+.pt_popup .newcontent_textcontrol {
+	margin-bottom: 10px;
+	margin-top: -20px;
+}
+
+.pt_popup .pagenav_button {
+	margin-top: 0;
+}
+
+/* Issue list popups */
+.pt_issuepopup .navpopupmenu.popupmenu.nohovermenu {
+	float: left;
+	text-align: left;
+	margin-top: 12px;
+	margin-bottom: 7px;
+	margin-left: 0px;
+}
+
+.pt_issuepopup .navpopupmenu.popupmenu.nohovermenu a.popupctrl span.ctrlcontainer {
+	background: transparent url(https://forum.developpez.be/images/misc/black_downward_arrow.png) no-repeat center right;
+	padding-right: 15px;
+	padding-left: 0;
+}
+
+.pt_issuepopup .navpopupbody {
+	overflow: visible;
+}
+
+.pt_issuepopup .pagenav {
+	margin-bottom: 5px;
+}
+
+.pt_issuepopup .below_threadlist {
+	padding-bottom: 38px;
+}
+
+.popupbody li.searchlinks {
+	padding-top: 25px;
+}
+
+.popupbody li input.searchbox {
+	width: auto;
+}
+
+/* Patch */
+.chunk_lines {
+	color: #000000;
+	padding: 0px;
+}
+
+.chunk_container {
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: #ffffff;
+}
+
+.line_counter {
+	padding-left: 2px;
+	color: #707070;
+}
+
+.patch_line_added, .patch_line_context, .patch_line_removed {
+	margin: 0px;
+	margin-left: 3px;
+	padding: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.patch_line_added {
+	background-color: #d0ffd0;
+}
+
+.patch_line_context {
+	background-color: #ffffff;
+}
+
+.patch_line_removed {
+	background-color: #ffc0c0;
+}
+
+.patch_key_box {
+	width: 8px;
+	height: 8px;
+	border: 1px solid #909090;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* List builder box */
+.pt_listbuilder_box {
+	padding: 5px;
+}
+
+/* Search */
+#ptsearch_tag_col1, #ptsearch_tag_col2, #ptsearch_assigneduser_col1, #ptsearch_assigneduser_col2, #ptsearch_issuestatusid, #ptsearch_projectid, #ptsearch_milestoneid, #ptsearch_projectcategoryid {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#ptsearch_assigneduser_col1, #ptsearch_tag_col1 {
+	width: 47%;
+}
+
+#ptsearch_assigneduser_col2, #ptsearch_tag_col2 {
+	float: right;
+	width: 47%;
+}
+
+div.checkbox_multiselect {
+	height: 150px;
+	overflow: auto;
+	padding: 6px;
+	background-color: #FFFFFF;
+}
+
+/* Subscriptions management */
+#usercp_content .pt_issuelist {
+	margin-top: 0;
+}
+
+.pt_issuelist .pt_issuelist_foot {
+	clear: both;
+	display: block;
+	height: 2em;
+	padding-top: 1em;
+	position: relative;
+	width: 100%;
+}
+
+/* Projects listings in a dropdown */
+.pt_listprojects {
+	clear: both;
+	display: block;
+	float: left;
+	left: 0;
+	margin-bottom: 5px;
+	position: relative;
+	width: 100%;
+}
+
+.pt_listprojects .menu {
+	float: right;
+	width: 300px;
+}
+
+.pt_listprojects .menuissuelist {
+	float: right;
+}
+
+.pt_listprojects .marginissue1 {
+	margin-top: -38px;
+}
+
+.pt_listprojects .marginissue2 {
+	margin-top: -10px;
+	margin-bottom: 5px;
+}
+
+/* Post made as issue */
+.postbitlegacy .title .ptlink, .postbit .posttitle .ptlink {
+	color: #4e4e4e;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 11px;
+}
+
+.postbitlegacy .title .ptseparator, .postbit .posttitle .ptseparator {
+	display: inline-block;
+	color: #4e4e4e;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 11px;
+}
+
+.postbitlegacy .postfoot .textcontrols a.promoteissue,
+.postbit .postfoot .textcontrols a.promoteissue {
+	background: url(https://forum.developpez.be/images/buttons/project.png) no-repeat #e9e9e9 left;
+	padding: 0px 0px 0px 0px;
+	padding-left: 20px;
+	border: 0px solid #a8a8a8;
+}
+
+.postbitlegacy .postfoot .textcontrols a.promoteissue:hover, .postbit .postfoot .textcontrols a.promoteissue:hover  {
+	background: url(https://forum.developpez.be/images/buttons/project-hover.png) no-repeat  left;
+	padding: 0px 0px 0px 0px;
+	padding-left: 20px;
+	border: 0px  ;
+}
+
+/* Magic Selects */
+/* Issue #106 */
+/*.vB_MagicSelect, .vB_MagicSelect_hover, .vB_MagicSelect_preload {
+	white-space: nowrap;
+}*/
+
+.vB_MagicSelectCursor {
+	cursor: default;
+}
+
+.vB_MagicSelect {
+	border: none;
+	padding: 1px 0px 0px 0px;
+	background-color: transparent;
+}
+
+.vB_MagicSelect_margin {
+	margin: 0px 0px 2px 0px;
+}
+
+.vB_MagicSelect_hover {
+	border: 1px solid rgb(34, 84, 177);
+	background-color: white;
+	margin: 1px -1px 1px -1px;
+}
+
+.vB_MagicSelect span, .vB_MagicSelect_hover span {
+	display: inline-block;
+}
+
+.vB_MagicSelect img, .vB_MagicSelect_hover img {
+	vertical-align: middle;
+}
+
+.vB_MagicSelect .vB_MagicSelect_button {
+	background-color: transparent;
+}
+
+.vB_MagicSelect_hover .vB_MagicSelect_button {
+	background-color: rgb(215, 231, 253);
+}
+
+.vB_MagicSelect_preload {
+	border: none;
+	padding: 4px 0px;
+	background-color: transparent;
+}
+
+.vB_MagicSelect_wrappable {
+	padding: 0px;
+	white-space: normal;
+}
+
+/* Activity stream specific values */
+#activitylist li.activitybit.project_issuenote ul {
+	padding-left: 85px;
+} 
+
+/* Overwrite some values */
+.above_threadlist .threadpagenav {
+	bottom: 5px;
+}
+
+.pt_project .actionbuttons .group {
+	padding: 10px 0 5px 0;
+}
+
+.pagination span.prev_next a, .pagination span.first_last a {
+	top: -1px;
+}
+
+a.firstunread {
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+/* Old vB3 Project Tools CSS definitions - we will keep these definitions only */
+.smallfont {
+	font-size: 11px;
+}
+
+.bigtext {
+	font-size: 14px;
+}
+
+.boldtext, strong {
+	font-weight: bold;
+}
+
+legend {
+	color: #3e3e3e;
+}
+
+/* Fix for http://www.vbulletin.org/forum/showthread.php?t=249025 */
+.footer_copyright, .footer_morecopyright, .footer_time {
+	color: rgb(102, 102, 102);
+}
+
+
+/* CSS Document */
+/* TOOLS MENU */
+/* convert to stylevars pls */
+
+.toolsmenu {
+	background: #e9e9e9 url(images/buttons/newbtn_middle.png) repeat-x  ;
+	width: 100%;
+	display: block;
+	border: 1px solid #cecece;
+	float: left;
+	clear: both;
+	margin: 0.5em 0;
+}
+
+.toolsmenu div {
+	text-align: right;
+	color: #4e4e4e;
+	width: 100%;
+	clear: both;
+	float: left;
+}
+
+.toolsmenu h1 {
+	font-size:14px;
+	font-weight:bold;
+	margin-top: 0.25em;
+	text-align: left;
+	display: inline;
+	float: left;
+	margin-left: 10px;
+}
+
+.toolsmenu h1 a {
+	color: #4e4e4e;
+}
+
+.toolsmenu ul {
+	padding: 5px 0;
+	float: right;
+	margin-right: 10px;
+}
+
+.toolsmenu .nopopupgroup li {
+	float: left;
+	margin-left: 10px;
+}
+
+.toolsmenu .popupgroup a.popupctrl, .toolsmenu .popupgroup .popupmenu a.popupctrl, .toolsmenu .nopopupgroup li a {
+	font-size: 11px;
+	color: #4e4e4e;
+	display:block;
+	_display:inline;
+	float: left;
+	clear: right;
+	padding: 0.2em 0.4em;
+}
+
+.toolsmenu .popupgroup a.popupctrl, .toolsmenu .popupgroup .popupmenu a.popupctrl, .toolsmenu .popupgroup .popupmenu:hover a.popupctrl, .toolsmenu .popupgroup .popupmenu:hover .popupctrl a.popupctrl.active {
+	border: 0;
+	color: #4e4e4e;
+	padding-right: 15px;
+}
+
+.toolsmenu li {
+	position: relative;
+	display:block;
+	clear: right;
+}
+
+.toolsmenu .popupgroup ul {
+	text-align: left;
+	float: left;
+}
+
+.toolsmenu .popupgroup .popupbody {
+	padding:2px;
+}
+
+.toolsmenu .menuimage, .toolsmenu li a.menuimage {
+	padding-left: 20px;
+	color: #4e4e4e;
+}
+
+.toolsmenu .nopopupgroup li a, .toolsmenu .menuimage a.popupctrl {
+	color: #4e4e4e;
+        font-weight: bold;
+}
+
+.toolsmenu .nopopupgroup li a:hover, .toolsmenu .menuimage a.popupctrl:hover {
+	color: #417394;
+}
+
+.menusearch.popupmenu .popupbody {
+	min-width:240px;
+	max-width:240px;
+	font-size: 11px;
+	left: -100px;
+}
+
+.menusearch input.button {
+	float: right;
+	top: 0;
+}
+
+.menusearch .submitoptions {
+	width: 50%;
+	float: left;
+	text-align: left;
+	clear: right;
+}
+
+.menusearch .formsubmit .advancedsearchlink {
+	width: 50%;
+	float: left;
+	clear: right;
+}
+
+.toolsmenu .popupgroup .popupbody a, .toolsmenu .popupgroup .popupbody li label {
+	font-size: 11px;
+}
+
+.toolsmenu .popupgroup .popupbody li {
+	width: 100%;
+}
+
+.toolsmenu .popupgroup .popupbody form ul  {
+	width: 100%;
+}Ml9VÌU      b/•b/¶D≈BdAÏ   ¢    O^partitionKey=%28https%2Cdeveloppez.net%29,:https://www.developpez.net/forums/css.php?styleid=7&langid=2&d=1638971131&td=ltr&sheet=projecttools.css,toolsmenu.css necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Mon, 14 Mar 2022 09:44:13 GMT
+Server: Apache/2.4.38 (Debian)
+X-Powered-By: PHP/5.3.29
+Cache-control: max-age=31536000
+Expires: Tue, 14 Mar 2023 09:44:13 GMT
+Last-Modified: Wed, 08 Dec 2021 13:45:31 GMT
+Content-Type: text/css
+ original-response-headers Date: Mon, 14 Mar 2022 09:44:13 GMT
+Server: Apache/2.4.38 (Debian)
+X-Powered-By: PHP/5.3.29
+Pragma: 
+Cache-control: max-age=31536000
+Expires: Tue, 14 Mar 2023 09:44:13 GMT
+Last-Modified: Wed, 08 Dec 2021 13:45:31 GMT
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/css
+ ctid 5 uncompressed-len 0 net-response-time-onstart 1431 net-response-time-onstop 1558   kõ

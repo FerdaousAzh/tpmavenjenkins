@@ -1,0 +1,94 @@
+{
+  "Version": "20.04",
+  "OEM": {
+    "Vendor": "innotek GmbH",
+    "Product": "VirtualBox",
+    "Family": "Virtual Machine"
+  },
+  "BIOS": {
+    "Vendor": "innotek GmbH",
+    "Version": "VirtualBox"
+  },
+  "CPU": {
+    "OpMode": "32-bit, 64-bit",
+    "CPUs": "1",
+    "Threads": "1",
+    "Cores": "1",
+    "Sockets": "1",
+    "Vendor": "GenuineIntel",
+    "Family": "6",
+    "Model": "142",
+    "Stepping": "9",
+    "Name": "Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz",
+    "Hypervisor": "KVM",
+    "VirtualizationType": "full"
+  },
+  "Arch": "amd64",
+  "GPU": [
+    {
+      "Vendor": "15ad",
+      "Model": "0405"
+    }
+  ],
+  "RAM": 2.5,
+  "Disks": [
+    25.8
+  ],
+  "Partitions": [
+    24.1,
+    0.5
+  ],
+  "Screens": [
+    {
+      "Size": "0mmx0mm",
+      "Resolution": "800x600",
+      "Frequency": "60.00"
+    }
+  ],
+  "Autologin": false,
+  "LivePatch": false,
+  "Session": {
+    "DE": "ubuntu:GNOME",
+    "Name": "ubuntu",
+    "Type": "x11"
+  },
+  "Language": "fr_FR",
+  "Timezone": "Africa/Casablanca",
+  "Install": {
+    "Media": "Ubuntu 20.04.2 LTS \"Focal Fossa\" - Release amd64 (20210204)",
+    "Type": "GTK",
+    "OEM": false,
+    "PartitionMethod": "use_device",
+    "DownloadUpdates": true,
+    "Language": "fr",
+    "Minimal": false,
+    "RestrictedAddons": false,
+    "Stages": {
+      "0": "language",
+      "7": "language",
+      "28": "console_setup",
+      "42": "console_setup",
+      "43": "console_setup",
+      "48": "console_setup",
+      "51": "console_setup",
+      "128": "prepare",
+      "164": "partman",
+      "171": "partman",
+      "540": "partman",
+      "543": "partman",
+      "545": "partman",
+      "643": "partman",
+      "659": "partman",
+      "661": "partman",
+      "669": "partman",
+      "673": "partman",
+      "692": "partman",
+      "694": "partman",
+      "818": "start_install",
+      "832": "timezone",
+      "838": "usersetup",
+      "878": "user_done",
+      "1960": "done"
+    }
+  }
+}

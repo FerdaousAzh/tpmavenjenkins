@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="fr" xml:lang="fr">
+<head>
+    <title>Cours : TECHNIQUES DE DÉVELOPPEMENT ET D’INTÉGRATION CONTINUS (A21-22-SUD2)</title>
+    <link rel="shortcut icon" href="http://m.inpt.ac.ma/theme/image.php/clean/theme/1614806513/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, Cours : TECHNIQUES DE DÉVELOPPEMENT ET D’INTÉGRATION CONTINUS (A21-22-SUD2)" />
+<link rel="stylesheet" type="text/css" href="http://m.inpt.ac.ma/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="http://m.inpt.ac.ma/theme/styles.php/clean/1614806513_1/all" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"http:\/\/m.inpt.ac.ma","sesskey":"w2JLam7cqp","themerev":"1614806513","slasharguments":1,"theme":"clean","iconsystemmodule":"core\/icon_system_standard","jsrev":"1614806513","admin":"admin","svgicons":true,"usertimezone":"Afrique\/Casablanca","contextid":34598};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"http:\/\/m.inpt.ac.ma\/lib\/yuilib\/3.17.2\/","comboBase":"http:\/\/m.inpt.ac.ma\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"http:\/\/m.inpt.ac.ma\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"http:\/\/m.inpt.ac.ma\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"http:\/\/m.inpt.ac.ma\/theme\/yui_combo.php?m\/1614806513\/","combine":true,"comboBase":"http:\/\/m.inpt.ac.ma\/theme\/yui_combo.php?","ext":false,"root":"m\/1614806513\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_bigbluebuttonbn-rooms":{"requires":["base","node","datasource-get","datasource-jsonschema","datasource-polling","moodle-core-notification"]},"moodle-mod_bigbluebuttonbn-modform":{"requires":["base","node"]},"moodle-mod_bigbluebuttonbn-recordings":{"requires":["base","node","datasource-get","datasource-jsonschema","datasource-polling","moodle-core-notification"]},"moodle-mod_bigbluebuttonbn-imports":{"requires":["base","node"]},"moodle-mod_bigbluebuttonbn-broker":{"requires":["base","node","datasource-get","datasource-jsonschema","datasource-polling","moodle-core-notification"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"http:\/\/m.inpt.ac.ma\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"http:\/\/m.inpt.ac.ma\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1614806513\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"http:\/\/m.inpt.ac.ma\/lib\/javascript.php\/1614806513\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"http:\/\/m.inpt.ac.ma\/lib\/javascript.php\/1614806513\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.2\/MathJax.js?delayStartupUntil=configured"},"core_completion":{"name":"core_completion","fullpath":"http:\/\/m.inpt.ac.ma\/lib\/javascript.php\/1614806513\/course\/completion.js"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body  id="page-course-view-topics" class="format-topics  path-course path-course-view gecko dir-ltr lang-fr yui-skin-sam yui3-skin-sam m-inpt-ac-ma pagelayout-course course-1254 context-34598 category-145 has-region-side-pre used-region-side-pre has-region-side-post empty-region-side-post side-pre-only layout-option-langmenu">
+
+<div class="skiplinks">
+    <a href="#maincontent" class="skip">Passer au contenu principal</a>
+</div><script type="text/javascript" src="http://m.inpt.ac.ma/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script type="text/javascript" src="http://m.inpt.ac.ma/lib/javascript.php/1614806513/lib/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+<header role="banner" class="navbar navbar-fixed-top moodle-has-zindex">
+    <nav role="navigation" class="navbar-inner">
+        <div class="container-fluid">
+            <a class="brand" title="Accueil" href="http://m.inpt.ac.ma/">m.inpt.ac.ma</a>            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></a>            <div class="usermenu"><div class="moodle-actionmenu nowrap-items" id="action-menu-0" data-enhance="moodle-core-actionmenu">
+
+        <ul class="menubar" id="action-menu-0-menubar" role="menubar">
+
+            <!--
+
+            --><!--
+
+            --><li role="presentation"><a href="#" class=" toggle-display textmenu" id="action-menu-toggle-0" title="Menu utilisateur" role="menuitem"><span class="userbutton"><span class="usertext mr-1">AZHARI FERDAOUS</span><span class="avatars"><span class="avatar current"><img src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/u/f2" alt="Avatar AZHARI FERDAOUS" title="Avatar AZHARI FERDAOUS" class="userpicture defaultuserpic" width="35" height="35" role="presentation" /></span></span></span><b class="caret"></b></a>
+</li>
+
+        </ul>
+
+
+        <ul class="menu  align-tr-br" id="action-menu-0-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-0" role="menu" data-align="tr-br">
+            <li role="presentation">    <a href="http://m.inpt.ac.ma/my/" class="icon menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1"><img class="icon " alt="Tableau de bord" title="Tableau de bord" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/dashboard" /><span class="menu-action-text" id="actionmenuaction-1">Tableau de bord</span></a>
+
+
+
+
+
+</li><li role="presentation">
+<span class="filler">&nbsp;</span>
+
+
+
+</li><li role="presentation">    <a href="http://m.inpt.ac.ma/user/profile.php?id=1015" class="icon menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2"><img class="icon " alt="Profil" title="Profil" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/user" /><span class="menu-action-text" id="actionmenuaction-2">Profil</span></a>
+
+
+
+
+
+</li><li role="presentation">    <a href="http://m.inpt.ac.ma/grade/report/overview/index.php" class="icon menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3"><img class="icon " alt="Notes" title="Notes" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/t/grades" /><span class="menu-action-text" id="actionmenuaction-3">Notes</span></a>
+
+
+
+
+
+</li><li role="presentation">    <a href="http://m.inpt.ac.ma/message/index.php" class="icon menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-4"><img class="icon " alt="Messages personnels" title="Messages personnels" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/t/message" /><span class="menu-action-text" id="actionmenuaction-4">Messages personnels</span></a>
+
+
+
+
+
+</li><li role="presentation">    <a href="http://m.inpt.ac.ma/user/preferences.php" class="icon menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-5"><img class="icon " alt="Préférences" title="Préférences" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/t/preferences" /><span class="menu-action-text" id="actionmenuaction-5">Préférences</span></a>
+
+
+
+
+
+</li><li role="presentation">
+<span class="filler">&nbsp;</span>
+
+
+
+</li><li role="presentation">    <a href="http://m.inpt.ac.ma/login/logout.php?sesskey=w2JLam7cqp" class="icon menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6"><img class="icon " alt="Déconnexion" title="Déconnexion" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/a/logout" /><span class="menu-action-text" id="actionmenuaction-6">Déconnexion</span></a>
+
+
+
+
+
+</li>
+        </ul>
+</div></div>            <div class="pull-right popover-region collapsed">
+    <a id="message-drawer-toggle-622ef9e1d458e622ef9e1b816338" class="nav-link d-inline-block popover-region-toggle position-relative" href="#">
+        <img class="icon " alt="Ouvrir/fermer le tiroir des messages" title="Ouvrir/fermer le tiroir des messages" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/t/message" />
+        <div class="count-container " data-region="count-container">5</div>
+    </a>
+</div><div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="1015"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        aria-role="button"
+        aria-controls="popover-region-container-622ef9e1d59e3622ef9e1b816339"
+        aria-haspopup="true"
+        aria-label="Afficher la fenêtre des notifications sans nouvelle notification"
+        tabindex="0">
+                <img class="icon " alt="Ouvrir/fermer le menu notifications" title="Ouvrir/fermer le menu notifications" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/notifications" />
+        <div class="count-container hidden" data-region="count-container">0</div>
+
+    </div>
+    <div 
+        id="popover-region-container-622ef9e1d59e3622ef9e1b816339"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Fenêtre de notification"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notifications</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button"
+           href="#"
+           title="Tout marquer comme lu"
+           data-action="mark-all-read"
+           role="button">
+            <span class="normal-icon"><img class="icon " alt="Tout marquer comme lu" title="Tout marquer comme lu" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/t/markasread" /></span>
+            <span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+        </a>
+        <a href="http://m.inpt.ac.ma/message/notificationpreferences.php?userid=1015"
+           title="Préférences de notification">
+            <img class="icon " alt="Préférences de notification" title="Préférences de notification" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/settings" />
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">Vous n'avez pas de notification</div>
+
+            </div>
+            <span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+        </div>
+                <a class="see-all-link"
+                    href="http://m.inpt.ac.ma/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Tout afficher</div>
+                    </div>
+                </a>
+    </div>
+</div>                        <div class="nav-collapse collapse">
+                <ul class="nav"><li class="dropdown langmenu"><a href="" class="dropdown-toggle" data-toggle="dropdown" title="Langue">Français ‎(fr)‎<b class="caret"></b></a><ul class="dropdown-menu"><li><a title="English ‎(en)‎" href="http://m.inpt.ac.ma/course/view.php?id=1254&amp;lang=en">English ‎(en)‎</a></li><li><a title="Français ‎(fr)‎" href="http://m.inpt.ac.ma/course/view.php?id=1254&amp;lang=fr">Français ‎(fr)‎</a></li></ul></ul>                <ul class="nav pull-right">
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div id="page" class="container-fluid">
+    <header id="page-header" class="clearfix"><div class="page-context-header"><div class="page-header-headings"><h1>TECHNIQUES DE DÉVELOPPEMENT ET D’INTÉGRATION CONTINUS (A21-22-SUD2)</h1></div></div><div class="clearfix" id="page-navbar"><div class="breadcrumb-nav"><span class="accesshide" id="navbar-label">Chemin de la page</span><nav aria-labelledby="navbar-label"><ul class="breadcrumb"><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://m.inpt.ac.ma/my/"><span itemprop="title">Tableau de bord</span></a></span> <span class="divider"> <span class="accesshide " ><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&#x25BA;</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://m.inpt.ac.ma/course/index.php"><span itemprop="title">Cours</span></a></span> <span class="divider"> <span class="accesshide " ><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&#x25BA;</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://m.inpt.ac.ma/course/index.php?categoryid=7"><span itemprop="title">INE2</span></a></span> <span class="divider"> <span class="accesshide " ><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&#x25BA;</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://m.inpt.ac.ma/course/index.php?categoryid=21"><span itemprop="title">SUD-2</span></a></span> <span class="divider"> <span class="accesshide " ><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&#x25BA;</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://m.inpt.ac.ma/course/index.php?categoryid=117"><span itemprop="title">A21-22-SUD-2</span></a></span> <span class="divider"> <span class="accesshide " ><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&#x25BA;</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://m.inpt.ac.ma/course/index.php?categoryid=145"><span itemprop="title">S4-A21-22-SUD-2</span></a></span> <span class="divider"> <span class="accesshide " ><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&#x25BA;</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" title="TECHNIQUES DE DÉVELOPPEMENT ET D’INTÉGRATION CONTINUS (A21-22-SUD2)" href="http://m.inpt.ac.ma/course/view.php?id=1254"><span itemprop="title">TECHNIQUES DE DÉVELOPPEMENT ET D’INTÉGRATION CONTI...</span></a></span></li></ul></nav></div><div class="breadcrumb-button"></div></div><div id="course-header"></div></header>    <div id="page-content" class="row-fluid">
+        <div id="region-main-box" class="span9 desktop-first-column">
+            <div class="row-fluid">
+                <section id="region-main" class="span8 pull-right">
+                    <span class="notifications" id="user-notifications"></span><div role="main"><span id="maincontent"></span><form action="." method="get"><div><input type="hidden" id="completion_dynamic_change" name="completion_dynamic_change" value="0" /></div></form><div class="course-content"><div id="completionprogressid" class="completionprogress">Votre progression<span class="helptooltip">
+    <a href="http://m.inpt.ac.ma/help.php?component=completion&amp;identifier=completionicons&amp;lang=fr" title="Aide sur Coches d&#039;achèvement" aria-haspopup="true" target="_blank"><img class="icon iconhelp" alt="Aide sur Coches d&#039;achèvement" title="Aide sur Coches d&#039;achèvement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/help" />
+</a>
+</span></div><h2 class="accesshide">Aperçu des sections</h2><ul class="topics"><li id="section-0" class="section main clearfix" role="region" aria-label="Généralités"><span class="hidden sectionname">Généralités</span><div class="left side"></div><div class="right side"><img class="icon spacer" width="1" height="1" alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/spacer" /></div><div class="content"><h3 class="sectionname accesshide"><span><a href="http://m.inpt.ac.ma/course/view.php?id=1254#section-0">Généralités</a></span></h3><div class="section_availability"></div><div class="summary"></div><ul class="section img-text"><li class="activity forum modtype_forum " id="module-18743"><div><div class="mod-indent-outer"><div class="mod-indent"></div><div><div class="activityinstance"><a class="" onclick="" href="http://m.inpt.ac.ma/mod/forum/view.php?id=18743"><img src="http://m.inpt.ac.ma/theme/image.php/clean/forum/1614806513/icon" class="iconlarge activityicon" alt=" " role="presentation" /><span class="instancename">Annonces<span class="accesshide " > Forum</span></span></a></div></div></div></div></li><li class="activity resource modtype_resource " id="module-19854"><div><div class="mod-indent-outer"><div class="mod-indent"></div><div><div class="activityinstance"><a class="" onclick="" href="http://m.inpt.ac.ma/mod/resource/view.php?id=19854"><img src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/f/pdf-24" class="iconlarge activityicon" alt=" " role="presentation" /><span class="instancename">Support du cours DevOps<span class="accesshide " > Fichier</span></span></a></div><span class="actions"><form method="post" action="http://m.inpt.ac.ma/course/togglecompletion.php" class="togglecompletion"><div><input type="hidden" name="id" value="19854" /><input type="hidden" name="sesskey" value="w2JLam7cqp" /><input type="hidden" name="modulename" value="Support du cours DevOps" /><input type="hidden" name="completionstate" value="1" /><button class="btn btn-link" title="Non terminé : Support du cours DevOps. Sélectionner pour marquer comme terminé."><img class="icon " alt="Non terminé : Support du cours DevOps. Sélectionner pour marquer comme terminé." title="Non terminé : Support du cours DevOps. Sélectionner pour marquer comme terminé." src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/completion-manual-n" /></button></div></form></span></div></div></div></li><li class="activity assign modtype_assign " id="module-19139"><div><div class="mod-indent-outer"><div class="mod-indent"></div><div><div class="activityinstance"><a class="" onclick="" href="http://m.inpt.ac.ma/mod/assign/view.php?id=19139"><img src="http://m.inpt.ac.ma/theme/image.php/clean/assign/1614806513/icon" class="iconlarge activityicon" alt=" " role="presentation" /><span class="instancename">Atelier n°1: Manipulation git/Github<span class="accesshide " > Devoir</span></span></a></div><span class="actions"><form method="post" action="http://m.inpt.ac.ma/course/togglecompletion.php" class="togglecompletion"><div><input type="hidden" name="id" value="19139" /><input type="hidden" name="sesskey" value="w2JLam7cqp" /><input type="hidden" name="modulename" value="Atelier n°1: Manipulation git/Github" /><input type="hidden" name="completionstate" value="0" /><button class="btn btn-link" title="Terminé : Atelier n°1: Manipulation git/Github. Sélectionner pour marquer comme non terminé."><img class="icon " alt="Terminé : Atelier n°1: Manipulation git/Github. Sélectionner pour marquer comme non terminé." title="Terminé : Atelier n°1: Manipulation git/Github. Sélectionner pour marquer comme non terminé." src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/completion-manual-y" /></button></div></form></span><div class="contentafterlink"><div class="no-overflow"><div class="no-overflow"><p><b>CR à rendre au plus tard le Lundi 14/02</b></p></div></div></div></div></div></div></li><li class="activity assign modtype_assign " id="module-19366"><div><div class="mod-indent-outer"><div class="mod-indent"></div><div><div class="activityinstance"><a class="" onclick="" href="http://m.inpt.ac.ma/mod/assign/view.php?id=19366"><img src="http://m.inpt.ac.ma/theme/image.php/clean/assign/1614806513/icon" class="iconlarge activityicon" alt=" " role="presentation" /><span class="instancename">Atelier n°2: Automatisation du build : Maven + Installation Jenkins<span class="accesshide " > Devoir</span></span></a></div><span class="actions"><form method="post" action="http://m.inpt.ac.ma/course/togglecompletion.php" class="togglecompletion"><div><input type="hidden" name="id" value="19366" /><input type="hidden" name="sesskey" value="w2JLam7cqp" /><input type="hidden" name="modulename" value="Atelier n°2: Automatisation du build : Maven + Installation Jenkins" /><input type="hidden" name="completionstate" value="0" /><button class="btn btn-link" title="Terminé : Atelier n°2: Automatisation du build : Maven + Installation Jenkins. Sélectionner pour marquer comme non terminé."><img class="icon " alt="Terminé : Atelier n°2: Automatisation du build : Maven + Installation Jenkins. Sélectionner pour marquer comme non terminé." title="Terminé : Atelier n°2: Automatisation du build : Maven + Installation Jenkins. Sélectionner pour marquer comme non terminé." src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/completion-manual-y" /></button></div></form></span><div class="contentafterlink"><div class="no-overflow"><div class="no-overflow"><p>CR à rendre au plus tard le Lundi 21 Février</p></div></div></div></div></div></div></li><li class="activity assign modtype_assign " id="module-19445"><div><div class="mod-indent-outer"><div class="mod-indent"></div><div><div class="activityinstance"><a class="" onclick="" href="http://m.inpt.ac.ma/mod/assign/view.php?id=19445"><img src="http://m.inpt.ac.ma/theme/image.php/clean/assign/1614806513/icon" class="iconlarge activityicon" alt=" " role="presentation" /><span class="instancename">Atelier n°3: Première prise en main de Jenkins<span class="accesshide " > Devoir</span></span></a></div><span class="actions"><form method="post" action="http://m.inpt.ac.ma/course/togglecompletion.php" class="togglecompletion"><div><input type="hidden" name="id" value="19445" /><input type="hidden" name="sesskey" value="w2JLam7cqp" /><input type="hidden" name="modulename" value="Atelier n°3: Première prise en main de Jenkins" /><input type="hidden" name="completionstate" value="0" /><button class="btn btn-link" title="Terminé : Atelier n°3: Première prise en main de Jenkins. Sélectionner pour marquer comme non terminé."><img class="icon " alt="Terminé : Atelier n°3: Première prise en main de Jenkins. Sélectionner pour marquer comme non terminé." title="Terminé : Atelier n°3: Première prise en main de Jenkins. Sélectionner pour marquer comme non terminé." src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/completion-manual-y" /></button></div></form></span><div class="contentafterlink"><div class="no-overflow"><div class="no-overflow"><p>Il s'agit d'une première prise en main de Jenkins comme outil d'intégration continue&nbsp;<br></p><p><b>CR à rendre au plus tard le Lundi 28/02</b></p></div></div></div></div></div></div></li><li class="activity assign modtype_assign " id="module-19771"><div><div class="mod-indent-outer"><div class="mod-indent"></div><div><div class="activityinstance"><a class="" onclick="" href="http://m.inpt.ac.ma/mod/assign/view.php?id=19771"><img src="http://m.inpt.ac.ma/theme/image.php/clean/assign/1614806513/icon" class="iconlarge activityicon" alt=" " role="presentation" /><span class="instancename">Atelier n°4: Mise en pratique de l'intégration continue Jenkins, Maven et Tomcat<span class="accesshide " > Devoir</span></span></a></div><span class="actions"><form method="post" action="http://m.inpt.ac.ma/course/togglecompletion.php" class="togglecompletion"><div><input type="hidden" name="id" value="19771" /><input type="hidden" name="sesskey" value="w2JLam7cqp" /><input type="hidden" name="modulename" value="Atelier n°4: Mise en pratique de l&#039;intégration continue Jenkins, Maven et Tomcat" /><input type="hidden" name="completionstate" value="1" /><button class="btn btn-link" title="Non terminé : Atelier n°4: Mise en pratique de l&#039;intégration continue Jenkins, Maven et Tomcat. Sélectionner pour marquer comme terminé."><img class="icon " alt="Non terminé : Atelier n°4: Mise en pratique de l&#039;intégration continue Jenkins, Maven et Tomcat. Sélectionner pour marquer comme terminé." title="Non terminé : Atelier n°4: Mise en pratique de l&#039;intégration continue Jenkins, Maven et Tomcat. Sélectionner pour marquer comme terminé." src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/completion-manual-n" /></button></div></form></span><div class="contentafterlink"><div class="no-overflow"><div class="no-overflow"><p>Il s'agit de réaliser le déploiement du fichier War de l'application au niveau de Tomcat suite à build automatique Maven à travers Jenkins.</p><p><b>CR à rendre au plus tard le Lundi 14/ Mars</b></p></div></div></div></div></div></div></li></ul></div></li><li id="section-1" class="section main clearfix" role="region" aria-label="Section 1"><span class="hidden sectionname">Section 1</span><div class="left side"></div><div class="right side"><img class="icon spacer" width="1" height="1" alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/spacer" /></div><div class="content"><h3 class="sectionname"><span><a href="http://m.inpt.ac.ma/course/view.php?id=1254#section-1">Section 1</a></span></h3><div class="section_availability"></div><div class="summary"></div><ul class="section img-text"></ul></div></li><li id="section-2" class="section main clearfix" role="region" aria-label="Section 2"><span class="hidden sectionname">Section 2</span><div class="left side"></div><div class="right side"><img class="icon spacer" width="1" height="1" alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/spacer" /></div><div class="content"><h3 class="sectionname"><span><a href="http://m.inpt.ac.ma/course/view.php?id=1254#section-2">Section 2</a></span></h3><div class="section_availability"></div><div class="summary"></div><ul class="section img-text"></ul></div></li><li id="section-3" class="section main clearfix" role="region" aria-label="Section 3"><span class="hidden sectionname">Section 3</span><div class="left side"></div><div class="right side"><img class="icon spacer" width="1" height="1" alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/spacer" /></div><div class="content"><h3 class="sectionname"><span><a href="http://m.inpt.ac.ma/course/view.php?id=1254#section-3">Section 3</a></span></h3><div class="section_availability"></div><div class="summary"></div><ul class="section img-text"></ul></div></li><li id="section-4" class="section main clearfix" role="region" aria-label="Section 4"><span class="hidden sectionname">Section 4</span><div class="left side"></div><div class="right side"><img class="icon spacer" width="1" height="1" alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/spacer" /></div><div class="content"><h3 class="sectionname"><span><a href="http://m.inpt.ac.ma/course/view.php?id=1254#section-4">Section 4</a></span></h3><div class="section_availability"></div><div class="summary"></div><ul class="section img-text"></ul></div></li></ul></div></div>                </section>
+                <aside id="block-region-side-pre" class="span4 desktop-first-column block-region" data-blockregion="side-pre" data-droptarget="1"><a class="skip skip-block" id="fsb-1" href="#sb-1">Passer Navigation</a><div id="inst38" class="block_navigation  block" role="navigation" data-block="navigation" data-instanceid="38" aria-labelledby="instance-38-header" data-dockable="1"><div class="header"><div class="title"><div class="block_action"></div><h2 id="instance-38-header">Navigation</h2></div></div><div class="content"><ul class="block_tree list" role="tree" data-ajax-loader="block_navigation/nav_loader"><li class="type_unknown depth_1 contains_branch" aria-labelledby="label_1_1"><p class="tree_item branch navigation_node" role="treeitem" aria-expanded="true" aria-owns="random622ef9e1b81632_group" data-collapsible="false"><a tabindex="-1" id="label_1_1" href="http://m.inpt.ac.ma/my/">Tableau de bord</a></p><ul id="random622ef9e1b81632_group" role="group"><li class="type_setting depth_2 item_with_icon" aria-labelledby="label_2_2"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_2_2" href="http://m.inpt.ac.ma/?redirect=0"><img class="icon navicon" alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/home" /><span class="item-content-wrap">Accueil du site</span></a></p></li><li class="type_course depth_2 contains_branch" aria-labelledby="label_2_3"><p class="tree_item branch" role="treeitem" aria-expanded="false" aria-owns="random622ef9e1b81634_group"><span tabindex="-1" id="label_2_3" title="moodle.inpt.ac.ma">Pages du site</span></p><ul id="random622ef9e1b81634_group" role="group" aria-hidden="true"><li class="type_unknown depth_3 item_with_icon" aria-labelledby="label_3_5"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_3_5" href="http://m.inpt.ac.ma/blog/index.php"><img class="icon navicon" alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/navigationitem" /><span class="item-content-wrap">Blogs du site</span></a></p></li><li class="type_custom depth_3 item_with_icon" aria-labelledby="label_3_6"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_3_6" href="http://m.inpt.ac.ma/badges/view.php?type=1"><img class="icon navicon" alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/navigationitem" /><span class="item-content-wrap">Badges de site</span></a></p></li><li class="type_setting depth_3 item_with_icon" aria-labelledby="label_3_7"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_3_7" href="http://m.inpt.ac.ma/tag/search.php"><img class="icon navicon" alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/navigationitem" /><span class="item-content-wrap">Tags</span></a></p></li><li class="type_custom depth_3 item_with_icon" aria-labelledby="label_3_8"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_3_8" href="http://m.inpt.ac.ma/calendar/view.php?view=month&amp;course=1254"><img class="icon navicon" alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/calendar" /><span class="item-content-wrap">Calendrier</span></a></p></li><li class="type_activity depth_3 item_with_icon" aria-labelledby="label_3_10"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_3_10" title="Forum" href="http://m.inpt.ac.ma/mod/forum/view.php?id=1"><img class="icon navicon" alt="Forum" title="Forum" src="http://m.inpt.ac.ma/theme/image.php/clean/forum/1614806513/icon" /><span class="item-content-wrap">Annonces du site</span></a></p></li></ul></li><li class="type_system depth_2 contains_branch" aria-labelledby="label_2_11"><p class="tree_item branch canexpand" role="treeitem" aria-expanded="true" aria-owns="random622ef9e1b816310_group"><span tabindex="-1" id="label_2_11">Mes cours</span></p><ul id="random622ef9e1b816310_group" role="group"><li class="type_course depth_3 contains_branch" aria-labelledby="label_3_12"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_780" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_780" data-node-key="780" data-node-type="20"><a tabindex="-1" id="label_3_12" title="SATGE-INE1-21" href="http://m.inpt.ac.ma/course/view.php?id=780">SATGE-INE1-21</a></p></li><li class="type_course depth_3 contains_branch" aria-labelledby="label_3_13"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_799" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_799" data-node-key="799" data-node-type="20"><a tabindex="-1" id="label_3_13" title="VALIDATION ET ASSURANCE QUALITÉ LOGICIELLE (SUD-1-2021)" href="http://m.inpt.ac.ma/course/view.php?id=799">VALIDATION ET ASSURANCE QUALITÉ LOGICIELLE (SUD-1-...</a></p></li><li class="type_course depth_3 contains_branch" aria-labelledby="label_3_14"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_798" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_798" data-node-key="798" data-node-type="20"><a tabindex="-1" id="label_3_14" title="THÉORIE DES GRAPHES ET ORDONNANCEMENTS (SUD-1-2021)" href="http://m.inpt.ac.ma/course/view.php?id=798">THÉORIE DES GRAPHES ET ORDONNANCEMENTS (SUD-1-2021)</a></p></li><li class="type_course depth_3 contains_branch" aria-labelledby="label_3_15"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_797" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_797" data-node-key="797" data-node-type="20"><a tabindex="-1" id="label_3_15" title="STRUCTURES DE DONNÉES ET ALGORITHMES (SUD-1-2021)" href="http://m.inpt.ac.ma/course/view.php?id=797">STRUCTURES DE DONNÉES ET ALGORITHMES (SUD-1-2021)</a></p></li><li class="type_course depth_3 contains_branch" aria-labelledby="label_3_16"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_796" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_796" data-node-key="796" data-node-type="20"><a tabindex="-1" id="label_3_16" title="MÉMOIRES ET INTERFACES MATÉRIELLES (SUD-1-2021)" href="http://m.inpt.ac.ma/course/view.php?id=796">MÉMOIRES ET INTERFACES MATÉRIELLES (SUD-1-2021)</a></p></li><li class="type_course depth_3 contains_branch" aria-labelledby="label_3_17"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_795" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_795" data-node-key="795" data-node-type="20"><a tabindex="-1" id="label_3_17" title="COMMUNICATION ANALOGIQUE ET NUMÉRIQUE (SUD-1-2021)" href="http://m.inpt.ac.ma/course/view.php?id=795">COMMUNICATION ANALOGIQUE ET NUMÉRIQUE (SUD-1-2021)</a></p></li><li class="type_course depth_3 contains_branch" aria-labelledby="label_3_18"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_794" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_794" data-node-key="794" data-node-type="20"><a tabindex="-1" id="label_3_18" title="ANALYSE FINANCIÈRE DES PROJETS (SUD-1-2021)" href="http://m.inpt.ac.ma/course/view.php?id=794">ANALYSE FINANCIÈRE DES PROJETS (SUD-1-2021)</a></p></li><li class="type_course depth_3 contains_branch" aria-labelledby="label_3_19"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_718" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_718" data-node-key="718" data-node-type="20"><a tabindex="-1" id="label_3_19" title="MATHÉMATIQUES DISCRÈTES (SUD-1)" href="http://m.inpt.ac.ma/course/view.php?id=718">MATHÉMATIQUES DISCRÈTES (SUD-1)</a></p></li><li class="type_course depth_3 contains_branch" aria-labelledby="label_3_20"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_717" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_717" data-node-key="717" data-node-type="20"><a tabindex="-1" id="label_3_20" title="DÉVELOPPEMENT DES APPLICATIONS MOBILES(SUD-1)" href="http://m.inpt.ac.ma/course/view.php?id=717">DÉVELOPPEMENT DES APPLICATIONS MOBILES(SUD-1)</a></p></li><li class="type_course depth_3 contains_branch" aria-labelledby="label_3_21"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_716" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_716" data-node-key="716" data-node-type="20"><a tabindex="-1" id="label_3_21" title="OPTIMISATION LINÉAIRE ET NON-LINÉAIRE (SUD-1)" href="http://m.inpt.ac.ma/course/view.php?id=716">OPTIMISATION LINÉAIRE ET NON-LINÉAIRE (SUD-1)</a></p></li><li class="type_custom depth_3 item_with_icon" aria-labelledby="label_3_22"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_3_22" href="http://m.inpt.ac.ma/my/"><img class="icon navicon" alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/navigationitem" /><span class="item-content-wrap">Plus...</span></a></p></li></ul></li><li class="type_system depth_2 contains_branch" aria-labelledby="label_2_23"><p class="tree_item branch canexpand" role="treeitem" aria-expanded="true" aria-owns="random622ef9e1b816312_group"><a tabindex="-1" id="label_2_23" href="http://m.inpt.ac.ma/course/index.php">Cours</a></p><ul id="random622ef9e1b816312_group" role="group"><li class="type_category depth_3 contains_branch" aria-labelledby="label_3_24"><p class="tree_item branch canexpand" role="treeitem" aria-expanded="true" aria-owns="random622ef9e1b816313_group"><span tabindex="-1" id="label_3_24">INE2</span></p><ul id="random622ef9e1b816313_group" role="group"><li class="type_category depth_4 contains_branch" aria-labelledby="label_4_25"><p class="tree_item branch" role="treeitem" id="expandable_branch_10_15" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_15" data-node-key="15" data-node-type="10"><span tabindex="-1" id="label_4_25">AMOA-2</span></p></li><li class="type_category depth_4 contains_branch" aria-labelledby="label_4_26"><p class="tree_item branch" role="treeitem" id="expandable_branch_10_16" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_16" data-node-key="16" data-node-type="10"><span tabindex="-1" id="label_4_26">ASEDS-2</span></p></li><li class="type_category depth_4 contains_branch" aria-labelledby="label_4_27"><p class="tree_item branch" role="treeitem" id="expandable_branch_10_17" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_17" data-node-key="17" data-node-type="10"><span tabindex="-1" id="label_4_27">ICCN-2</span></p></li><li class="type_category depth_4 contains_branch" aria-labelledby="label_4_28"><p class="tree_item branch" role="treeitem" id="expandable_branch_10_18" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_18" data-node-key="18" data-node-type="10"><span tabindex="-1" id="label_4_28">DE-2</span></p></li><li class="type_category depth_4 contains_branch" aria-labelledby="label_4_29"><p class="tree_item branch" role="treeitem" id="expandable_branch_10_19" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_19" data-node-key="19" data-node-type="10"><span tabindex="-1" id="label_4_29">SESNUM-2</span></p></li><li class="type_category depth_4 contains_branch" aria-labelledby="label_4_30"><p class="tree_item branch" role="treeitem" id="expandable_branch_10_20" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_20" data-node-key="20" data-node-type="10"><span tabindex="-1" id="label_4_30">SmartICT-2</span></p></li><li class="type_category depth_4 contains_branch" aria-labelledby="label_4_31"><p class="tree_item branch canexpand" role="treeitem" aria-expanded="true" aria-owns="random622ef9e1b816314_group"><span tabindex="-1" id="label_4_31">SUD-2</span></p><ul id="random622ef9e1b816314_group" role="group"><li class="type_category depth_5 contains_branch" aria-labelledby="label_5_32"><p class="tree_item branch" role="treeitem" id="expandable_branch_10_66" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_66" data-node-key="66" data-node-type="10"><span tabindex="-1" id="label_5_32">S4</span></p></li><li class="type_category depth_5 contains_branch" aria-labelledby="label_5_33"><p class="tree_item branch" role="treeitem" id="expandable_branch_10_116" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_116" data-node-key="116" data-node-type="10"><span tabindex="-1" id="label_5_33">A20-21-SUD-2</span></p></li><li class="type_category depth_5 contains_branch" aria-labelledby="label_5_34"><p class="tree_item branch canexpand" role="treeitem" aria-expanded="true" aria-owns="random622ef9e1b816315_group"><span tabindex="-1" id="label_5_34">A21-22-SUD-2</span></p><ul id="random622ef9e1b816315_group" role="group"><li class="type_category depth_6 contains_branch" aria-labelledby="label_6_35"><p class="tree_item branch" role="treeitem" id="expandable_branch_10_144" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_144" data-node-key="144" data-node-type="10"><span tabindex="-1" id="label_6_35">S3-A21-22-SUD-2</span></p></li><li class="type_category depth_6 contains_branch" aria-labelledby="label_6_36"><p class="tree_item branch canexpand" role="treeitem" aria-expanded="true" aria-owns="random622ef9e1b816316_group"><span tabindex="-1" id="label_6_36">S4-A21-22-SUD-2</span></p><ul id="random622ef9e1b816316_group" role="group"><li class="type_course depth_7 contains_branch current_branch" aria-labelledby="label_7_37"><p class="tree_item branch active_tree_node canexpand" role="treeitem" aria-expanded="true" aria-owns="random622ef9e1b816317_group"><a tabindex="-1" id="label_7_37" title="TECHNIQUES DE DÉVELOPPEMENT ET D’INTÉGRATION CONTINUS (A21-22-SUD2)" href="http://m.inpt.ac.ma/course/view.php?id=1254">TECHNIQUES DE DÉVELOPPEMENT ET D’INTÉGRATION CONTI...</a></p><ul id="random622ef9e1b816317_group" role="group"><li class="type_container depth_8 contains_branch" aria-labelledby="label_8_38"><p class="tree_item branch" role="treeitem" aria-expanded="false" aria-owns="random622ef9e1b816318_group"><a tabindex="-1" id="label_8_38" href="http://m.inpt.ac.ma/user/index.php?id=1254">Participants</a></p><ul id="random622ef9e1b816318_group" role="group" aria-hidden="true"><li class="type_setting depth_9 item_with_icon" aria-labelledby="label_9_39"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_9_39" href="http://m.inpt.ac.ma/blog/index.php?courseid=1254"><img class="icon navicon" alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/navigationitem" /><span class="item-content-wrap">Blogs de cours</span></a></p></li><li class="type_user depth_9 item_with_icon" aria-labelledby="label_9_40"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_9_40" href="http://m.inpt.ac.ma/user/view.php?id=1015&amp;course=1254"><img class="icon navicon" alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/navigationitem" /><span class="item-content-wrap">AZHARI FERDAOUS</span></a></p></li></ul></li><li class="type_setting depth_8 item_with_icon" aria-labelledby="label_8_41"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_8_41" href="http://m.inpt.ac.ma/badges/view.php?type=2&amp;id=1254"><img class="icon navicon" alt="Badges" title="Badges" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/badge" /><span class="item-content-wrap">Badges</span></a></p></li><li class="type_setting depth_8 item_with_icon" aria-labelledby="label_8_42"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_8_42" href="http://m.inpt.ac.ma/admin/tool/lp/coursecompetencies.php?courseid=1254"><img class="icon navicon" alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/competencies" /><span class="item-content-wrap">Compétences</span></a></p></li><li class="type_setting depth_8 item_with_icon" aria-labelledby="label_8_43"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_8_43" href="http://m.inpt.ac.ma/grade/report/index.php?id=1254"><img class="icon navicon" alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/grades" /><span class="item-content-wrap">Notes</span></a></p></li><li class="type_structure depth_8 contains_branch" aria-labelledby="label_8_44"><p class="tree_item branch" role="treeitem" id="expandable_branch_30_8476" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_8476" data-node-key="8476" data-node-type="30"><a tabindex="-1" id="label_8_44" href="http://m.inpt.ac.ma/course/view.php?id=1254#section-0">Généralités</a></p></li><li class="type_structure depth_8 contains_branch" aria-labelledby="label_8_45"><p class="tree_item branch" role="treeitem" id="expandable_branch_30_8477" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_8477" data-node-key="8477" data-node-type="30"><a tabindex="-1" id="label_8_45" href="http://m.inpt.ac.ma/course/view.php?id=1254#section-1">Section 1</a></p></li><li class="type_structure depth_8 contains_branch" aria-labelledby="label_8_46"><p class="tree_item branch" role="treeitem" id="expandable_branch_30_8478" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_8478" data-node-key="8478" data-node-type="30"><a tabindex="-1" id="label_8_46" href="http://m.inpt.ac.ma/course/view.php?id=1254#section-2">Section 2</a></p></li><li class="type_structure depth_8 contains_branch" aria-labelledby="label_8_47"><p class="tree_item branch" role="treeitem" id="expandable_branch_30_8479" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_8479" data-node-key="8479" data-node-type="30"><a tabindex="-1" id="label_8_47" href="http://m.inpt.ac.ma/course/view.php?id=1254#section-3">Section 3</a></p></li><li class="type_structure depth_8 contains_branch" aria-labelledby="label_8_48"><p class="tree_item branch" role="treeitem" id="expandable_branch_30_8480" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_8480" data-node-key="8480" data-node-type="30"><a tabindex="-1" id="label_8_48" href="http://m.inpt.ac.ma/course/view.php?id=1254#section-4">Section 4</a></p></li></ul></li><li class="type_course depth_7 contains_branch" aria-labelledby="label_7_49"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_1253" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_1253" data-node-key="1253" data-node-type="20"><a tabindex="-1" id="label_7_49" title="PLATEFORMES ET FRAMEWORKS DE DÉVELOPPEMENT WEB (A21-22-SUD2)" href="http://m.inpt.ac.ma/course/view.php?id=1253">PLATEFORMES ET FRAMEWORKS DE DÉVELOPPEMENT WEB (A2...</a></p></li><li class="type_course depth_7 contains_branch" aria-labelledby="label_7_50"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_1252" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_1252" data-node-key="1252" data-node-type="20"><a tabindex="-1" id="label_7_50" title="PATTERN RECOGNITION ET MACHINE LEARNING (A21-22-SUD2)" href="http://m.inpt.ac.ma/course/view.php?id=1252">PATTERN RECOGNITION ET MACHINE LEARNING (A21-22-SUD2)</a></p></li><li class="type_course depth_7 contains_branch" aria-labelledby="label_7_51"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_1251" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_1251" data-node-key="1251" data-node-type="20"><a tabindex="-1" id="label_7_51" title="MANAGEMENT DE PROJETS (A21-22-SUD2)" href="http://m.inpt.ac.ma/course/view.php?id=1251">MANAGEMENT DE PROJETS (A21-22-SUD2)</a></p></li><li class="type_course depth_7 contains_branch" aria-labelledby="label_7_52"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_1250" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_1250" data-node-key="1250" data-node-type="20"><a tabindex="-1" id="label_7_52" title="DATA MINING &amp; WARHOUSING (A21-22-SUD2)" href="http://m.inpt.ac.ma/course/view.php?id=1250">DATA MINING &amp; WARHOUSING (A21-22-SUD2)</a></p></li><li class="type_course depth_7 contains_branch" aria-labelledby="label_7_53"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_1249" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_1249" data-node-key="1249" data-node-type="20"><a tabindex="-1" id="label_7_53" title="PLATEFORMES ET TECHNOLOGIES DE L&#039;IOT (A21-22-SUD2)" href="http://m.inpt.ac.ma/course/view.php?id=1249">PLATEFORMES ET TECHNOLOGIES DE L'IOT (A21-22-SUD2)</a></p></li></ul></li><li class="type_course depth_6 contains_branch" aria-labelledby="label_6_54"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_1146" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_1146" data-node-key="1146" data-node-type="20"><a tabindex="-1" id="label_6_54" title="SÉCURITÉ DES APPLICATIONS WEB ET MOBILES (A21-22-SUD2)" href="http://m.inpt.ac.ma/course/view.php?id=1146">SÉCURITÉ DES APPLICATIONS WEB ET MOBILES (A21-22-S...</a></p></li><li class="type_course depth_6 contains_branch" aria-labelledby="label_6_55"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_1145" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_1145" data-node-key="1145" data-node-type="20"><a tabindex="-1" id="label_6_55" title="RÉSEAUX MOBILES (A21-22-SUD2)" href="http://m.inpt.ac.ma/course/view.php?id=1145">RÉSEAUX MOBILES (A21-22-SUD2)</a></p></li><li class="type_course depth_6 contains_branch" aria-labelledby="label_6_56"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_1144" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_1144" data-node-key="1144" data-node-type="20"><a tabindex="-1" id="label_6_56" title="PROGRAMMATION DE PILOTES ET DE NOYAUX OS (A21-22-SUD2)" href="http://m.inpt.ac.ma/course/view.php?id=1144">PROGRAMMATION DE PILOTES ET DE NOYAUX OS (A21-22-S...</a></p></li><li class="type_course depth_6 contains_branch" aria-labelledby="label_6_57"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_1143" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_1143" data-node-key="1143" data-node-type="20"><a tabindex="-1" id="label_6_57" title="MIDDLEWARES ET ARCHITECTURES DISTRIBUÉES (A21-22-SUD2)" href="http://m.inpt.ac.ma/course/view.php?id=1143">MIDDLEWARES ET ARCHITECTURES DISTRIBUÉES (A21-22-S...</a></p></li><li class="type_course depth_6 contains_branch" aria-labelledby="label_6_58"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_1142" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_1142" data-node-key="1142" data-node-type="20"><a tabindex="-1" id="label_6_58" title="INTRODUCTION AU DÉVELOPPEMENT DURABLE (A21-22-SUD2)" href="http://m.inpt.ac.ma/course/view.php?id=1142">INTRODUCTION AU DÉVELOPPEMENT DURABLE (A21-22-SUD2)</a></p></li><li class="type_course depth_6 contains_branch" aria-labelledby="label_6_59"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_1141" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_1141" data-node-key="1141" data-node-type="20"><a tabindex="-1" id="label_6_59" title="FONDEMENTS DE L’IOT (A21-22-SUD2)" href="http://m.inpt.ac.ma/course/view.php?id=1141">FONDEMENTS DE L’IOT (A21-22-SUD2)</a></p></li><li class="type_course depth_6 contains_branch" aria-labelledby="label_6_60"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_1034" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_1034" data-node-key="1034" data-node-type="20"><a tabindex="-1" id="label_6_60" title="TEC (A21-22-SUD2)" href="http://m.inpt.ac.ma/course/view.php?id=1034">TEC (A21-22-SUD2)</a></p></li><li class="type_course depth_6 contains_branch" aria-labelledby="label_6_61"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_1033" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_1033" data-node-key="1033" data-node-type="20"><a tabindex="-1" id="label_6_61" title="RÉSEAUX DE CAPTEURS SANS FIL (A21-22-SUD2) " href="http://m.inpt.ac.ma/course/view.php?id=1033">RÉSEAUX DE CAPTEURS SANS FIL (A21-22-SUD2) </a></p></li><li class="type_course depth_6 contains_branch" aria-labelledby="label_6_62"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_1032" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_1032" data-node-key="1032" data-node-type="20"><a tabindex="-1" id="label_6_62" title="RÉFÉRENTIELS ET BONNES PRATIQUES DES SIS (A21-22-SUD2)" href="http://m.inpt.ac.ma/course/view.php?id=1032">RÉFÉRENTIELS ET BONNES PRATIQUES DES SIS (A21-22-S...</a></p></li><li class="type_course depth_6 contains_branch" aria-labelledby="label_6_63"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_1031" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_1031" data-node-key="1031" data-node-type="20"><a tabindex="-1" id="label_6_63" title="MARKETING DIGITAL (A21-22-SUD2)" href="http://m.inpt.ac.ma/course/view.php?id=1031">MARKETING DIGITAL (A21-22-SUD2)</a></p></li><li class="type_course depth_6 contains_branch" aria-labelledby="label_6_64"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_1030" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_1030" data-node-key="1030" data-node-type="20"><a tabindex="-1" id="label_6_64" title="ANGLAIS (A21-22-SUD2)" href="http://m.inpt.ac.ma/course/view.php?id=1030">ANGLAIS (A21-22-SUD2)</a></p></li></ul></li><li class="type_course depth_5 contains_branch" aria-labelledby="label_5_65"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_634" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_634" data-node-key="634" data-node-type="20"><a tabindex="-1" id="label_5_65" title="AFFICHAGE-SUD-2" href="http://m.inpt.ac.ma/course/view.php?id=634">AFFICHAGE-SUD-2</a></p></li></ul></li><li class="type_course depth_4 item_with_icon" aria-labelledby="label_4_66"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_4_66" title="STAGE-INE2- 21" href="http://m.inpt.ac.ma/course/view.php?id=778"><img class="icon navicon" alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/course" /><span class="item-content-wrap">STAGE-INE2- 21</span></a></p></li><li class="type_course depth_4 item_with_icon" aria-labelledby="label_4_67"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_4_67" title="MOBILITE A L INTERNATIONAL" href="http://m.inpt.ac.ma/course/view.php?id=675"><img class="icon navicon" alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/course" /><span class="item-content-wrap">MOBILITE A L INTERNATIONAL</span></a></p></li><li class="type_course depth_4 item_with_icon" aria-labelledby="label_4_68"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_4_68" title="COMMUNICATION ET DEVELOPPEMENT PERSONNEL" href="http://m.inpt.ac.ma/course/view.php?id=235"><img class="icon navicon" alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/course" /><span class="item-content-wrap">COMMUNICATION ET DEVELOPPEMENT PERSONNEL</span></a></p></li></ul></li><li class="type_category depth_3 contains_branch" aria-labelledby="label_3_69"><p class="tree_item branch" role="treeitem" id="expandable_branch_10_3" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_3" data-node-key="3" data-node-type="10"><span tabindex="-1" id="label_3_69">Management</span></p></li><li class="type_category depth_3 contains_branch" aria-labelledby="label_3_70"><p class="tree_item branch" role="treeitem" id="expandable_branch_10_6" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_6" data-node-key="6" data-node-type="10"><span tabindex="-1" id="label_3_70">INE1</span></p></li><li class="type_category depth_3 contains_branch" aria-labelledby="label_3_71"><p class="tree_item branch" role="treeitem" id="expandable_branch_10_37" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_37" data-node-key="37" data-node-type="10"><span tabindex="-1" id="label_3_71">INE3</span></p></li><li class="type_category depth_3 contains_branch" aria-labelledby="label_3_72"><p class="tree_item branch" role="treeitem" id="expandable_branch_10_75" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_75" data-node-key="75" data-node-type="10"><span tabindex="-1" id="label_3_72">COMMUNICATIONS ADMINISTRATIVES</span></p></li></ul></li></ul></li></ul></div></div><span class="skip-block-to" id="sb-1"></span></aside>            </div>
+        </div>
+        <aside id="block-region-side-post" class="span3 pull-right block-region" data-blockregion="side-post" data-droptarget="1"></aside>    </div>
+    <div
+    id="message-drawer-622ef9e1d7d31622ef9e1b816343"
+    class="message-drawer bg-light hidden"
+    aria-expanded="false"
+    aria-hidden="true"
+    data-region="message-drawer"
+    role="region"
+>
+    <div class="drawer-top p-2 border-bottom bg-secondary text-right">
+        <a id="message-drawer-close-622ef9e1d7d31622ef9e1b816343" class="" href="#">
+            <img class="icon " alt="Ouvrir/fermer le tiroir des messages" title="Ouvrir/fermer le tiroir des messages" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/window_close" />
+        </a>
+    </div>
+    <div class="header-container position-relative" data-region="header-container">
+        <div class="hidden border-bottom px-2 py-3" aria-hidden="true" data-region="view-contacts">
+            <div class="d-flex align-items-center">
+                <div class="align-self-stretch">
+                    <a class="h-100 d-flex align-items-center mr-2" href="#" data-route-back>
+                        <span class="dir-rtl-hide"><img class="icon " alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/t/collapsed_rtl" /></span>
+                        <span class="dir-ltr-hide"><img class="icon " alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/t/collapsed" /></span>                    </a>
+                </div>
+                <div>
+                    Contacts
+                </div>
+                <div class="ml-auto">
+                    <a href="#" data-route="view-search">
+                        <img class="icon " alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/a/search" />
+                    </a>
+                </div>
+            </div>
+        </div>        
+        <div
+            class="hidden bg-white position-relative border-bottom px-2 py-2"
+            aria-hidden="true"
+            data-region="view-conversation"
+        >
+            <div class="hidden" data-region="header-content"></div>
+            <div class="hidden" data-region="header-edit-mode">
+                
+                <div class="d-flex p-2 align-items-center">
+                    Messages sélectionnés :
+                    <span class="ml-1" data-region="message-selected-court">1</span>
+                    <button type="button" class="ml-auto close" aria-label="" data-action="cancel-edit-mode">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+            <div data-region="header-placeholder">
+                <div class="d-flex">
+                    <div class="align-self-stretch" >
+                        <a class="h-100 mr-2 d-flex align-items-center" href="#" data-route-back>
+                            <span class="dir-rtl-hide"><img class="icon " alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/t/collapsed_rtl" /></span>
+                            <span class="dir-ltr-hide"><img class="icon " alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/t/collapsed" /></span>                        </a>
+                    </div>
+                    <div
+                        class="ml-2 rounded-circle bg-pulse-grey align-self-center"
+                        style="height: 38px; width: 38px"
+                    >
+                    </div>
+                    <div class="ml-2 " style="flex: 1">
+                        <div
+                            class="mt-1 bg-pulse-grey w-75"
+                            style="height: 16px;"
+                        >
+                        </div>
+                    </div>
+                    <div
+                        class="ml-2 bg-pulse-grey align-self-center"
+                        style="height: 16px; width: 20px"
+                    >
+                    </div>
+                </div>
+            </div>
+            <div
+                class="hidden position-absolute"
+                data-region="confirm-dialogue-container"
+                style="top: 0; bottom: -1px; right: 0; left: 0; background: rgba(0,0,0,0.3);"
+            ></div>
+        </div>        <div class="border-bottom px-2 py-3" aria-hidden="false" data-region="view-overview">
+            <div class="d-flex align-items-center">
+                <div class="input-prepend d-flex flex-grow m-0">
+                    <span class="add-on bg-white pr-0">
+                        <img class="icon " alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/a/search" />
+                    </span>
+                    <input
+                        type="text"
+                        class="form-control border-left-0 searchinput"
+                        placeholder="Recherche"
+                        aria-label="Recherche"
+                        data-region="view-overview-search-input"
+                    >
+                </div>
+                <div class="ml-2">
+                    <a
+                        href="#"
+                        data-route="view-settings"
+                        data-route-param="1015"
+                    >
+                        <img class="icon " alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/t/edit" />
+                    </a>
+                </div>
+            </div>
+            <div class="text-right mt-3">
+                <a href="#" data-route="view-contacts">
+                    <img class="icon " alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/user" />
+                    Contacts
+                    <span class="badge bg-primary ml-2 hidden" data-region="contact-request-count">
+                        0
+                    </span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="hidden border-bottom px-2 py-3 view-search" aria-hidden="true" data-region="view-search">
+            <div class="d-flex align-items-center">
+                <a
+                    class="mr-2 align-self-stretch d-flex align-items-center"
+                    href="#"
+                    data-route-back
+                    data-action="cancel-search"
+                >
+                    <span class="dir-rtl-hide"><img class="icon " alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/t/collapsed_rtl" /></span>
+                    <span class="dir-ltr-hide"><img class="icon " alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/t/collapsed" /></span>                </a>
+                <div class="input-append m-0 d-flex flex-grow">
+                    <input
+                        type="text"
+                        class="form-control border-right-0 searchinput"
+                        placeholder="Recherche"
+                        aria-label="Recherche"
+                        data-region="search-input"
+                    >
+                    <button
+                        class="btn m-0"
+                        type="button"
+                        data-action="search"
+                    >
+                        <span data-region="search-icon-container">
+                            <img class="icon " alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/a/search" />
+                        </span>
+                        <span class="hidden" data-region="loading-icon-container">
+                            <span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>        
+        <div class="hidden border-bottom px-2 py-3" aria-hidden="true" data-region="view-settings">
+            <div class="d-flex align-items-center">
+                <div class="align-self-stretch" >
+                    <a class="h-100 d-flex mr-2 align-items-center" href="#" data-route-back>
+                        <span class="dir-rtl-hide"><img class="icon " alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/t/collapsed_rtl" /></span>
+                        <span class="dir-ltr-hide"><img class="icon " alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/t/collapsed" /></span>                    </a>
+                </div>
+                <div>
+                    Paramètres
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-container position-relative" data-region="body-container">
+        
+        <div
+            class="hidden"
+            data-region="view-contact"
+            aria-hidden="true"
+        >
+            <div class="p-2 pt-3" data-region="content-container"></div>
+        </div>        <div class="hidden h-100" aria-hidden="true" data-region="view-contacts" data-user-id="1015">
+            <div class="d-flex flex-column h-100">
+                <div class="p-3 border-bottom">
+                    <ul class="nav nav-pills d-flex m-0" role="tablist">
+                        <li class="nav-item w-50 align-self-stretch text-center active">
+                            <a
+                                id="contacts-tab-622ef9e1d7d31622ef9e1b816343"
+                                class="nav-link"
+                                href="#contacts-tab-panel-622ef9e1d7d31622ef9e1b816343"
+                                data-toggle="tab"
+                                data-action="show-contacts-section"
+                                role="tab"
+                                aria-controls="contacts-tab-panel-622ef9e1d7d31622ef9e1b816343"
+                                aria-selected="true"
+                            >
+                                Contacts
+                            </a>
+                        </li>
+                        <li class="nav-item w-50 text-center">
+                            <a
+                                id="requests-tab-622ef9e1d7d31622ef9e1b816343"
+                                class="nav-link"
+                                href="#requests-tab-panel-622ef9e1d7d31622ef9e1b816343"
+                                data-toggle="tab"
+                                data-action="show-requests-section"
+                                role="tab"
+                                aria-controls="requests-tab-panel-622ef9e1d7d31622ef9e1b816343"
+                                aria-selected="false"
+                            >
+                                Demandes
+                                <span class="badge bg-primary ml-2 hidden" data-region="contact-request-count">
+                                    0
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content d-flex flex-column h-100">
+                            <div
+            class="tab-pane fade in active h-100"
+            style="overflow-y: auto"
+            aria-live="polite"
+            data-region="lazy-load-list"
+            data-user-id="1015"
+                                id="contacts-tab-panel-622ef9e1d7d31622ef9e1b816343"
+                    data-section="contacts"
+                    role="tabpanel"
+                    aria-labelledby="contacts-tab-622ef9e1d7d31622ef9e1b816343"
+
+        >
+            <div class="onepix">
+            </div>
+            <div class="hidden text-center p-2" data-region="empty-message-container">
+                <p class="text-muted mt-2">
+                    Aucun contact
+                </p>
+            </div>
+            <div class="hidden list-group" data-region="content-container">
+                
+            </div>
+            <div class="list-group" data-region="placeholder-container">
+                
+            </div>
+            <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                <span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+            </div>
+        </div>
+        
+                            <div
+            class="tab-pane fade h-100"
+            style="overflow-y: auto"
+            aria-live="polite"
+            data-region="lazy-load-list"
+            data-user-id="1015"
+                                id="requests-tab-panel-622ef9e1d7d31622ef9e1b816343"
+                    data-section="requests"
+                    role="tabpanel"
+                    aria-labelledby="requests-tab-622ef9e1d7d31622ef9e1b816343"
+
+        >
+            <div class="onepix">
+            </div>
+            <div class="hidden text-center p-2" data-region="empty-message-container">
+                <p class="text-muted mt-2">
+                    Aucune demande de contact
+                </p>
+            </div>
+            <div class="hidden list-group" data-region="content-container">
+                
+            </div>
+            <div class="list-group" data-region="placeholder-container">
+                
+            </div>
+            <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                <span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+            </div>
+        </div>
+                </div>
+            </div>
+        </div>        
+        <div
+            class="view-conversation hidden h-100"
+            aria-hidden="true"
+            data-region="view-conversation"
+            data-user-id="1015"
+            data-midnight="1647212400"
+            style="overflow-y: auto; overflow-x: hidden"
+        >
+            <div class="position-relative h-100" data-region="content-container" style="overflow-y: auto; overflow-x: hidden">
+                <div class="p-3 text-center hidden" data-region="contact-request-sent-message-container">
+                    <p class="m-0">Demande de contact envoyée</p>
+                    <p class="font-italic font-weight-light" data-region="text"></p>
+                </div>
+                <div class="content-message-container hidden h-100 px-2 pb-2 pt-0" data-region="content-message-container" role="log" style="overflow-y: auto; overflow-x: hidden">
+                    <div class="hidden text-center p-3" data-region="more-messages-loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+</div>
+                </div>
+                <div class="p-4 w-100 h-100 hidden position-absolute" data-region="confirm-dialogue-container" style="top: 0; background: rgba(0,0,0,0.3);">
+                    
+                    <div class="p-3 bg-white" data-region="confirm-dialogue" role="alert">
+                        <h3 class="h6 hidden" data-region="dialogue-header"></h3>
+                        <p class="text-muted" data-region="dialogue-text"></p>
+                        <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-block">
+                            <span data-region="dialogue-button-text">Bloc</span>
+                            <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+</span>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-unblock">
+                            <span data-region="dialogue-button-text">Débloquer</span>
+                            <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+</span>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-remove-contact">
+                            <span data-region="dialogue-button-text">Supprimer</span>
+                            <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+</span>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-add-contact">
+                            <span data-region="dialogue-button-text">Ajouter</span>
+                            <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+</span>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-delete-selected-messages">
+                            <span data-region="dialogue-button-text">Supprimer</span>
+                            <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+</span>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-delete-conversation">
+                            <span data-region="dialogue-button-text">Supprimer</span>
+                            <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+</span>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-block hidden" data-action="request-add-contact">
+                            <span data-region="dialogue-button-text">Envoyer une demande de cotnact</span>
+                            <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+</span>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-block hidden" data-action="accept-contact-request">
+                            <span data-region="dialogue-button-text">Accepter et ajouter aux contacts</span>
+                            <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+</span>
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-block hidden" data-action="decline-contact-request">
+                            <span data-region="dialogue-button-text">Décliner</span>
+                            <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+</span>
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-block" data-action="cancel-confirm">Annuler</button>
+                    </div>
+                </div>
+                <div class="px-2 pb-2 pt-0" data-region="content-placeholder">
+                    <div class="h-100 d-flex flex-column">
+                        <div
+                            class="px-2 pb-2 pt-0 bg-light h-100"
+                            style="overflow-y: auto"
+                        >
+                            <div class="mt-4">
+                                <div class="mb-4">
+                                    <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                            </div>                            <div class="mt-4">
+                                <div class="mb-4">
+                                    <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                            </div>                            <div class="mt-4">
+                                <div class="mb-4">
+                                    <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                            </div>                            <div class="mt-4">
+                                <div class="mb-4">
+                                    <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                            </div>                            <div class="mt-4">
+                                <div class="mb-4">
+                                    <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                            </div>                        </div>
+                    </div>                </div>
+            </div>
+        </div>
+        
+        <div
+            class="hidden"
+            aria-hidden="true"
+            data-region="view-group-info"
+        >
+            <div
+                class="pt-3 h-100 d-flex flex-column"
+                data-region="group-info-content-container"
+                style="overflow-y: auto"
+            ></div>
+        </div>        <div class="h-100 view-overview-body" aria-hidden="false" data-region="view-overview" data-user-id="1015">
+            <div id="message-drawer-view-overview-container" class="d-flex flex-column h-100" style="overflow-y: auto">
+                    
+                    <div
+                        class="accordion-group section border-0 "
+                        data-region="view-overview-favourites"
+                    >
+                        <div id="view-overview-favourites-toggle" class="accordion-heading" data-region="toggle">
+                            <button
+                                class="btn btn-link w-100 text-left p-2 m-0 d-flex align-items-center overview-section-toggle collapsed"
+                                data-toggle="collapse"
+                                data-parent="#message-drawer-view-overview-container"
+                                data-target="#view-overview-favourites-target"
+                                aria-expanded="false"
+                                aria-controls="view-overview-favourites-target"
+                            >
+                                <span class="collapsed-icon-container">
+                                    <img class="icon " alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/t/collapsed" />
+                                </span>
+                                <span class="expanded-icon-container">
+                                    <img class="icon " alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/t/expanded" />
+                                </span>
+                                <strong>Favori</strong>
+                                <span class="hidden ml-1" data-region="section-total-count-container">
+                                    (<span data-region="section-total-count"></span>)
+                                </span>
+                                <span class="hidden ml-2" data-region="loading-icon-container">
+                                    <span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+                                </span>
+                                <span class="hidden badge badge-pill badge-primary ml-auto bg-primary" data-region="section-unread-count">
+                                    
+                                </span>
+                            </button>
+                        </div>
+                                            <div
+                        class=" accordion-body collapse border-bottom "
+                        style="overflow-y: auto"
+                        aria-live="polite"
+                        data-region="lazy-load-list"
+                        data-user-id="1015"
+                                    id="view-overview-favourites-target"
+            aria-labelledby="view-overview-favourites-toggle"
+            data-parent="#message-drawer-view-overview-container"
+
+                    >
+                        <div class="onepix">
+                        </div>
+                        <div class="hidden text-center p-2" data-region="empty-message-container">
+                            <p class="text-muted mt-2">
+                                        <p class="text-muted mt-2">Aucun message favori</p>
+
+                            </p>
+                        </div>
+                        <div class="hidden list-group" data-region="content-container">
+                            
+                        </div>
+                        <div class="list-group" data-region="placeholder-container">
+                                    <div class="text-center py-2"><span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+</div>
+
+                        </div>
+                        <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                            <span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div
+                        class="accordion-group section border-0 "
+                        data-region="view-overview-group-messages"
+                    >
+                        <div id="view-overview-group-messages-toggle" class="accordion-heading" data-region="toggle">
+                            <button
+                                class="btn btn-link w-100 text-left p-2 m-0 d-flex align-items-center overview-section-toggle collapsed"
+                                data-toggle="collapse"
+                                data-parent="#message-drawer-view-overview-container"
+                                data-target="#view-overview-group-messages-target"
+                                aria-expanded="false"
+                                aria-controls="view-overview-group-messages-target"
+                            >
+                                <span class="collapsed-icon-container">
+                                    <img class="icon " alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/t/collapsed" />
+                                </span>
+                                <span class="expanded-icon-container">
+                                    <img class="icon " alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/t/expanded" />
+                                </span>
+                                <strong>Messages de groupe</strong>
+                                <span class="hidden ml-1" data-region="section-total-count-container">
+                                    (<span data-region="section-total-count"></span>)
+                                </span>
+                                <span class="hidden ml-2" data-region="loading-icon-container">
+                                    <span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+                                </span>
+                                <span class="hidden badge badge-pill badge-primary ml-auto bg-primary" data-region="section-unread-count">
+                                    
+                                </span>
+                            </button>
+                        </div>
+                                            <div
+                        class=" accordion-body collapse border-bottom "
+                        style="overflow-y: auto"
+                        aria-live="polite"
+                        data-region="lazy-load-list"
+                        data-user-id="1015"
+                                    id="view-overview-group-messages-target"
+            aria-labelledby="view-overview-group-messages-toggle"
+            data-parent="#message-drawer-view-overview-container"
+
+                    >
+                        <div class="onepix">
+                        </div>
+                        <div class="hidden text-center p-2" data-region="empty-message-container">
+                            <p class="text-muted mt-2">
+                                        <p class="text-muted mt-2">Aucun message de groupe</p>
+
+                            </p>
+                        </div>
+                        <div class="hidden list-group" data-region="content-container">
+                            
+                        </div>
+                        <div class="list-group" data-region="placeholder-container">
+                                    <div class="text-center py-2"><span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+</div>
+
+                        </div>
+                        <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                            <span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div
+                        class="accordion-group section border-0 "
+                        data-region="view-overview-messages"
+                    >
+                        <div id="view-overview-messages-toggle" class="accordion-heading" data-region="toggle">
+                            <button
+                                class="btn btn-link w-100 text-left p-2 m-0 d-flex align-items-center overview-section-toggle collapsed"
+                                data-toggle="collapse"
+                                data-parent="#message-drawer-view-overview-container"
+                                data-target="#view-overview-messages-target"
+                                aria-expanded="false"
+                                aria-controls="view-overview-messages-target"
+                            >
+                                <span class="collapsed-icon-container">
+                                    <img class="icon " alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/t/collapsed" />
+                                </span>
+                                <span class="expanded-icon-container">
+                                    <img class="icon " alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/t/expanded" />
+                                </span>
+                                <strong>Messages personnels</strong>
+                                <span class="hidden ml-1" data-region="section-total-count-container">
+                                    (<span data-region="section-total-count"></span>)
+                                </span>
+                                <span class="hidden ml-2" data-region="loading-icon-container">
+                                    <span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+                                </span>
+                                <span class="hidden badge badge-pill badge-primary ml-auto bg-primary" data-region="section-unread-count">
+                                    
+                                </span>
+                            </button>
+                        </div>
+                                            <div
+                        class=" accordion-body collapse border-bottom "
+                        style="overflow-y: auto"
+                        aria-live="polite"
+                        data-region="lazy-load-list"
+                        data-user-id="1015"
+                                    id="view-overview-messages-target"
+            aria-labelledby="view-overview-messages-toggle"
+            data-parent="#message-drawer-view-overview-container"
+
+                    >
+                        <div class="onepix">
+                        </div>
+                        <div class="hidden text-center p-2" data-region="empty-message-container">
+                            <p class="text-muted mt-2">
+                                        <p class="text-muted mt-2">Aucun message</p>
+
+                            </p>
+                        </div>
+                        <div class="hidden list-group" data-region="content-container">
+                            
+                        </div>
+                        <div class="list-group" data-region="placeholder-container">
+                                    <div class="text-center py-2"><span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+</div>
+
+                        </div>
+                        <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                            <span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+        
+        <div
+            data-region="view-search"
+            aria-hidden="true"
+            class="h-100 hidden"
+            data-user-id="1015"
+            data-users-offset="0"
+            data-messages-offset="0"
+            style="overflow-y: auto"
+        >
+            <div class="hidden" data-region="search-results-container" style="overflow-y: auto">
+                
+                <div class="d-flex flex-column">
+                    <div class="mb-3 bg-white">
+                        <div data-region="contacts-container"  class="pt-2">
+                            <h4 class="h6 px-2">Contacts</h4>
+                            <div class="list-group" data-region="list"></div>
+                            <p class="hidden px-2" data-region="no-results-container">
+                                Aucun contact trouvé
+                            </p>
+                        </div>
+                        <div data-region="non-contacts-container" class="pt-2 border-top">
+                            <h4 class="h6 px-2">Non contact</h4>
+                            <div class="list-group" data-region="list"></div>
+                            <p class="hidden px-2" data-region="no-results-container">
+                                Aucun non contact trouvé
+                            </p>
+                        </div>
+                        <div class="text-right">
+                            <button class="btn btn-link text-primary" data-action="load-more-users">
+                                <span data-region="button-text">Charger plus</span>
+                                <span data-region="loading-icon-container" class="hidden"><span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-white">
+                        <div data-region="messages-container">
+                            <h4 class="h6 px-2 pt-2">Messages personnels</h4>
+                            <div class="list-group" data-region="list"></div>
+                            <p class="hidden px-2" data-region="no-results-container">
+                                Aucun message trouvé
+                            </p>
+                        </div>
+                        <div class="text-right">
+                            <button class="btn btn-link text-primary" data-action="load-more-messages">
+                                <span data-region="button-text">Charger plus</span>
+                                <span data-region="loading-icon-container" class="hidden"><span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>            </div>
+            <div class="hidden" data-region="loading-placeholder">
+                <div class="text-center pt-3 icon-size-4"><span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+</div>
+            </div>
+            <div class="p-2" data-region="empty-message-container">
+                <p>Rechercher des personnes et des messages</p>
+            </div>
+        </div>        
+        <div class="h-100 hidden bg-white" aria-hidden="true" data-region="view-settings">
+            <div class="hidden" data-region="content-container">
+                
+                <div data-region="settings" class="p-3">
+                    <h3 class="h6 font-weight-bold">Confidentialité</h3>
+                    <p>Vous pouvez choisir qui peut vous envoyer un message personnel</p>
+                    <div data-preference="blocknoncontacts" class="mb-3">
+                            <div class="custom-control custom-radio mb-2">
+                                <input
+                                    type="radio"
+                                    name="message_blocknoncontacts"
+                                    class="custom-control-input"
+                                    id="block-noncontacts-622ef9e1d7d31622ef9e1b816343-1"
+                                    value="1"
+                                >
+                                <label class="custom-control-label ml-2" for="block-noncontacts-622ef9e1d7d31622ef9e1b816343-1">
+                                    Mes contacts seulement
+                                </label>
+                            </div>
+                            <div class="custom-control custom-radio mb-2">
+                                <input
+                                    type="radio"
+                                    name="message_blocknoncontacts"
+                                    class="custom-control-input"
+                                    id="block-noncontacts-622ef9e1d7d31622ef9e1b816343-0"
+                                    value="0"
+                                >
+                                <label class="custom-control-label ml-2" for="block-noncontacts-622ef9e1d7d31622ef9e1b816343-0">
+                                    Mes contacts et tout le monde dans mes cours
+                                </label>
+                            </div>
+                    </div>
+                
+                    <div class="hidden" data-region="notification-preference-container">
+                        <h3 class="mb-2 mt-4 h6 font-weight-bold">Préférences de notification</h3>
+                    </div>
+                
+                    <h3 class="mb-2 mt-4 h6 font-weight-bold">Général</h3>
+                    <div data-preference="entertosend">
+                        <span class="switch">
+                            <input type="checkbox"
+                                id="enter-to-send-622ef9e1d7d31622ef9e1b816343"
+                                
+                            >
+                            <label for="enter-to-send-622ef9e1d7d31622ef9e1b816343">
+                                Taper entrée pour envoyer
+                            </label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div data-region="placeholder-container">
+                
+                <div class="d-flex flex-column p-3">
+                    <div class="w-25 bg-pulse-grey h6" style="height: 18px"></div>
+                    <div class="w-75 bg-pulse-grey mb-4" style="height: 18px"></div>
+                    <div class="mb-3">
+                        <div class="w-100 d-flex mb-3">
+                            <div class="bg-pulse-grey rounded-circle" style="width: 18px; height: 18px"></div>
+                            <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                        </div>
+                        <div class="w-100 d-flex mb-3">
+                            <div class="bg-pulse-grey rounded-circle" style="width: 18px; height: 18px"></div>
+                            <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                        </div>
+                        <div class="w-100 d-flex mb-3">
+                            <div class="bg-pulse-grey rounded-circle" style="width: 18px; height: 18px"></div>
+                            <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                        </div>
+                    </div>
+                    <div class="w-50 bg-pulse-grey h6 mb-3 mt-2" style="height: 18px"></div>
+                    <div class="mb-4">
+                        <div class="w-100 d-flex mb-2 align-items-center">
+                            <div class="bg-pulse-grey w-25" style="width: 18px; height: 27px"></div>
+                            <div class="bg-pulse-grey w-25 ml-2" style="height: 18px"></div>
+                        </div>
+                        <div class="w-100 d-flex mb-2 align-items-center">
+                            <div class="bg-pulse-grey w-25" style="width: 18px; height: 27px"></div>
+                            <div class="bg-pulse-grey w-25 ml-2" style="height: 18px"></div>
+                        </div>
+                    </div>
+                    <div class="w-25 bg-pulse-grey h6 mb-3 mt-2" style="height: 18px"></div>
+                    <div class="mb-3">
+                        <div class="w-100 d-flex mb-2 align-items-center">
+                            <div class="bg-pulse-grey w-25" style="width: 18px; height: 27px"></div>
+                            <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                        </div>
+                    </div>
+                </div>            </div>
+        </div>    </div>
+    <div class="footer-container position-relative" data-region="footer-container">
+        
+        <div
+            class="hidden border-top bg-white position-relative"
+            aria-hidden="true"
+            data-region="view-conversation"
+            data-enter-to-send="0"
+        >
+            <div class="hidden p-2" data-region="content-messages-footer-container">
+                
+                <div class="d-flex mt-1">
+                    <textarea
+                        data-region="send-message-txt"
+                        class="form-control bg-light m-0 flex-grow"
+                        rows="3"
+                        data-auto-rows
+                        data-min-rows="3"
+                        data-max-rows="5"
+                        role="textbox"
+                        aria-label="Écrire un message"
+                        placeholder="Écrire un message"
+                        style="resize: none"
+                    ></textarea>
+                    <button
+                        class="btn btn-link btn-icon icon-size-3 ml-1 mt-auto"
+                        aria-label="Envoyer message personnel"
+                        data-action="send-message"
+                    >
+                        <span data-region="send-icon-container"><img class="icon " alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/sendmessage" /></span>
+                        <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hidden p-2" data-region="content-messages-footer-edit-mode-container">
+                
+                <div class="d-flex p-3">
+                    <button
+                        class="btn btn-link btn-icon my-1 icon-size-4 ml-auto"
+                        data-action="delete-selected-messages"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Supprimer les messages sélectionnés"
+                    >
+                        <span data-region="icon-container"><img class="icon " alt="" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/trash" /></span>
+                        <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+</span>
+                        <span class="sr-only">Supprimer les messages sélectionnés</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hidden bg-secondary p-3" data-region="content-messages-footer-require-contact-container">
+                
+                <div class="p-3 bg-white">
+                    <p data-region="title"></p>
+                    <p class="text-muted" data-region="text"></p>
+                    <button type="button" class="btn btn-primary btn-block" data-action="request-add-contact">
+                        <span data-region="dialogue-button-text">Envoyer une demande de cotnact</span>
+                        <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hidden bg-secondary p-3" data-region="content-messages-footer-require-unblock-container">
+                
+                <div class="p-3 bg-white">
+                    <p class="text-muted" data-region="text">Vous avez bloqué cet utilisateur antérieurement</p>
+                    <button type="button" class="btn btn-primary btn-block" data-action="request-unblock">
+                        <span data-region="dialogue-button-text">Débloquer l'utilisateur</span>
+                        <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><img class="icon " alt="Chargement" title="Chargement" src="http://m.inpt.ac.ma/theme/image.php/clean/core/1614806513/i/loading" /></span>
+</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hidden bg-secondary p-3" data-region="content-messages-footer-unable-to-message">
+                
+                <div class="p-3 bg-white">
+                    <p class="text-muted" data-region="text">Vous ne pouvez pas envoyer un message à cet utilisateur</p>
+                </div>
+            </div>
+            <div class="p-2" data-region="placeholder-container">
+                <div class="d-flex">
+                    <div class="bg-pulse-grey w-100" style="height: 80px"></div>
+                    <div class="mx-2 mb-2 align-self-end bg-pulse-grey" style="height: 20px; width: 20px"></div>
+                </div>            </div>
+            <div
+                class="hidden position-absolute"
+                data-region="confirm-dialogue-container"
+                style="top: -1px; bottom: 0; right: 0; left: 0; background: rgba(0,0,0,0.3);"
+            ></div>
+        </div>    </div>
+</div>
+    <footer id="page-footer">
+        <div id="course-footer"></div>
+        <p class="helplink"></p>
+        <div class="logininfo">Connecté sous le nom « <a href="http://m.inpt.ac.ma/user/profile.php?id=1015" title="Consulter le profil">AZHARI FERDAOUS</a> » (<a href="http://m.inpt.ac.ma/login/logout.php?sesskey=w2JLam7cqp">Déconnexion</a>)</div><div class="homelink"><a href="http://m.inpt.ac.ma/">Accueil</a></div><div class="tool_dataprivacy"><a href="http://m.inpt.ac.ma/admin/tool/dataprivacy/summary.php">Résumé de conservation de données</a></div><a href="https://download.moodle.org/mobile?version=2018120301&amp;lang=fr&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile">Obtenir l'app mobile</a>    </footer>
+
+    <script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'http://m.inpt.ac.ma/lib/requirejs.php/1614806513/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'http://m.inpt.ac.ma/lib/javascript.php/1614806513/lib/jquery/jquery-3.2.1.min',
+        jqueryui: 'http://m.inpt.ac.ma/lib/javascript.php/1614806513/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'http://m.inpt.ac.ma/lib/javascript.php/1614806513/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="http://m.inpt.ac.ma/lib/javascript.php/1614806513/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "http://m.inpt.ac.ma/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("fr",{
+ "Audio Player": "Lecteur audio",
+ "Video Player": "Lecteur vidéo",
+ "Play": "Lecture",
+ "Pause": "Pause",
+ "Replay": "Revoir",
+ "Current Time": "Temps actuel",
+ "Duration Time": "Durée",
+ "Remaining Time": "Temps restant",
+ "Stream Type": "Type de flux",
+ "LIVE": "EN DIRECT",
+ "Loaded": "Chargé",
+ "Progress": "Progression",
+ "Progress Bar": "Barre de progression",
+ "progress bar timing: currentTime={1} duration={2}": "{1} de {2}",
+ "Fullscreen": "Plein écran",
+ "Non-Fullscreen": "Fenêtré",
+ "Mute": "Sourdine",
+ "Unmute": "Son activé",
+ "Playback Rate": "Vitesse de lecture",
+ "Subtitles": "Sous-titres",
+ "subtitles off": "Sous-titres désactivés",
+ "Captions": "Sous-titres transcrits",
+ "captions off": "Sous-titres transcrits désactivés",
+ "Chapters": "Chapitres",
+ "Descriptions": "Descriptions",
+ "descriptions off": "descriptions désactivées",
+ "Audio Track": "Piste audio",
+ "Volume Level": "Niveau de volume",
+ "You aborted the media playback": "Vous avez interrompu la lecture de la vidéo.",
+ "A network error caused the media download to fail part-way.": "Une erreur de réseau a interrompu le téléchargement de la vidéo.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "Cette vidéo n'a pas pu être chargée, soit parce que le serveur ou le réseau a échoué ou parce que le format n'est pas reconnu.",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "La lecture de la vidéo a été interrompue à cause d'un problème de corruption ou parce que la vidéo utilise des fonctionnalités non prises en charge par votre navigateur.",
+ "No compatible source was found for this media.": "Aucune source compatible n'a été trouvée pour cette vidéo.",
+ "The media is encrypted and we do not have the keys to decrypt it.": "Le média est chiffré et nous n'avons pas les clés pour le déchiffrer.",
+ "Play Video": "Lire la vidéo",
+ "Close": "Fermer",
+ "Close Modal Dialog": "Fermer la boîte de dialogue modale",
+ "Modal Window": "Fenêtre modale",
+ "This is a modal window": "Ceci est une fenêtre modale",
+ "This modal can be closed by pressing the Escape key or activating the close button.": "Ce modal peut être fermé en appuyant sur la touche Échap ou activer le bouton de fermeture.",
+ ", opens captions settings dialog": ", ouvrir les paramètres des sous-titres transcrits",
+ ", opens subtitles settings dialog": ", ouvrir les paramètres des sous-titres",
+ ", opens descriptions settings dialog": ", ouvrir les paramètres des descriptions",
+ ", selected": ", sélectionné",
+ "captions settings": "Paramètres des sous-titres transcrits",
+ "subtitles settings": "Paramètres des sous-titres",
+ "descriptions settings": "Paramètres des descriptions",
+ "Text": "Texte",
+ "White": "Blanc",
+ "Black": "Noir",
+ "Red": "Rouge",
+ "Green": "Vert",
+ "Blue": "Bleu",
+ "Yellow": "Jaune",
+ "Magenta": "Magenta",
+ "Cyan": "Cyan",
+ "Background": "Arrière-plan",
+ "Window": "Fenêtre",
+ "Transparent": "Transparent",
+ "Semi-Transparent": "Semi-transparent",
+ "Opaque": "Opaque",
+ "Font Size": "Taille des caractères",
+ "Text Edge Style": "Style des contours du texte",
+ "None": "Aucun",
+ "Raised": "Élevé",
+ "Depressed": "Enfoncé",
+ "Uniform": "Uniforme",
+ "Dropshadow": "Ombre portée",
+ "Font Family": "Famille de polices",
+ "Proportional Sans-Serif": "Polices à chasse variable sans empattement (Proportional Sans-Serif)",
+ "Monospace Sans-Serif": "Polices à chasse fixe sans empattement (Monospace Sans-Serif)",
+ "Proportional Serif": "Polices à chasse variable avec empattement (Proportional Serif)",
+ "Monospace Serif": "Polices à chasse fixe avec empattement (Monospace Serif)",
+ "Casual": "Manuscrite",
+ "Script": "Scripte",
+ "Small Caps": "Petites capitales",
+ "Reset": "Réinitialiser",
+ "restore all settings to the default values": "Restaurer tous les paramètres aux valeurs par défaut",
+ "Done": "Terminé",
+ "Caption Settings Dialog": "Boîte de dialogue des paramètres des sous-titres transcrits",
+ "Beginning of dialog window. Escape will cancel and close the window.": "Début de la fenêtre de dialogue. La touche d'échappement annulera et fermera la fenêtre.",
+ "End of dialog window.": "Fin de la fenêtre de dialogue."
+});
+
+    });
+});;
+require(["block_navigation/navblock"], function(amd) { amd.init("38"); });;
+require(["tool_usertours/usertours"], function(amd) { amd.init("1", false, 34598); });;
+require(["block_settings/settingsblock"], function(amd) { amd.init("39", null); });;
+
+require(['core/yui'], function(Y) {
+    M.util.init_skiplink(Y);
+});
+;
+
+require(['jquery'], function($) {
+    $('#single_select622ef9e1b816329').change(function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f622ef9e1b816328').submit();
+        }
+    });
+});
+;
+
+require(['core/yui'], function(Y) {
+    Y.use('moodle-core-actionmenu', function() {
+        M.core.actionmenu.init();
+    });
+});
+;
+
+require(
+[
+    'jquery',
+    'core_message/message_popover'
+],
+function(
+    $,
+    Popover
+) {
+    var toggle = $('#message-drawer-toggle-622ef9e1d458e622ef9e1b816338');
+    Popover.init(toggle);
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery'], function($) {
+    $('#single_select622ef9e1b816341').change(function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f622ef9e1b816340').submit();
+        }
+    });
+});
+;
+
+require(
+[
+    'jquery',
+    'core_message/message_drawer',
+    'core_message/message_popover'
+],
+function(
+    $,
+    MessageDrawer,
+    Popover
+) {
+
+    var root = $('#message-drawer-622ef9e1d7d31622ef9e1b816343');
+    MessageDrawer.init(root);
+
+    var toggle = $('#message-drawer-close-622ef9e1d7d31622ef9e1b816343');
+    Popover.init(toggle);
+});
+;
+require(["core/notification"], function(amd) { amd.init(34598, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });;
+require(["core/page_global"], function(amd) { amd.init(); });
+});
+//]]>
+</script>
+<script type="text/javascript" src="http://m.inpt.ac.ma/theme/javascript.php/clean/1614806513/footer"></script>
+<script type="text/javascript" src="http://m.inpt.ac.ma/lib/javascript.php/1614806513/course/format/topics/format.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Modifi\u00e9 le","name":"Nom","error":"Erreur","info":"Information","yes":"Oui","no":"Non","viewallcourses":"Afficher tous les cours","cancel":"Annuler","morehelp":"Plus d'aide","loadinghelp":"Chargement...","confirm":"Confirmer","areyousure":"En \u00eates-vous bien s\u00fbr\u00a0?","closebuttontitle":"Fermer","unknownerror":"Erreur inconnue"},"repository":{"type":"Type","size":"Taille","invalidjson":"Cha\u00eene JSON non valide","nofilesattached":"Aucun fichier joint","filepicker":"S\u00e9lecteur de fichiers","logout":"D\u00e9connexion","nofilesavailable":"Aucun fichier disponible","norepositoriesavailable":"D\u00e9sol\u00e9, aucun de vos d\u00e9p\u00f4ts actuels ne peut retourner de fichiers dans le format requis.","fileexistsdialogheader":"Le fichier existe","fileexistsdialog_editor":"Un fichier de ce nom a d\u00e9j\u00e0 \u00e9t\u00e9 joint au texte que vous modifiez.","fileexistsdialog_filemanager":"Un fichier de ce nom a d\u00e9j\u00e0 \u00e9t\u00e9 joint","renameto":"Renommer \u00e0 {$a}","referencesexist":"Ce fichier est utilis\u00e9 comme source par {$a} alias.","select":"S\u00e9lectionnez"},"admin":{"confirmdeletecomments":"Voulez-vous vraiment supprimer des commentaires\u00a0?","confirmation":"Confirmation"},"block":{"addtodock":"D\u00e9placer vers le dock","undockitem":"Retirer cet \u00e9l\u00e9ment du dock","dockblock":"Mettre le bloc {$a} dans le dock","undockblock":"\u00d4ter du dock le bloc {$a}","undockall":"Tout retirer du dock","hidedockpanel":"Cacher le panneau du dock","hidepanel":"Cacher le dock"},"langconfig":{"thisdirectionvertical":"btt"},"completion":{"completion-alt-manual-y":"Termin\u00e9\u00a0: {$a}. S\u00e9lectionner pour marquer comme non termin\u00e9.","completion-alt-manual-n":"Non termin\u00e9\u00a0: {$a}. S\u00e9lectionner pour marquer comme termin\u00e9."}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {Y.use("moodle-core-dock-loader",function() {M.core.dock.loader.initLoader();
+});
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"fr"});
+});
+ M.util.js_pending('random622ef9e1b81631'); Y.use('core_completion', function(Y) { M.core_completion.init(Y);  M.util.js_complete('random622ef9e1b81631'); });
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+M.util.init_block_hider(Y, {"id":"inst38","title":"Navigation","preference":"block38hidden","tooltipVisible":"Cacher bloc Navigation","tooltipHidden":"Afficher bloc Navigation"});
+ M.util.js_pending('random622ef9e1b816344'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random622ef9e1b816344'); });
+})();
+//]]>
+</script>
+
+</div>
+</body>
+</html>
+�L6lo0           b/�D=`       S    O^partitionKey=%28http%2Cinpt.ac.ma%29,:http://m.inpt.ac.ma/course/view.php?id=1254 strongly-framed 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Mon, 14 Mar 2022 08:16:33 GMT
+Server: Apache/2.4.6 (CentOS) PHP/7.0.32
+X-Powered-By: PHP/7.0.32
+Expires: Mon, 20 Aug 1969 09:23:00 GMT
+Pragma: no-cache
+Content-Language: fr
+Content-Script-Type: text/javascript
+Content-Style-Type: text/css
+X-UA-Compatible: IE=edge
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0, no-transform
+Last-Modified: Mon, 14 Mar 2022 08:16:33 GMT
+Accept-Ranges: none
+X-Frame-Options: sameorigin
+Content-Type: text/html; charset=utf-8
+ original-response-headers Date: Mon, 14 Mar 2022 08:16:33 GMT
+Server: Apache/2.4.6 (CentOS) PHP/7.0.32
+X-Powered-By: PHP/7.0.32
+Expires: Mon, 20 Aug 1969 09:23:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Language: fr
+Content-Script-Type: text/javascript
+Content-Style-Type: text/css
+X-UA-Compatible: IE=edge
+Cache-Control: post-check=0, pre-check=0, no-transform
+Last-Modified: Mon, 14 Mar 2022 08:16:33 GMT
+Accept-Ranges: none
+X-Frame-Options: sameorigin
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+ ctid 1 uncompressed-len 0 net-response-time-onstart 699 net-response-time-onstop 865  IN

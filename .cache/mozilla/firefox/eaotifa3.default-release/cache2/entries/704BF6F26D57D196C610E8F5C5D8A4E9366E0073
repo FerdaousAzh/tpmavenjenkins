@@ -1,0 +1,814 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!---->
+<title>[RESOLU]problème mise à jour / Autres logiciels et problèmes généraux / Forum Ubuntu-fr.org</title>
+      
+    <link rel="shortcut icon" href="//www-static.ubuntu-fr.org/theme2010/images/commun/ubuntu/icone.png"/>
+          <link rel="stylesheet" media="screen" type="text/css" title="Design Ubuntu" href="//www-static.ubuntu-fr.org/theme2010/css/forum.css" />
+    <link rel="stylesheet" media="screen" type="text/css" title="Design Ubuntu" href="//www-static.ubuntu-fr.org/theme2010/css/forum-ubuntu.css" />
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="style/Ubuntu.css" />
+    <script type="text/javascript" src="//www-static.ubuntu-fr.org/theme2010/js/common.js"></script> 
+    <script type="text/javascript">
+    var menu_hidden=0;
+    </script>
+    <script type="text/javascript" src="//www-static.ubuntu-fr.org/theme2010/js/menu.js"></script>
+  
+<!--[if lte IE 6]><script type="text/javascript" src="style/imports/minmax.js"></script><![endif]-->
+<link rel="canonical" href="viewtopic.php?id=2029150" title="Page 1" />
+</head>
+
+<body>
+  <div id="accessibar">
+    <a href="#main" tabindex="1">Contenu</a> | <a href="#qsearch__in" tabindex="2">Rechercher</a> | <a href="#navigation" tabindex="3">Menus</a>
+  </div>
+  <div id="punviewtopic">
+    <div id="page">
+
+      <div id="header">
+        <div id="logo">
+          <h1>Ubuntu-fr</h1>
+          <a href="http://www.ubuntu-fr.org" title="Accueil">Communauté francophone d'utilisateurs d'Ubuntu</a>
+        </div>
+
+        <form action="search_ubuntufr.php" id="search">
+          <fieldset>
+            <input type="text" value="Recherche rapide...." id="qsearch__in" accesskey="f" name="q" title="[F]" size="34" />
+            <select name="tsearch">
+              <option value="wiki">Documentation</option>
+              <option  value="forum" selected="selected">Forum</option>
+              <option  value="planet" >Planet</option>
+            </select>
+            <input type="submit" value="ok" class="button" title="Chercher" />
+          </fieldset>
+        </form>
+
+        <div id="brdwelcome" class="inbox">
+			<form action="login.php?action=in" accept-charset="utf-8" id="login_top" method="post"><fieldset>
+  <input type="hidden" name="form_sent" value="1" />
+<input type="hidden" name="redirect_url" value="//forum.ubuntu-fr.org/viewtopic.php?id=2029150" />
+<input type="text" placeholder="Identifiant" required="required" title="Entrez votre identifiant" name="req_username" size="9" /><input type="password" placeholder="Mot de passe" required="required" title="Entrez votre mot de passe" name="req_password" size="9" /><input type="submit" value="connexion" id="connect" /> / <a href="register.php">inscription</a></fieldset></form>
+			<div class="clearer"></div>
+		</div>
+ 
+        <div class="clearer"></div>
+      </div>
+
+      <div id="navigation">
+        <ul>
+          <li class="menu"><a id="menu-accueil" class="title" href="http://www.ubuntu-fr.org"><span>Accueil</span></a></li>
+          <li class="menu"><a id="menu-doc" class="title" href="http://doc.ubuntu-fr.org" title="Documentation Ubuntu francophone"><span>Documentation</span></a></li>
+          <li class="menu" id="active" >
+            <a id="menu-forum" class="title" href="index.php" title="Index du forum"><span>Forum</span></a>
+            <ul>
+              <li class="cat">
+                <h2>Navigation</h2>
+                <div class="inbox">
+			<ul>
+				<li id="navrules"><a href="misc.php?action=rules" title="Charte du Forum Ubuntu-fr">Règles</a></li>
+				<li id="navregister"><a href="register.php">Inscription</a></li>
+				<li id="navlogin"><a href="login.php">Identification</a></li>
+			</ul>
+		</div>
+              </li>
+              
+		<li class="cat"><h2>Liens de recherche</h2>
+		<div id="brdmenu" class="inbox">
+			<ul>
+				<li><a href="search.php?action=show_24h" title="300 dernières discussions actives">Messages récents</a></li>
+				<li><a href="search.php?action=show_unanswered" title="300 dernières discussions sans réponse">Discussions sans réponse</a></li>
+			</ul>
+		</div></li>
+	
+            </ul>
+          </li>
+          <li class="menu"><a id="menu-planet" class="title" href="http://planet.ubuntu-fr.org"><span>Planet</span></a></li>
+        </ul>
+        <div class="clearer"></div>
+      </div>
+    
+      <div id="wrapper">
+        <div id="announce" class="block">
+	<div class="hd"><h2><span>Annonce</span></h2></div>
+	<div class="box">
+		<div id="announce-block" class="inbox">
+			<div class="usercontent"><p><strong>DVD, clés USB et t-shirts Ubuntu-fr</strong> disponibles sur la boutique <a href='https://enventelibre.org/41-ubuntu-fr'>En Vente Libre</a></p><p>Si vous avez des soucis pour rester connecté, déconnectez-vous puis reconnectez-vous depuis <a href='https://forum.ubuntu-fr.org/login.php'>ce lien</a> en cochant la case <br/>Me connecter automatiquement lors de mes prochaines visites.</p><p><a href='https://doc.ubuntu-fr.org/groupes/ubuntu-fr-forum'>À propos de l'équipe du forum.</a></p></div>
+		</div>
+	</div>
+</div>
+        <div id="main">
+          <div id="hidemenu" title="Masquer le menu"></div><!--
+	<div id="hidemenu"><a accesskey="z" title="Masquer le menu - AccessKey Z" href="javascript:switchMenuVisible()"><span>&nbsp;</span></a></div>-->
+          <div class="linkst">
+	<div class="inbox crumbsplus">
+		<ul class="crumbs">
+				<li><a href="http://www.ubuntu-fr.org" name="Accueil">Accueil</a></li>
+				<li><span>»&#160;</span><a href="index.php">Forum</a></li>
+				<li><span>»&#160;</span><a href="viewforum.php?id=18">Autres logiciels et problèmes généraux</a></li>
+				<li><span>»&#160;</span><strong><a href="viewtopic.php?id=2029150">[RESOLU]problème mise à jour</a></strong></li>
+		</ul>
+		<div class="pagepost">
+			<p class="pagelink conl"><span class="pages-label">Pages&#160;: </span><strong class="item1">1</strong></p>
+		</div>
+		<div class="clearer"></div>
+	</div>
+</div>
+
+<div id="p21953483" class="blockpost rowodd firstpost blockpost1">
+	<h2><span><span class="conr">#1</span> <a href="viewtopic.php?pid=21953483#p21953483">Le 09/08/2018, à 14:43</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>izzy94</strong></dt>
+											</dl>
+				</div>
+				<div class="postright">
+					<h3>[RESOLU]problème mise à jour</h3>
+					<div class="postmsg">
+						<p>bonjour, </p><p>je tiens à préciser que je suis un total novice dans les système d&#039;exploitation Linux, j&#039;ai un problème lorsque je fais la commende &quot;sudo apt-get update&quot; dans le terminal j&#039;ai des messages d&#039;erreur. voila le résultat de ma requette sur le terminal : </p><div class="codebox"><pre><code>izzy@izzy-Swift-SF314-51:~$ sudo apt-get update
+[sudo] Mot de passe de izzy : 
+Ign:1 http://ppa.launchpad.net/crebs/ppa/ubuntu bionic InRelease
+Atteint:2 http://security.ubuntu.com/ubuntu bionic-security InRelease 
+Atteint:3 http://be.archive.ubuntu.com/ubuntu bionic InRelease                 
+Atteint:4 http://be.archive.ubuntu.com/ubuntu bionic-updates InRelease         
+Atteint:5 http://ppa.launchpad.net/webupd8team/java/ubuntu bionic InRelease    
+Atteint:6 http://be.archive.ubuntu.com/ubuntu bionic-backports InRelease       
+Err:7 http://ppa.launchpad.net/crebs/ppa/ubuntu bionic Release 
+  404  Not Found [IP : 91.189.95.83 80]
+Lecture des listes de paquets... Fait                          
+E: Le dépôt http://ppa.launchpad.net/crebs/ppa/ubuntu bionic Release n&#039;a pas de fichier Release.
+N: Les mises à jour depuis un tel dépôt ne peuvent s&#039;effectuer de manière sécurisée, et sont donc désactivées par défaut
+N: Voir les pages de manuel d&#039;apt-secure(8) pour la création des dépôts et les détails de configuration d&#039;un utilisateur.
+izzy@izzy-Swift-SF314-51:~$ </code></pre></div><p>je ne comprends pas du tout comment résoudre ce problème, après plusieurs recherche sur le net rien trouvé qui puisse me guidé dans mon soucis. <br />est-ce que je devrais pas plutot réinstallé complètement mon OS ?</p>
+						<p class="postedit"><em>Dernière modification par izzy94 (Le 09/08/2018, à 16:14)</em></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Hors ligne</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p21953484" class="blockpost roweven">
+	<h2><span><span class="conr">#2</span> <a href="viewtopic.php?pid=21953484#p21953484">Le 09/08/2018, à 14:50</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>NicoApi73</strong></dt>
+											</dl>
+				</div>
+				<div class="postright">
+					<h3>Re&#160;: [RESOLU]problème mise à jour</h3>
+					<div class="postmsg">
+						<p>Bonjour,</p><p>Non, c&#039;est un ppa qui pose problème. Attends le passage de quelqu&#039;un expérimenté sur le sujet avant de faire une quelconque modification de ton système.</p><p>Pour avancer, donne le retour de :</p><div class="codebox"><pre><code>cat /etc/apt/sources.list
+ls /etc/apt/sources.list.d -1</code></pre></div>
+						<p class="postedit"><em>Dernière modification par NicoApi73 (Le 09/08/2018, à 14:51)</em></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Hors ligne</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p21953487" class="blockpost rowodd">
+	<h2><span><span class="conr">#3</span> <a href="viewtopic.php?pid=21953487#p21953487">Le 09/08/2018, à 14:54</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>xubu1957</strong></dt>
+												<dd class="postavatar"><img src="http://forum.ubuntu-fr.org/img/avatars/1629531.png?m=1522935198" width="60" height="60" alt="" /></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re&#160;: [RESOLU]problème mise à jour</h3>
+					<div class="postmsg">
+						<p>Bonjour,</p><p>Vu :</p><div class="codebox"><pre><code>E: Le dépôt http://ppa.launchpad.net/crebs/ppa/ubuntu bionic Release n&#039;a pas de fichier Release.</code></pre></div><p>Ce PPA n&#039;existe pas en version 18.04 &gt; <a href="https://launchpad.net/~crebs/+archive/ubuntu/ppa/+packages" rel="nofollow">launchpad.net/~crebs/+archive/ubuntu/ppa/+packages</a></p><p>Il faut le désactiver dans &gt; <a href="https://doc.ubuntu-fr.org/depots#depot_partenaire_ou_depot_commercial" rel="nofollow">depot_partenaire_ou_depot_commercial</a></p>
+					</div>
+					<div class="postsignature postmsg"><hr /><p>Important : Pensez à passer vos sujets en [Résolu] lorsque ceux-ci le sont, au début du titre en cliquant sur <em>Modifier</em> sous le premier message, et un bref récapitulatif de la solution à la fin de celui-ci. Merci.</p><p>Xubuntu 20.04 LTS - Lenovo T410 -18.04.1 LTS Toshiba Satellite A300&#160; Membre de <a href="http://www.linux-azur.org/" rel="nofollow">Linux-Azur</a></p></div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><strong>En ligne</strong></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p21953507" class="blockpost roweven">
+	<h2><span><span class="conr">#4</span> <a href="viewtopic.php?pid=21953507#p21953507">Le 09/08/2018, à 16:02</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>izzy94</strong></dt>
+											</dl>
+				</div>
+				<div class="postright">
+					<h3>Re&#160;: [RESOLU]problème mise à jour</h3>
+					<div class="postmsg">
+						<p>@NicoApi73&#160; voila le résultat que j&#039;obtiens que je mes les requêtes que tu m&#039;as donné dans mon terminal</p><div class="codebox"><pre class="vscroll"><code>izzy@izzy-Swift-SF314-51:~$ cat /etc/apt/sources.list
+# deb cdrom:[Ubuntu 18.04.1 LTS _Bionic Beaver_ - Release amd64 (20180725)]/ bionic main restricted
+
+# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
+# newer versions of the distribution.
+deb http://be.archive.ubuntu.com/ubuntu/ bionic main restricted
+# deb-src http://be.archive.ubuntu.com/ubuntu/ bionic main restricted
+
+## Major bug fix updates produced after the final release of the
+## distribution.
+deb http://be.archive.ubuntu.com/ubuntu/ bionic-updates main restricted
+# deb-src http://be.archive.ubuntu.com/ubuntu/ bionic-updates main restricted
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
+## team. Also, please note that software in universe WILL NOT receive any
+## review or updates from the Ubuntu security team.
+deb http://be.archive.ubuntu.com/ubuntu/ bionic universe
+# deb-src http://be.archive.ubuntu.com/ubuntu/ bionic universe
+deb http://be.archive.ubuntu.com/ubuntu/ bionic-updates universe
+# deb-src http://be.archive.ubuntu.com/ubuntu/ bionic-updates universe
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu 
+## team, and may not be under a free licence. Please satisfy yourself as to 
+## your rights to use the software. Also, please note that software in 
+## multiverse WILL NOT receive any review or updates from the Ubuntu
+## security team.
+deb http://be.archive.ubuntu.com/ubuntu/ bionic multiverse
+# deb-src http://be.archive.ubuntu.com/ubuntu/ bionic multiverse
+deb http://be.archive.ubuntu.com/ubuntu/ bionic-updates multiverse
+# deb-src http://be.archive.ubuntu.com/ubuntu/ bionic-updates multiverse
+
+## N.B. software from this repository may not have been tested as
+## extensively as that contained in the main release, although it includes
+## newer versions of some applications which may provide useful features.
+## Also, please note that software in backports WILL NOT receive any review
+## or updates from the Ubuntu security team.
+deb http://be.archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse
+# deb-src http://be.archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse
+
+## Uncomment the following two lines to add software from Canonical&#039;s
+## &#039;partner&#039; repository.
+## This software is not part of Ubuntu, but is offered by Canonical and the
+## respective vendors as a service to Ubuntu users.
+# deb http://archive.canonical.com/ubuntu bionic partner
+# deb-src http://archive.canonical.com/ubuntu bionic partner
+
+deb http://security.ubuntu.com/ubuntu bionic-security main restricted
+# deb-src http://security.ubuntu.com/ubuntu bionic-security main restricted
+deb http://security.ubuntu.com/ubuntu bionic-security universe
+# deb-src http://security.ubuntu.com/ubuntu bionic-security universe
+deb http://security.ubuntu.com/ubuntu bionic-security multiverse
+# deb-src http://security.ubuntu.com/ubuntu bionic-security multiverse
+izzy@izzy-Swift-SF314-51:~$ ls /etc/apt/sources.list.d -1
+crebs-ubuntu-ppa-bionic.list
+crebs-ubuntu-ppa-bionic.list.save
+webupd8team-ubuntu-java-bionic.list
+webupd8team-ubuntu-java-bionic.list.save</code></pre></div><p>@xubu1957 j&#039;ai désactivé le logiciel qui posait problème et maintenant cela fonctionne quand je fais un sudo apt-get update plus de message d&#039;erreur </p><p>merci de votre aide</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Hors ligne</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p21953508" class="blockpost rowodd">
+	<h2><span><span class="conr">#5</span> <a href="viewtopic.php?pid=21953508#p21953508">Le 09/08/2018, à 16:05</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>xubu1957</strong></dt>
+												<dd class="postavatar"><img src="http://forum.ubuntu-fr.org/img/avatars/1629531.png?m=1522935198" width="60" height="60" alt="" /></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re&#160;: [RESOLU]problème mise à jour</h3>
+					<div class="postmsg">
+						<p>Pour éditer ta discussion et rajouter [Résolu] au début du titre, il faut utiliser le bouton <em>Modifier</em> au bas de ton premier message.</p><p>Merci <img src="http://forum.ubuntu-fr.org/img/smilies/wink.png" width="15" height="15" alt="wink" /></p>
+					</div>
+					<div class="postsignature postmsg"><hr /><p>Important : Pensez à passer vos sujets en [Résolu] lorsque ceux-ci le sont, au début du titre en cliquant sur <em>Modifier</em> sous le premier message, et un bref récapitulatif de la solution à la fin de celui-ci. Merci.</p><p>Xubuntu 20.04 LTS - Lenovo T410 -18.04.1 LTS Toshiba Satellite A300&#160; Membre de <a href="http://www.linux-azur.org/" rel="nofollow">Linux-Azur</a></p></div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><strong>En ligne</strong></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p21953513" class="blockpost roweven">
+	<h2><span><span class="conr">#6</span> <a href="viewtopic.php?pid=21953513#p21953513">Le 09/08/2018, à 16:16</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>NicoApi73</strong></dt>
+											</dl>
+				</div>
+				<div class="postright">
+					<h3>Re&#160;: [RESOLU]problème mise à jour</h3>
+					<div class="postmsg">
+						<p>Je ne sais pas analyser les ppa, ce serait bien que quelqu&#039;un d&#039;expérimenté commente :</p><div class="codebox"><pre><code>crebs-ubuntu-ppa-bionic.list
+crebs-ubuntu-ppa-bionic.list.save
+webupd8team-ubuntu-java-bionic.list
+webupd8team-ubuntu-java-bionic.list.save</code></pre></div><p>Celui qui posait problème (crebs) est maintenant desactivé, il reste donc webupd8team...</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Hors ligne</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p21953518" class="blockpost rowodd">
+	<h2><span><span class="conr">#7</span> <a href="viewtopic.php?pid=21953518#p21953518">Le 09/08/2018, à 16:23</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>xubu1957</strong></dt>
+												<dd class="postavatar"><img src="http://forum.ubuntu-fr.org/img/avatars/1629531.png?m=1522935198" width="60" height="60" alt="" /></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re&#160;: [RESOLU]problème mise à jour</h3>
+					<div class="postmsg">
+						<p>@NicoApi73 </p><p>Tu as la méthode de <strong>nam1962</strong> :</p><div class="quotebox"><cite>xubu a écrit&#160;:</cite><blockquote><div><p>En appliquant la Doc &gt; <a href="https://doc.ubuntu-fr.org/ppa#en_desinstallant_les_paquets_de_ce_ppa" rel="nofollow">en_desinstallant_les_paquets_de_ce_ppa</a></p><p>Tente :</p><div class="codebox"><pre><code>sudo apt-get install ppa-purge</code></pre></div><p>puis :</p><div class="codebox"><pre><code>sudo ppa-purge ppa:freetuxtv/freetuxtv-dev</code></pre></div><p>Et cette explication pour examiner les PPA :</p><div class="quotebox"><cite>Le 06/10/2017, nam1962 a écrit&#160;:</cite><blockquote><div><div class="quotebox"><cite>Jansma a écrit&#160;:</cite><blockquote><div><p>(...) mais comment tu fais pour savoir tout ça ? Tu connais par cœur le nom de tous les ppa de tous les logiciels ?</p></div></blockquote></div><p>Tu reprends le début de chacun de tes PPA et tu ajoutes &quot;launchpad&quot; puis recherche Goo (ou autre)</p><p>Exemple : <em>freetuxtv-freetuxtv-dev launchpad</em> envoie sur <a href="https://launchpad.net/~freetuxtv/+archive/ubuntu/freetuxtv-dev" rel="nofollow">https://launchpad.net/~freetuxtv/+archi … etuxtv-dev</a></p><p>Ce qui donne en plus la bonne syntaxe pour installer le PPA :</p><div class="codebox"><pre><code>sudo add-apt-repository ppa:freetuxtv/freetuxtv-dev</code></pre></div><p>MAIS !<br />Si, sur la page Launchpad, dans <em>Technical details about this PPA</em> - <em>Choose your ubuntu version</em> on voit bien xenial, on voit surtout dans le pavé de droite que<span class="bbu"> ça n&#039;a pas été maintenu depuis <span class="bbs">69</span>* <strong>77</strong> semaines</span> (et donc que c&#039;est à oublier)</p><p>Ceci permet de faire un rappel : les PPA sont réservés à ceux qui savent gérer ! <img src="http://forum.ubuntu-fr.org/img/smilies/tongue.png" width="15" height="15" alt="tongue" /></p></div></blockquote></div><p><em>(edit = * actualisation)</em></p></div></blockquote></div>
+					</div>
+					<div class="postsignature postmsg"><hr /><p>Important : Pensez à passer vos sujets en [Résolu] lorsque ceux-ci le sont, au début du titre en cliquant sur <em>Modifier</em> sous le premier message, et un bref récapitulatif de la solution à la fin de celui-ci. Merci.</p><p>Xubuntu 20.04 LTS - Lenovo T410 -18.04.1 LTS Toshiba Satellite A300&#160; Membre de <a href="http://www.linux-azur.org/" rel="nofollow">Linux-Azur</a></p></div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><strong>En ligne</strong></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p21953521" class="blockpost roweven">
+	<h2><span><span class="conr">#8</span> <a href="viewtopic.php?pid=21953521#p21953521">Le 09/08/2018, à 16:33</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>NicoApi73</strong></dt>
+											</dl>
+				</div>
+				<div class="postright">
+					<h3>Re&#160;: [RESOLU]problème mise à jour</h3>
+					<div class="postmsg">
+						<p>ok, donc webupd8team-ubuntu-java-bionic semble être maintenu, vu que la dernière mise à jour date de 3 semaines, si j&#039;ai bien compris (et à voir c&#039;est oracle qui est derrière)</p><p>Donc pas de problème!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Hors ligne</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p21953527" class="blockpost rowodd">
+	<h2><span><span class="conr">#9</span> <a href="viewtopic.php?pid=21953527#p21953527">Le 09/08/2018, à 16:49</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>xubu1957</strong></dt>
+												<dd class="postavatar"><img src="http://forum.ubuntu-fr.org/img/avatars/1629531.png?m=1522935198" width="60" height="60" alt="" /></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re&#160;: [RESOLU]problème mise à jour</h3>
+					<div class="postmsg">
+						<p>Pour <strong>webupd8team</strong>, l&#039;avis de nam1962 est plutôt radical &gt; <a href="https://forum.ubuntu-fr.org/viewtopic.php?pid=21873873#p21873873" rel="nofollow">forum.ubuntu-fr.org/viewtopic.php?pid=21873873#p21873873</a>.</p>
+					</div>
+					<div class="postsignature postmsg"><hr /><p>Important : Pensez à passer vos sujets en [Résolu] lorsque ceux-ci le sont, au début du titre en cliquant sur <em>Modifier</em> sous le premier message, et un bref récapitulatif de la solution à la fin de celui-ci. Merci.</p><p>Xubuntu 20.04 LTS - Lenovo T410 -18.04.1 LTS Toshiba Satellite A300&#160; Membre de <a href="http://www.linux-azur.org/" rel="nofollow">Linux-Azur</a></p></div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><strong>En ligne</strong></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p21953533" class="blockpost roweven">
+	<h2><span><span class="conr">#10</span> <a href="viewtopic.php?pid=21953533#p21953533">Le 09/08/2018, à 16:54</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>NicoApi73</strong></dt>
+											</dl>
+				</div>
+				<div class="postright">
+					<h3>Re&#160;: [RESOLU]problème mise à jour</h3>
+					<div class="postmsg">
+						<p>@izzy94 : vu le post #9, il semblerait qu&#039;il vaille mieux que tu désactives également le ppa webupd8team</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Hors ligne</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p22286081" class="blockpost rowodd">
+	<h2><span><span class="conr">#11</span> <a href="viewtopic.php?pid=22286081#p22286081">Le 15/05/2020, à 20:41</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>cronopio-79</strong></dt>
+											</dl>
+				</div>
+				<div class="postright">
+					<h3>Re&#160;: [RESOLU]problème mise à jour</h3>
+					<div class="postmsg">
+						<p>Même problème, pouvez - vous m&#039;aider?</p><div class="codebox"><pre class="vscroll"><code>sudo apt-get update[sudo] Mot de passe de utilisateur : 
+Ign:1 http://fr.archive.ubuntu.com/ubuntu cosmic InRelease
+Ign:2 http://fr.archive.ubuntu.com/ubuntu cosmic-updates InRelease             
+Err:3 https://&lt;miroir.cran&gt;/bin/linux/&lt;version.ubuntu&gt; cosmic InRelease        
+  Ne parvient pas à résoudre « &lt;miroir.cran&gt; »
+Ign:4 http://fr.archive.ubuntu.com/ubuntu cosmic-backports InRelease           
+Err:5 http://fr.archive.ubuntu.com/ubuntu cosmic Release                       
+  404  Not Found [IP : 2001:860:f70a::2 80]
+Err:6 http://fr.archive.ubuntu.com/ubuntu cosmic-updates Release
+  404  Not Found [IP : 2001:860:f70a::2 80]
+Err:7 http://fr.archive.ubuntu.com/ubuntu cosmic-backports Release
+  404  Not Found [IP : 2001:860:f70a::2 80]
+Ign:8 http://security.ubuntu.com/ubuntu cosmic-security InRelease      
+Err:9 http://security.ubuntu.com/ubuntu cosmic-security Release        
+  404  Not Found [IP : 2001:67c:1562::18 80]
+Ign:10 https://cloud.r-project.org/bin/linux/ubuntu disco-cran35/ InRelease
+Err:11 https://cloud.r-project.org/bin/linux/ubuntu disco-cran35/ Release
+  404  Not Found [IP : 2600:9000:219c:5e00:6:c2d3:f940:93a1 443]
+Lecture des listes de paquets... Fait
+E: Le dépôt http://fr.archive.ubuntu.com/ubuntu cosmic Release n&#039;a pas de fichier Release.
+N: Les mises à jour depuis un tel dépôt ne peuvent s&#039;effectuer de manière sécurisée, et sont donc désactivées par défaut
+N: Voir les pages de manuel d&#039;apt-secure(8) pour la création des dépôts et les détails de configuration d&#039;un utilisateur.
+E: Le dépôt http://fr.archive.ubuntu.com/ubuntu cosmic-updates Release n&#039;a pas de fichier Release.
+N: Les mises à jour depuis un tel dépôt ne peuvent s&#039;effectuer de manière sécurisée, et sont donc désactivées par défaut
+N: Voir les pages de manuel d&#039;apt-secure(8) pour la création des dépôts et les détails de configuration d&#039;un utilisateur.
+E: Le dépôt http://fr.archive.ubuntu.com/ubuntu cosmic-backports Release n&#039;a pas de fichier Release.
+N: Les mises à jour depuis un tel dépôt ne peuvent s&#039;effectuer de manière sécurisée, et sont donc désactivées par défaut
+N: Voir les pages de manuel d&#039;apt-secure(8) pour la création des dépôts et les détails de configuration d&#039;un utilisateur.
+E: Le dépôt http://security.ubuntu.com/ubuntu cosmic-security Release ne contient plus de fichier Release.
+N: Les mises à jour depuis un tel dépôt ne peuvent s&#039;effectuer de manière sécurisée, et sont donc désactivées par défaut
+N: Voir les pages de manuel d&#039;apt-secure(8) pour la création des dépôts et les détails de configuration d&#039;un utilisateur.</code></pre></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Hors ligne</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p22286082" class="blockpost roweven">
+	<h2><span><span class="conr">#12</span> <a href="viewtopic.php?pid=22286082#p22286082">Le 15/05/2020, à 20:43</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>xubu1957</strong></dt>
+												<dd class="postavatar"><img src="http://forum.ubuntu-fr.org/img/avatars/1629531.png?m=1522935198" width="60" height="60" alt="" /></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re&#160;: [RESOLU]problème mise à jour</h3>
+					<div class="postmsg">
+						<p>Bonjour,</p><p>La version <a href="http://doc.ubuntu-fr.org/cosmic">cosmic</a> est périmée.</p><div class="quotebox"><blockquote><div><p>Depuis le 18 juillet 2019, Ubuntu 18.10 est en fin de vie (end of life, EOL). Elle ne profite plus de nouvelle mise à jour de sécurité et les paquets logiciels pour cette version sont déplacés dans des serveurs d&#039;archive. Pour continuer à recevoir des mises à jour de sécurité, veuillez mettre à niveau votre version d&#039;Ubuntu vers une version activement soutenue.</p></div></blockquote></div><p><em>Réponse déjà fournie dans ta discussion &gt; </em><a href="./viewtopic.php?pid=22261558#p22261558" rel="nofollow">Impossible d&#039;installer certains logiciels</a></p>
+						<p class="postedit"><em>Dernière modification par xubu1957 (Le 15/05/2020, à 20:46)</em></p>
+					</div>
+					<div class="postsignature postmsg"><hr /><p>Important : Pensez à passer vos sujets en [Résolu] lorsque ceux-ci le sont, au début du titre en cliquant sur <em>Modifier</em> sous le premier message, et un bref récapitulatif de la solution à la fin de celui-ci. Merci.</p><p>Xubuntu 20.04 LTS - Lenovo T410 -18.04.1 LTS Toshiba Satellite A300&#160; Membre de <a href="http://www.linux-azur.org/" rel="nofollow">Linux-Azur</a></p></div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><strong>En ligne</strong></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p22286462" class="blockpost rowodd">
+	<h2><span><span class="conr">#13</span> <a href="viewtopic.php?pid=22286462#p22286462">Le 16/05/2020, à 16:55</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>cronopio-79</strong></dt>
+											</dl>
+				</div>
+				<div class="postright">
+					<h3>Re&#160;: [RESOLU]problème mise à jour</h3>
+					<div class="postmsg">
+						<p>Désolé encore.<br />J&#039;arrive pas à migrer de la version Cosmic à 20.04. Il faut passer par 19.10?</p><p>merci</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Hors ligne</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p22286471" class="blockpost roweven">
+	<h2><span><span class="conr">#14</span> <a href="viewtopic.php?pid=22286471#p22286471">Le 16/05/2020, à 17:07</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>xubu1957</strong></dt>
+												<dd class="postavatar"><img src="http://forum.ubuntu-fr.org/img/avatars/1629531.png?m=1522935198" width="60" height="60" alt="" /></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re&#160;: [RESOLU]problème mise à jour</h3>
+					<div class="postmsg">
+						<p>Bonjour,</p><p>Tu ne peux faire de <a href="http://doc.ubuntu-fr.org/migration">migration</a> à partir d&#039;une version périmée.</p>
+					</div>
+					<div class="postsignature postmsg"><hr /><p>Important : Pensez à passer vos sujets en [Résolu] lorsque ceux-ci le sont, au début du titre en cliquant sur <em>Modifier</em> sous le premier message, et un bref récapitulatif de la solution à la fin de celui-ci. Merci.</p><p>Xubuntu 20.04 LTS - Lenovo T410 -18.04.1 LTS Toshiba Satellite A300&#160; Membre de <a href="http://www.linux-azur.org/" rel="nofollow">Linux-Azur</a></p></div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><strong>En ligne</strong></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p22286585" class="blockpost rowodd">
+	<h2><span><span class="conr">#15</span> <a href="viewtopic.php?pid=22286585#p22286585">Le 16/05/2020, à 20:38</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>cronopio-79</strong></dt>
+											</dl>
+				</div>
+				<div class="postright">
+					<h3>Re&#160;: [RESOLU]problème mise à jour</h3>
+					<div class="postmsg">
+						<p>De coup, comment je dois faire?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Hors ligne</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p22286588" class="blockpost roweven">
+	<h2><span><span class="conr">#16</span> <a href="viewtopic.php?pid=22286588#p22286588">Le 16/05/2020, à 20:47</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>xubu1957</strong></dt>
+												<dd class="postavatar"><img src="http://forum.ubuntu-fr.org/img/avatars/1629531.png?m=1522935198" width="60" height="60" alt="" /></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re&#160;: [RESOLU]problème mise à jour</h3>
+					<div class="postmsg">
+						<p>Tu sauvegardes tes données, et tu refais une <a href="https://doc.ubuntu-fr.org/reinstallation_ubuntu" rel="nofollow">reinstallation_ubuntu</a></p>
+					</div>
+					<div class="postsignature postmsg"><hr /><p>Important : Pensez à passer vos sujets en [Résolu] lorsque ceux-ci le sont, au début du titre en cliquant sur <em>Modifier</em> sous le premier message, et un bref récapitulatif de la solution à la fin de celui-ci. Merci.</p><p>Xubuntu 20.04 LTS - Lenovo T410 -18.04.1 LTS Toshiba Satellite A300&#160; Membre de <a href="http://www.linux-azur.org/" rel="nofollow">Linux-Azur</a></p></div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><strong>En ligne</strong></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="postlinksb">
+	<div class="inbox crumbsplus">
+		<div class="pagepost">
+			<p class="pagelink conl"><span class="pages-label">Pages&#160;: </span><strong class="item1">1</strong></p>
+		</div>
+		<ul class="crumbs">
+			<li><a href="index.php">Forum</a></li>
+			<li><span>»&#160;</span><a href="viewforum.php?id=18">Autres logiciels et problèmes généraux</a></li>
+			<li><span>»&#160;</span><strong><a href="viewtopic.php?id=2029150">[RESOLU]problème mise à jour</a></strong></li>
+		</ul>
+		<div class="clearer"></div>
+	</div>
+</div>
+        </div>
+
+        <div id="footer">
+          <div id="brdfooter" class="block">
+	<h2><span>Pied de page des forums</span></h2>
+	<div class="box">
+		<div id="brdfooternav" class="inbox">
+			<div class="conl">
+				<form id="qjump" method="get" action="viewforum.php">
+					<div><label><span>Atteindre<br /></span>
+					<select name="id" onchange="window.location=('viewforum.php?id='+this.options[this.selectedIndex].value)">
+						<optgroup label="Débuter avec Ubuntu">
+							<option value="9">Questions et informations avant l&#039;installation</option>
+							<option value="10">Installation d&#039;Ubuntu</option>
+						</optgroup>
+						<optgroup label="Configuration matérielle">
+							<option value="27">Affichage et cartes graphiques</option>
+							<option value="16">Accès internet et réseaux</option>
+							<option value="79">Imprimantes et scanners</option>
+							<option value="6">Autres types de matériel</option>
+						</optgroup>
+						<optgroup label="Utilisation générale">
+							<option value="25">Installation de logiciels et changements de version</option>
+							<option value="13">Bureautique et logiciels pour l&#039;internet et le réseau</option>
+							<option value="17">Lecture et configuration multimédia</option>
+							<option value="81">Création graphique, musicale et vidéo</option>
+							<option value="40">Logiciels éducatifs</option>
+							<option value="15">Jeux</option>
+							<option value="78">Terminal, scripts et ligne de commande</option>
+							<option value="65">Accessibilité</option>
+							<option value="18" selected="selected">Autres logiciels et problèmes généraux</option>
+							<option value="5">Archives</option>
+						</optgroup>
+						<optgroup label="Environnements">
+							<option value="121">Gnome3</option>
+							<option value="66">KDE/Plasma</option>
+							<option value="38">XFCE</option>
+							<option value="101">LXDE</option>
+							<option value="201">Mate</option>
+							<option value="204">Budgie</option>
+							<option value="41">Autres environnements et personnalisations d&#039;Ubuntu</option>
+						</optgroup>
+						<optgroup label="Utilisations avancées">
+							<option value="51">Ubuntu en entreprise</option>
+							<option value="28">Serveurs</option>
+							<option value="63">Virtualisation et émulation</option>
+							<option value="23">Trucs, astuces et scripts utiles</option>
+							<option value="35">Développement et programmation</option>
+							<option value="91">Sécurité</option>
+							<option value="206">WSL - Ubuntu Core</option>
+							<option value="131">Ubuntu Touch (smartphones et tablettes)</option>
+							<option value="53">Version instable : 22.04 LTS Jammy Jellyfish</option>
+						</optgroup>
+						<optgroup label="Activités autour du libre">
+							<option value="29">Événements</option>
+							<option value="69">Vos développements libres</option>
+							<option value="71">Vos sites sur le libre</option>
+							<option value="73">Revendeurs libres</option>
+						</optgroup>
+						<optgroup label="Divers">
+							<option value="42">Actualités autour du logiciel libre</option>
+							<option value="21">À propos du site - Contribution(s)</option>
+							<option value="171">Café Ubuntu</option>
+						</optgroup>
+						<optgroup label="Sous-forums">
+							<option value="37">Unity</option>
+							<option value="22">LiveCD/LiveUSB</option>
+							<option value="7">Archives</option>
+							<option value="205">NAS</option>
+							<option value="181">Être ou ne pas être…?</option>
+							<option value="111">Gnome2</option>
+							<option value="82">WiFi</option>
+							<option value="61">Wubi : installation dans Windows</option>
+							<option value="4">Archive version instable</option>
+							<option value="20">Autres architectures</option>
+						</optgroup>
+					</select></label>
+					<input type="submit" value="Aller" accesskey="g" />
+					</div>
+				</form>
+			</div>
+			<div class="conr">
+				<p id="poweredby">Propulsé par <a href="http://fluxbb.org/">FluxBB</a></p>
+			</div>
+			<div class="clearer"></div>
+		</div>
+	</div>
+</div>
+          <div class="end-box"><div><!-- Bottom corners --></div></div>
+        </div>
+      </div>
+
+	    <div class="block-inner">
+
+        <div class="content">
+          <ul class="menu"><li class="leaf first contact"><a href="http://www.ubuntu-fr.org/contacts">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="clearer"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Inclusion du script pour les stats de Sp4rKy -->
+  <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDomains", ["*.forum.ubuntu-fr.org","*.forum.ubuntu-fr.org"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.ubuntu-fr.org/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 2]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.ubuntu-fr.org/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</body>
+</html>
+ى���           b/�DU�b/�   `    O^partitionKey=%28https%2Cubuntu-fr.org%29,:https://forum.ubuntu-fr.org/viewtopic.php?id=2029150 strongly-framed 1 security-info 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 request-method GET request-Cookie 1Vx6i2XjEYcmcEkLdynayNv4Y4g= response-head HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 14 Mar 2022 10:49:18 GMT
+Content-Type: text/html; charset=utf-8
+Cache-Control: public, max-age=0, s-maxage=300
+Vary: Cookie
+X-Frame-Options: deny
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+ original-response-headers Server: nginx/1.14.2
+Date: Mon, 14 Mar 2022 10:49:18 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Cache-Control: public, max-age=0, s-maxage=300
+Vary: Cookie
+X-Frame-Options: deny
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+ ctid 1 uncompressed-len 0 net-response-time-onstart 708 net-response-time-onstop 1360   �-

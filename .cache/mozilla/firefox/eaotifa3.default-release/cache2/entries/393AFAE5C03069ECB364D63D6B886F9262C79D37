@@ -1,0 +1,358 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!---->
+<title>[Résolu]Pas de fichier Release ?? / Installation de logiciels et changements de version / Forum Ubuntu-fr.org</title>
+      
+    <link rel="shortcut icon" href="//www-static.ubuntu-fr.org/theme2010/images/commun/ubuntu/icone.png"/>
+          <link rel="stylesheet" media="screen" type="text/css" title="Design Ubuntu" href="//www-static.ubuntu-fr.org/theme2010/css/forum.css" />
+    <link rel="stylesheet" media="screen" type="text/css" title="Design Ubuntu" href="//www-static.ubuntu-fr.org/theme2010/css/forum-ubuntu.css" />
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="style/Ubuntu.css" />
+    <script type="text/javascript" src="//www-static.ubuntu-fr.org/theme2010/js/common.js"></script> 
+    <script type="text/javascript">
+    var menu_hidden=0;
+    </script>
+    <script type="text/javascript" src="//www-static.ubuntu-fr.org/theme2010/js/menu.js"></script>
+  
+<!--[if lte IE 6]><script type="text/javascript" src="style/imports/minmax.js"></script><![endif]-->
+<link rel="canonical" href="viewtopic.php?id=2026467" title="Page 1" />
+</head>
+
+<body>
+  <div id="accessibar">
+    <a href="#main" tabindex="1">Contenu</a> | <a href="#qsearch__in" tabindex="2">Rechercher</a> | <a href="#navigation" tabindex="3">Menus</a>
+  </div>
+  <div id="punviewtopic">
+    <div id="page">
+
+      <div id="header">
+        <div id="logo">
+          <h1>Ubuntu-fr</h1>
+          <a href="http://www.ubuntu-fr.org" title="Accueil">Communauté francophone d'utilisateurs d'Ubuntu</a>
+        </div>
+
+        <form action="search_ubuntufr.php" id="search">
+          <fieldset>
+            <input type="text" value="Recherche rapide...." id="qsearch__in" accesskey="f" name="q" title="[F]" size="34" />
+            <select name="tsearch">
+              <option value="wiki">Documentation</option>
+              <option  value="forum" selected="selected">Forum</option>
+              <option  value="planet" >Planet</option>
+            </select>
+            <input type="submit" value="ok" class="button" title="Chercher" />
+          </fieldset>
+        </form>
+
+        <div id="brdwelcome" class="inbox">
+			<form action="login.php?action=in" accept-charset="utf-8" id="login_top" method="post"><fieldset>
+  <input type="hidden" name="form_sent" value="1" />
+<input type="hidden" name="redirect_url" value="//forum.ubuntu-fr.org/viewtopic.php?id=2026467" />
+<input type="text" placeholder="Identifiant" required="required" title="Entrez votre identifiant" name="req_username" size="9" /><input type="password" placeholder="Mot de passe" required="required" title="Entrez votre mot de passe" name="req_password" size="9" /><input type="submit" value="connexion" id="connect" /> / <a href="register.php">inscription</a></fieldset></form>
+			<div class="clearer"></div>
+		</div>
+ 
+        <div class="clearer"></div>
+      </div>
+
+      <div id="navigation">
+        <ul>
+          <li class="menu"><a id="menu-accueil" class="title" href="http://www.ubuntu-fr.org"><span>Accueil</span></a></li>
+          <li class="menu"><a id="menu-doc" class="title" href="http://doc.ubuntu-fr.org" title="Documentation Ubuntu francophone"><span>Documentation</span></a></li>
+          <li class="menu" id="active" >
+            <a id="menu-forum" class="title" href="index.php" title="Index du forum"><span>Forum</span></a>
+            <ul>
+              <li class="cat">
+                <h2>Navigation</h2>
+                <div class="inbox">
+			<ul>
+				<li id="navrules"><a href="misc.php?action=rules" title="Charte du Forum Ubuntu-fr">Règles</a></li>
+				<li id="navregister"><a href="register.php">Inscription</a></li>
+				<li id="navlogin"><a href="login.php">Identification</a></li>
+			</ul>
+		</div>
+              </li>
+              
+		<li class="cat"><h2>Liens de recherche</h2>
+		<div id="brdmenu" class="inbox">
+			<ul>
+				<li><a href="search.php?action=show_24h" title="300 dernières discussions actives">Messages récents</a></li>
+				<li><a href="search.php?action=show_unanswered" title="300 dernières discussions sans réponse">Discussions sans réponse</a></li>
+			</ul>
+		</div></li>
+	
+            </ul>
+          </li>
+          <li class="menu"><a id="menu-planet" class="title" href="http://planet.ubuntu-fr.org"><span>Planet</span></a></li>
+        </ul>
+        <div class="clearer"></div>
+      </div>
+    
+      <div id="wrapper">
+        <div id="announce" class="block">
+	<div class="hd"><h2><span>Annonce</span></h2></div>
+	<div class="box">
+		<div id="announce-block" class="inbox">
+			<div class="usercontent"><p><strong>DVD, clés USB et t-shirts Ubuntu-fr</strong> disponibles sur la boutique <a href='https://enventelibre.org/41-ubuntu-fr'>En Vente Libre</a></p><p>Si vous avez des soucis pour rester connecté, déconnectez-vous puis reconnectez-vous depuis <a href='https://forum.ubuntu-fr.org/login.php'>ce lien</a> en cochant la case <br/>Me connecter automatiquement lors de mes prochaines visites.</p><p><a href='https://doc.ubuntu-fr.org/groupes/ubuntu-fr-forum'>À propos de l'équipe du forum.</a></p></div>
+		</div>
+	</div>
+</div>
+        <div id="main">
+          <div id="hidemenu" title="Masquer le menu"></div><!--
+	<div id="hidemenu"><a accesskey="z" title="Masquer le menu - AccessKey Z" href="javascript:switchMenuVisible()"><span>&nbsp;</span></a></div>-->
+          <div class="linkst">
+	<div class="inbox crumbsplus">
+		<ul class="crumbs">
+				<li><a href="http://www.ubuntu-fr.org" name="Accueil">Accueil</a></li>
+				<li><span>»&#160;</span><a href="index.php">Forum</a></li>
+				<li><span>»&#160;</span><a href="viewforum.php?id=25">Installation de logiciels et changements de version</a></li>
+				<li><span>»&#160;</span><strong><a href="viewtopic.php?id=2026467">[Résolu]Pas de fichier Release ??</a></strong></li>
+		</ul>
+		<div class="pagepost">
+			<p class="pagelink conl"><span class="pages-label">Pages&#160;: </span><strong class="item1">1</strong></p>
+		</div>
+		<div class="clearer"></div>
+	</div>
+</div>
+
+<div id="p21922216" class="blockpost rowodd firstpost blockpost1">
+	<h2><span><span class="conr">#1</span> <a href="viewtopic.php?pid=21922216#p21922216">Le 24/05/2018, à 12:48</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>Herby</strong></dt>
+											</dl>
+				</div>
+				<div class="postright">
+					<h3>[Résolu]Pas de fichier Release ??</h3>
+					<div class="postmsg">
+						<p>Bonjour,</p><p>Après avoir stagné des années sur un 14.04LTS, je me suis enfin décidé à mettre à jour.<br />Je viens donc d&#039;installer Kubuntu 18.04LTS sans trop de problèmes si ce n&#039;est :<br />à chaque fois que j&#039;ajoute un PPA, je reçois le message suivant :</p><div class="codebox"><pre><code>E: Le dépôt cdrom://Kubuntu 18.04 LTS _Bionic Beaver_ - Release amd64 (20180426) bionic Release n&#039;a pas de fichier Release.
+N: Les mises à jour depuis un tel dépôt ne peuvent s&#039;effectuer de manière sécurisée, et sont donc désactivées par défaut
+N: Voir les pages de manuel d&#039;apt-secure(8) pour la création des dépôts et les détails de configuration d&#039;un utilisateur.</code></pre></div><p>Cela ne semble pas poser d&#039;autres problèmes et l&#039;ajout des PPA se fait. Néanmoins, j&#039;aimerais bien savoir à quoi est dû ce message et comment y remédier.</p>
+						<p class="postedit"><em>Dernière modification par Herby (Le 24/05/2018, à 14:10)</em></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Hors ligne</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p21922239" class="blockpost roweven">
+	<h2><span><span class="conr">#2</span> <a href="viewtopic.php?pid=21922239#p21922239">Le 24/05/2018, à 13:47</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>J5012</strong></dt>
+											</dl>
+				</div>
+				<div class="postright">
+					<h3>Re&#160;: [Résolu]Pas de fichier Release ??</h3>
+					<div class="postmsg">
+						<p>normal ...<br />c&#039;est juste l&#039;avertissement que le depot originelle d&#039;installation du cdrom n&#039;est plus disponible... il s&#039;agit en fait d&#039;un bug de l&#039;installeur de cette version de kubuntu qui aurait du desactiver le depot cdrom apres avoir terminé l&#039;installation et avant le 1er reboot ...</p><p>pour le desactiver, il te suffit d&#039;editer en admin le fichier &quot;/etc/apt/sources.list&quot; et de placer en debut de la ligne contenant &quot;cdrom://&quot; un dièse &quot;#&quot;</p><p>ex avec un depot en xenial :</p><div class="quotebox"><cite>pkexec gedit /etc/apt/sources.list a écrit&#160;:</cite><blockquote><div><div class="codebox"><pre><code>pkexec gedit /etc/apt/sources.list</code></pre></div><p># deb cdrom:[Ubuntu 16.04 LTS _Xenial Xerus_ - Release amd64 (20160420.1)]/ xenial main restricted<br />...</p></div></blockquote></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Hors ligne</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p21922248" class="blockpost rowodd">
+	<h2><span><span class="conr">#3</span> <a href="viewtopic.php?pid=21922248#p21922248">Le 24/05/2018, à 14:08</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>Herby</strong></dt>
+											</dl>
+				</div>
+				<div class="postright">
+					<h3>Re&#160;: [Résolu]Pas de fichier Release ??</h3>
+					<div class="postmsg">
+						<p>Merci de m&#039;avoir retiré cette épine du pied <img src="http://forum.ubuntu-fr.org/img/smilies/wink.png" width="15" height="15" alt="wink" /><br />Pour ceux que ça intéresse, voici la manip à faire sur Kubuntu :</p><div class="codebox"><pre><code>kate /etc/apt/sources.list</code></pre></div><p>Ajouter un caractère &quot;#&quot; au début de cette ligne : deb cdrom:[Kubuntu 18.04 LTS _Bionic Beaver_ - Release amd64 (20180426)]/ bionic main multiverse restricted universe<br />Sauvegarder et entrer le mdp admin.<br />Merci J5012</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Hors ligne</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="postlinksb">
+	<div class="inbox crumbsplus">
+		<div class="pagepost">
+			<p class="pagelink conl"><span class="pages-label">Pages&#160;: </span><strong class="item1">1</strong></p>
+		</div>
+		<ul class="crumbs">
+			<li><a href="index.php">Forum</a></li>
+			<li><span>»&#160;</span><a href="viewforum.php?id=25">Installation de logiciels et changements de version</a></li>
+			<li><span>»&#160;</span><strong><a href="viewtopic.php?id=2026467">[Résolu]Pas de fichier Release ??</a></strong></li>
+		</ul>
+		<div class="clearer"></div>
+	</div>
+</div>
+        </div>
+
+        <div id="footer">
+          <div id="brdfooter" class="block">
+	<h2><span>Pied de page des forums</span></h2>
+	<div class="box">
+		<div id="brdfooternav" class="inbox">
+			<div class="conl">
+				<form id="qjump" method="get" action="viewforum.php">
+					<div><label><span>Atteindre<br /></span>
+					<select name="id" onchange="window.location=('viewforum.php?id='+this.options[this.selectedIndex].value)">
+						<optgroup label="Débuter avec Ubuntu">
+							<option value="9">Questions et informations avant l&#039;installation</option>
+							<option value="10">Installation d&#039;Ubuntu</option>
+						</optgroup>
+						<optgroup label="Configuration matérielle">
+							<option value="27">Affichage et cartes graphiques</option>
+							<option value="16">Accès internet et réseaux</option>
+							<option value="79">Imprimantes et scanners</option>
+							<option value="6">Autres types de matériel</option>
+						</optgroup>
+						<optgroup label="Utilisation générale">
+							<option value="25" selected="selected">Installation de logiciels et changements de version</option>
+							<option value="13">Bureautique et logiciels pour l&#039;internet et le réseau</option>
+							<option value="17">Lecture et configuration multimédia</option>
+							<option value="81">Création graphique, musicale et vidéo</option>
+							<option value="40">Logiciels éducatifs</option>
+							<option value="15">Jeux</option>
+							<option value="78">Terminal, scripts et ligne de commande</option>
+							<option value="65">Accessibilité</option>
+							<option value="18">Autres logiciels et problèmes généraux</option>
+							<option value="5">Archives</option>
+						</optgroup>
+						<optgroup label="Environnements">
+							<option value="121">Gnome3</option>
+							<option value="66">KDE/Plasma</option>
+							<option value="38">XFCE</option>
+							<option value="101">LXDE</option>
+							<option value="201">Mate</option>
+							<option value="204">Budgie</option>
+							<option value="41">Autres environnements et personnalisations d&#039;Ubuntu</option>
+						</optgroup>
+						<optgroup label="Utilisations avancées">
+							<option value="51">Ubuntu en entreprise</option>
+							<option value="28">Serveurs</option>
+							<option value="63">Virtualisation et émulation</option>
+							<option value="23">Trucs, astuces et scripts utiles</option>
+							<option value="35">Développement et programmation</option>
+							<option value="91">Sécurité</option>
+							<option value="206">WSL - Ubuntu Core</option>
+							<option value="131">Ubuntu Touch (smartphones et tablettes)</option>
+							<option value="53">Version instable : 22.04 LTS Jammy Jellyfish</option>
+						</optgroup>
+						<optgroup label="Activités autour du libre">
+							<option value="29">Événements</option>
+							<option value="69">Vos développements libres</option>
+							<option value="71">Vos sites sur le libre</option>
+							<option value="73">Revendeurs libres</option>
+						</optgroup>
+						<optgroup label="Divers">
+							<option value="42">Actualités autour du logiciel libre</option>
+							<option value="21">À propos du site - Contribution(s)</option>
+							<option value="171">Café Ubuntu</option>
+						</optgroup>
+						<optgroup label="Sous-forums">
+							<option value="37">Unity</option>
+							<option value="22">LiveCD/LiveUSB</option>
+							<option value="7">Archives</option>
+							<option value="205">NAS</option>
+							<option value="181">Être ou ne pas être…?</option>
+							<option value="111">Gnome2</option>
+							<option value="82">WiFi</option>
+							<option value="61">Wubi : installation dans Windows</option>
+							<option value="4">Archive version instable</option>
+							<option value="20">Autres architectures</option>
+						</optgroup>
+					</select></label>
+					<input type="submit" value="Aller" accesskey="g" />
+					</div>
+				</form>
+			</div>
+			<div class="conr">
+				<p id="poweredby">Propulsé par <a href="http://fluxbb.org/">FluxBB</a></p>
+			</div>
+			<div class="clearer"></div>
+		</div>
+	</div>
+</div>
+          <div class="end-box"><div><!-- Bottom corners --></div></div>
+        </div>
+      </div>
+
+	    <div class="block-inner">
+
+        <div class="content">
+          <ul class="menu"><li class="leaf first contact"><a href="http://www.ubuntu-fr.org/contacts">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="clearer"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Inclusion du script pour les stats de Sp4rKy -->
+  <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDomains", ["*.forum.ubuntu-fr.org","*.forum.ubuntu-fr.org"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.ubuntu-fr.org/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 2]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.ubuntu-fr.org/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</body>
+</html>
+�0�      b/pb/qDV8b/p   `    O^partitionKey=%28https%2Cubuntu-fr.org%29,:https://forum.ubuntu-fr.org/viewtopic.php?id=2026467 necko:classified 1 strongly-framed 1 security-info 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 request-method GET request-Cookie djemQCFhrBRvygzbBsoCHA/lxNU= response-head HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 14 Mar 2022 10:52:32 GMT
+Content-Type: text/html; charset=utf-8
+Cache-Control: public, max-age=0, s-maxage=300
+Vary: Cookie
+X-Frame-Options: deny
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+ original-response-headers Server: nginx/1.14.2
+Date: Mon, 14 Mar 2022 10:52:32 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Cache-Control: public, max-age=0, s-maxage=300
+Vary: Cookie
+X-Frame-Options: deny
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+ ctid 1 uncompressed-len 0 net-response-time-onstart 930 net-response-time-onstop 985   @�
